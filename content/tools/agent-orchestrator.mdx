@@ -1,0 +1,24 @@
+---
+key: agent-orchestrator
+name: "Agent Orchestrator (AO)"
+category: "CLI orchestrator"
+website: "http://aoagents.dev/"
+github: "https://github.com/Untrivial-ai/agent-orchestrator"
+license: "Apache-2.0, open source"
+platform:
+  windows: unknown
+  linux: unknown
+  macos: full
+  android: unknown
+  ios: unknown
+pfNote: "macOS via Homebrew; mobile companion app pairs over LAN/Tailscale for remote monitoring"
+parallel: "Fleet of worker agents (25+ supported harnesses — Claude Code, Codex, Cursor, OpenCode, Copilot, Aider, Goose, Devin, more), coordinated by a main orchestrator agent"
+isolation: "Each worker agent spawned into its own git worktree"
+locality: "Local — orchestrator and agents run on your machine; mobile app only monitors/notifies"
+remote: "Mobile companion watches sessions, opens a terminal, and notifies when an agent needs you — execution and code stay local"
+mobileCtl: "Monitoring/notifications only, via the mobile companion app"
+---
+
+Positions itself as fleet management specifically for CI/review overhead —
+autonomously handles CI fixes, merge conflicts, and code reviews across many
+concurrent agents, not just spawning them.

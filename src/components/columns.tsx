@@ -19,6 +19,41 @@ function PlatformBadge({ status }: { status: PlatformStatus }) {
   return <Badge className={cn("rounded-full", className)}>{label}</Badge>
 }
 
+const PLATFORM_STATUS_DOT: Record<PlatformStatus, string> = {
+  full: "bg-green-500",
+  beta: "bg-amber-500",
+  none: "bg-transparent ring-1 ring-inset ring-muted-foreground/30",
+  unknown: "bg-transparent ring-1 ring-inset ring-muted-foreground/30",
+}
+
+const PLATFORM_LABELS: { id: keyof Tool["pf"]; letter: string; title: string }[] = [
+  { id: "windows", letter: "W", title: "Windows" },
+  { id: "linux", letter: "L", title: "Linux" },
+  { id: "macos", letter: "M", title: "macOS" },
+  { id: "android", letter: "A", title: "Android" },
+  { id: "ios", letter: "I", title: "iOS" },
+]
+
+// Folded-group stand-in for the 5 individual platform columns — one compact
+// dot per OS instead of 5 full badge columns, so "Platform Support" can
+// collapse to roughly the width of a single column.
+function PlatformSummaryCell({ pf }: { pf: Tool["pf"] }) {
+  return (
+    <div className="flex items-center gap-1.5">
+      {PLATFORM_LABELS.map(({ id, letter, title }) => (
+        <span
+          key={id}
+          title={`${title}: ${pf[id]}`}
+          className="flex items-center gap-0.5 text-[10px] text-muted-foreground"
+        >
+          <span className={cn("h-2 w-2 rounded-full", PLATFORM_STATUS_DOT[pf[id]])} />
+          {letter}
+        </span>
+      ))}
+    </div>
+  )
+}
+
 function platformColumn(
   id: keyof Tool["pf"],
   title: string
@@ -50,6 +85,16 @@ function featureColumn(id: keyof Tool, title: string): ColumnDef<Tool> {
     ),
     enableSorting: false,
   }
+}
+
+// Which leaf columns to hide/show when a group header's fold toggle is
+// clicked — read by DataTable, which owns the columnVisibility state.
+export const FOLD_CONFIG: Record<string, { expandedOnly: string[]; collapsedOnly: string[] }> = {
+  activity: { expandedOnly: ["contributors", "updated"], collapsedOnly: [] },
+  platform: {
+    expandedOnly: ["windows", "linux", "macos", "android", "ios"],
+    collapsedOnly: ["platformSummary"],
+  },
 }
 
 export const columns: ColumnDef<Tool>[] = [
@@ -185,6 +230,12 @@ export const columns: ColumnDef<Tool>[] = [
     id: "platform",
     header: "Platform Support",
     columns: [
+      {
+        id: "platformSummary",
+        header: "Platforms",
+        cell: ({ row }) => <PlatformSummaryCell pf={row.original.pf} />,
+        enableSorting: false,
+      },
       platformColumn("windows", "Win"),
       platformColumn("linux", "Linux"),
       platformColumn("macos", "macOS"),

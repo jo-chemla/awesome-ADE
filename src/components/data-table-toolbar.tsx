@@ -4,7 +4,6 @@ import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { DataTableFacetedFilter } from "@/components/data-table-faceted-filter"
-import { DataTableViewOptions } from "@/components/data-table-view-options"
 import { STATIC_TOOLS } from "@/lib/load-tools"
 
 const CATEGORY_OPTIONS = Array.from(new Set(STATIC_TOOLS.map((t) => t.category))).map(
@@ -79,7 +78,6 @@ export function DataTableToolbar<TData>({
           <X className="size-3.5" />
         </Button>
       )}
-      <DataTableViewOptions table={table} />
     </div>
   )
 }
