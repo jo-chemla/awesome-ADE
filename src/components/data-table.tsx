@@ -23,10 +23,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { Button } from "@/components/ui/button"
 import { DataTablePagination } from "@/components/data-table-pagination"
 import { DataTableToolbar } from "@/components/data-table-toolbar"
 import { FOLD_CONFIG } from "@/components/columns"
+import { cn } from "@/lib/utils"
 
 // Groups start coalesced to their single most-telling column (★ Stars for
 // Activity, a compact per-OS dot row for Platform Support) — click a group
@@ -100,9 +100,18 @@ export function DataTable<TData, TValue>({
                     <TableHead
                       key={header.id}
                       colSpan={header.colSpan}
+                      onClick={foldable ? () => toggleFold(header.column.id) : undefined}
+                      title={
+                        foldable
+                          ? (foldedGroups[header.column.id] ? "Show all columns" : "Collapse columns")
+                          : undefined
+                      }
                       className={
                         isGroupRow
-                          ? "bg-muted/50 text-center text-[10px] font-semibold tracking-wide text-muted-foreground uppercase"
+                          ? cn(
+                              "bg-muted/50 text-center text-[10px] font-semibold tracking-wide text-muted-foreground uppercase",
+                              foldable && "cursor-pointer select-none hover:bg-muted",
+                            )
                           : undefined
                       }
                     >
@@ -110,19 +119,11 @@ export function DataTable<TData, TValue>({
                         <span className="inline-flex items-center gap-1">
                           {flexRender(header.column.columnDef.header, header.getContext())}
                           {foldable && (
-                            <Button
-                              variant="ghost"
-                              size="icon"
-                              className="h-4 w-4 cursor-pointer normal-case"
-                              title={foldedGroups[header.column.id] ? "Show all columns" : "Collapse columns"}
-                              onClick={() => toggleFold(header.column.id)}
-                            >
-                              {foldedGroups[header.column.id] ? (
-                                <ChevronsLeftRight className="h-3 w-3" />
-                              ) : (
-                                <ChevronsRightLeft className="h-3 w-3" />
-                              )}
-                            </Button>
+                            foldedGroups[header.column.id] ? (
+                              <ChevronsLeftRight className="h-3 w-3" />
+                            ) : (
+                              <ChevronsRightLeft className="h-3 w-3" />
+                            )
                           )}
                         </span>
                       )}
