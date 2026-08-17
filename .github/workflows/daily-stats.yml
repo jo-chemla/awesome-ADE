@@ -1,0 +1,43 @@
+name: Daily activity stats
+
+on:
+  schedule:
+    # Every day at 04:15 UTC.
+    - cron: "15 4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch GitHub activity and update snapshots
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python .github/scripts/update-stats.py
+
+      - name: Commit daily snapshot
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md stats/daily.json stats/stats-history.json
+          git commit -m "chore: update daily activity stats"
+          git push
