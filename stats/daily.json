@@ -1,12 +1,12 @@
 {
   "date": "2026-08-17",
-  "generatedAt": "2026-08-17T08:59:09Z",
+  "generatedAt": "2026-08-17T09:48:44Z",
   "tools": [
     {
       "key": "49agents",
       "name": "49Agents",
       "github": "https://github.com/alpbahadur/49Agents",
-      "stars": 398,
+      "stars": 399,
       "pushedAt": "2026-08-17T03:31:53Z",
       "c20": 2,
       "c100": 1
@@ -42,7 +42,7 @@
       "key": "bb",
       "name": "bb",
       "github": "https://github.com/get-bb/bb",
-      "stars": 2166,
+      "stars": 2172,
       "pushedAt": "2026-08-17T06:08:13Z",
       "c20": 4,
       "c100": 4
@@ -51,7 +51,7 @@
       "key": "claudecodeui",
       "name": "Claude Code UI (CloudCLI)",
       "github": "https://github.com/siteboon/claudecodeui",
-      "stars": 13318,
+      "stars": 13319,
       "pushedAt": "2026-08-14T18:43:14Z",
       "c20": 2,
       "c100": 2
@@ -74,7 +74,7 @@
       "key": "herder",
       "name": "Herder (herdr)",
       "github": "https://github.com/herdrdev/herdr",
-      "stars": 29879,
+      "stars": 29902,
       "pushedAt": "2026-08-17T07:17:02Z",
       "c20": 4,
       "c100": 1
@@ -101,8 +101,8 @@
       "key": "openchamber",
       "name": "OpenChamber",
       "github": "https://github.com/openchamber/openchamber",
-      "stars": 8866,
-      "pushedAt": "2026-08-17T00:05:45Z",
+      "stars": 8868,
+      "pushedAt": "2026-08-17T09:21:37Z",
       "c20": 11,
       "c100": 3
     },
@@ -110,8 +110,8 @@
       "key": "orca",
       "name": "Orca",
       "github": "https://github.com/stablyai/orca",
-      "stars": 46928,
-      "pushedAt": "2026-08-17T08:57:33Z",
+      "stars": 46971,
+      "pushedAt": "2026-08-17T09:48:09Z",
       "c20": 12,
       "c100": 6
     },
@@ -119,8 +119,8 @@
       "key": "paseo",
       "name": "Paseo",
       "github": "https://github.com/getpaseo/paseo",
-      "stars": 14006,
-      "pushedAt": "2026-08-16T18:58:16Z",
+      "stars": 14014,
+      "pushedAt": "2026-08-17T09:45:32Z",
       "c20": 5,
       "c100": 3
     },
@@ -146,8 +146,8 @@
       "key": "t3code",
       "name": "t3 code",
       "github": "https://github.com/pingdotgg/t3code",
-      "stars": 19004,
-      "pushedAt": "2026-08-17T08:46:55Z",
+      "stars": 19006,
+      "pushedAt": "2026-08-17T09:32:37Z",
       "c20": 9,
       "c100": 2
     },
@@ -155,8 +155,8 @@
       "key": "warp",
       "name": "Warp 2.0",
       "github": "https://github.com/warpdotdev/warp",
-      "stars": 64267,
-      "pushedAt": "2026-08-17T07:29:24Z",
+      "stars": 64269,
+      "pushedAt": "2026-08-17T09:42:08Z",
       "c20": 23,
       "c100": 4
     },
