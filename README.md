@@ -25,16 +25,16 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | 5 | [Paseo](https://github.com/getpaseo/paseo) | 14,014 | 5 | 3 | today |
 | 6 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 13,319 | 2 | 2 | 3d ago |
 | 7 | [Superset](https://github.com/superset-sh/superset) | 12,979 | 5 | 3 | today |
-| 8 | [OpenChamber](https://github.com/openchamber/openchamber) | 8,868 | 11 | 3 | today |
-| 9 | [Emdash](https://github.com/generalaction/emdash) | 5,421 | 16 | 5 | yesterday |
-| 10 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,213 | 10 | 4 | 2026-05-22 |
-| 11 | [bb](https://github.com/get-bb/bb) | 2,172 | 4 | 4 | today |
-| 12 | [Mux](https://github.com/coder/mux) | 1,973 | 10 | 5 | today |
-| 13 | [Jean](https://github.com/coollabsio/jean) | 1,180 | 3 | 1 | 3d ago |
-| 14 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 840 | 1 | 1 | 20d ago |
-| 15 | [49Agents](https://github.com/alpbahadur/49Agents) | 399 | 2 | 1 | today |
-| 16 | [ADE](https://github.com/arul28/ADE) | 86 | 1 | 1 | today |
-| 17 | [Agent Orchestrator (AO)](https://github.com/Untrivial-ai/agent-orchestrator) | 9,577 | 25 | 5 | today |
+| 8 | [Agent Orchestrator (AO)](https://github.com/Untrivial-ai/agent-orchestrator) | 9,577 | 25 | 5 | today |
+| 9 | [OpenChamber](https://github.com/openchamber/openchamber) | 8,868 | 11 | 3 | today |
+| 10 | [Emdash](https://github.com/generalaction/emdash) | 5,421 | 16 | 5 | yesterday |
+| 11 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,213 | 10 | 4 | 2026-05-22 |
+| 12 | [bb](https://github.com/get-bb/bb) | 2,172 | 4 | 4 | today |
+| 13 | [Mux](https://github.com/coder/mux) | 1,973 | 10 | 5 | today |
+| 14 | [Jean](https://github.com/coollabsio/jean) | 1,180 | 3 | 1 | 3d ago |
+| 15 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 840 | 1 | 1 | 20d ago |
+| 16 | [49Agents](https://github.com/alpbahadur/49Agents) | 399 | 2 | 1 | today |
+| 17 | [ADE](https://github.com/arul28/ADE) | 86 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
