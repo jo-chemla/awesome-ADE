@@ -5,7 +5,10 @@ coding-agent orchestrators, terminal multiplexers, visual canvases, and
 editor-integrated harnesses): platform support, isolation model, and
 GitHub activity, side by side.
 
-**[Live site →]([#](https://jo-chemla.github.io/awesome-ADE/))** *(update this link once deployed — see below)*
+**[Live site →]([#](https://jo-chemla.github.io/awesome-ADE/)** 
+
+Great resources: 
+- [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators)
 
 ## How the data works
 
