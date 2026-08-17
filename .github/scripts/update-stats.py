@@ -113,11 +113,7 @@ def fetch_stats(repo: str, token: str | None) -> dict[str, object]:
 
 
 def load_tools() -> list[dict[str, object]]:
-    tools = []
-    for path in sorted(TOOLS_DIR.glob("*.mdx")):
-        fm = parse_frontmatter(path)
-        tools.append(fm)
-    return tools
+    return [parse_frontmatter(path) for path in sorted(TOOLS_DIR.glob("*.mdx"))]
 
 
 def fmt_num(value: object) -> str:
@@ -145,7 +141,14 @@ def platform_summary(platform: object) -> str:
     if not isinstance(platform, dict):
         return ""
     labels = [("W", "windows"), ("L", "linux"), ("M", "macos"), ("A", "android"), ("I", "ios")]
-    return " ".join(f"{letter}={'✓' if platform.get(key) == 'full' else 'β' if platform.get(key) == 'beta' else '—'}" for letter, key in labels)
+    return " ".join(
+        f"{letter}={'✓' if platform.get(key) == 'full' else 'β' if platform.get(key) == 'beta' else '—'}"
+        for letter, key in labels
+    )
+
+
+def clean_cell(value: object) -> str:
+    return str(value or "").replace("|", "\\|").replace("\n", " ").strip()
 
 
 def make_table(tools: list[dict[str, object]], stats_by_key: dict[str, dict[str, object]], today: str) -> str:
@@ -153,7 +156,7 @@ def make_table(tools: list[dict[str, object]], stats_by_key: dict[str, dict[str,
         START,
         f"## Daily activity snapshot — {today}",
         "",
-        "This table is regenerated daily from the GitHub API. `Contrib ≥20` is the number of contributors with at least 20 lifetime commits; the `@ ≥100` value is the corresponding ≥100 count.",
+        "This table is regenerated daily from the GitHub API. `Contrib ≥20` is the number of contributors with at least 20 lifetime commits; `@ ≥100` is the corresponding ≥100 count.",
         "",
         "| Tool | Category | ★ Stars | Contrib ≥20 | @ ≥100 | Last updated | Platforms | Parallel agents | Isolation | Local / cloud | Mobile control |",
         "| --- | --- | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- |",
@@ -161,29 +164,26 @@ def make_table(tools: list[dict[str, object]], stats_by_key: dict[str, dict[str,
     for tool in tools:
         key = str(tool.get("key", ""))
         stats = stats_by_key.get(key, {})
-        name = str(tool.get("name", key)).replace("|", "\\|")
-        category = str(tool.get("category", "")).replace("|", "\\|")
-        c20 = stats.get("c20")
-        c100 = stats.get("c100")
-        contrib = f"{fmt_num(c20)} / {fmt_num(c100)}" if c20 is not None else "—"
+        name = clean_cell(tool.get("name", key))
+        category = clean_cell(tool.get("category", ""))
         github = tool.get("github") or ""
-        if github:
-            name_cell = f"[{name}]({github})"
-        else:
-            name_cell = name
-        cells = [
+        name_cell = f"[{name}]({github})" if github else name
+
+        row = [
             name_cell,
             category,
             fmt_num(stats.get("stars")),
-            contrib,
+            fmt_num(stats.get("c20")),
+            fmt_num(stats.get("c100")),
             fmt_date(stats.get("pushedAt")),
             platform_summary(tool.get("platform")),
-            str(tool.get("parallel", "")).replace("|", "\\|").replace("\n", " "),
-            str(tool.get("isolation", "")).replace("|", "\\|").replace("\n", " "),
-            str(tool.get("locality", "")).replace("|", "\\|").replace("\n", " "),
-            str(tool.get("mobileCtl", "")).replace("|", "\\|").replace("\n", " "),
+            clean_cell(tool.get("parallel")),
+            clean_cell(tool.get("isolation")),
+            clean_cell(tool.get("locality")),
+            clean_cell(tool.get("mobileCtl")),
         ]
-        lines.append("| " + " | ".join(cells[:2] + [cells[2], cells[3].split(" / ")[0], cells[3].split(" / ")[1], *cells[4:]]) + " |")
+        lines.append("| " + " | ".join(row) + " |")
+
     lines.extend(["", "[Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)", END])
     return "\n".join(lines)
 
