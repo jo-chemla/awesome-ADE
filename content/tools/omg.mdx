@@ -1,0 +1,22 @@
+---
+key: omg
+name: "omg.dev"
+category: "CLI orchestrator"
+website: "https://omg.dev/"
+github: "https://github.com/BennyKok/omg.dev"
+license: "MIT, open source"
+platform:
+  windows: none
+  linux: full
+  macos: full
+  android: none
+  ios: none
+pfNote: "Server runs on Linux/macOS; mobile access is via an installable web PWA, not a native app"
+parallel: "Runs Claude Code, Codex, OpenCode, Cursor, Grok, Copilot, and Pi side by side; agents can delegate to subagents"
+isolation: "None by design — tmux-backed sessions run directly with shell access on the host machine"
+locality: "Local execution on your own machine/VPS, remote control-plane"
+remote: "Tailscale (recommended) or an outbound-only relay; not meant to be exposed to the public internet"
+mobileCtl: "Installable web PWA for checking on work, answering prompts, and steering sessions from a phone"
+---
+
+omg.dev turns your machine into an always-on host for coding agents. It runs Claude Code, Codex, OpenCode, Cursor, Grok, Copilot, and Pi in tmux-backed sessions that persist across disconnects, with an MCP-based delegation system for spawning and tracking subagents. Access is via a browser/PWA or SSH, over Tailscale or an outbound-only relay.
