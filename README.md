@@ -12,29 +12,29 @@ Great resources:
 The leaderboard is regenerated daily from the GitHub API and keeps historical snapshots in [`stats/stats-history.json`](./stats/stats-history.json). It includes only tools with a public GitHub repository.
 
 <!-- DAILY_TABLE:START -->
-## GitHub activity leaderboard — 2026-08-17
+## GitHub activity leaderboard — 2026-08-18
 
 Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
-| 1 | [Warp 2.0](https://github.com/warpdotdev/warp) | 64,270 | 23 | 4 | today |
-| 2 | [Orca](https://github.com/stablyai/orca) | 46,995 | 12 | 6 | today |
-| 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 29,906 | 4 | 1 | today |
-| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 19,008 | 9 | 2 | today |
-| 5 | [Paseo](https://github.com/getpaseo/paseo) | 14,018 | 5 | 3 | today |
-| 6 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 13,318 | 2 | 2 | today |
-| 7 | [Superset](https://github.com/superset-sh/superset) | 12,983 | 5 | 3 | today |
-| 8 | [Agent Orchestrator (AO)](https://github.com/Untrivial-ai/agent-orchestrator) | 9,577 | 25 | 5 | today |
-| 9 | [OpenChamber](https://github.com/openchamber/openchamber) | 8,873 | 11 | 3 | today |
-| 10 | [Emdash](https://github.com/generalaction/emdash) | 5,421 | 16 | 5 | yesterday |
-| 11 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,213 | 10 | 4 | 2026-05-22 |
-| 12 | [bb](https://github.com/get-bb/bb) | 2,177 | 4 | 4 | today |
-| 13 | [Mux](https://github.com/coder/mux) | 1,973 | 10 | 5 | today |
-| 14 | [Jean](https://github.com/coollabsio/jean) | 1,180 | 3 | 1 | 3d ago |
-| 15 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 840 | 1 | 1 | 20d ago |
-| 16 | [49Agents](https://github.com/alpbahadur/49Agents) | 399 | 2 | 1 | today |
-| 17 | [ADE](https://github.com/arul28/ADE) | 86 | 1 | 1 | today |
+| 1 | [Warp 2.0](https://github.com/warpdotdev/warp) | 64,290 | 23 | 4 | today |
+| 2 | [Orca](https://github.com/stablyai/orca) | 47,580 | 12 | 6 | today |
+| 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 30,106 | 4 | 1 | today |
+| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 19,139 | 9 | 2 | today |
+| 5 | [Paseo](https://github.com/getpaseo/paseo) | 14,119 | 5 | 3 | yesterday |
+| 6 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 13,325 | 2 | 2 | yesterday |
+| 7 | [Superset](https://github.com/superset-sh/superset) | 13,003 | 5 | 3 | today |
+| 8 | [Agent Orchestrator (AO)](https://github.com/Untrivial-ai/agent-orchestrator) | 9,599 | 25 | 5 | today |
+| 9 | [OpenChamber](https://github.com/openchamber/openchamber) | 8,900 | 11 | 3 | yesterday |
+| 10 | [Emdash](https://github.com/generalaction/emdash) | 5,426 | 16 | 5 | yesterday |
+| 11 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,214 | 10 | 4 | 2026-05-22 |
+| 12 | [bb](https://github.com/get-bb/bb) | 2,273 | 4 | 4 | today |
+| 13 | [Mux](https://github.com/coder/mux) | 1,973 | 10 | 5 | yesterday |
+| 14 | [Jean](https://github.com/coollabsio/jean) | 1,181 | 3 | 1 | yesterday |
+| 15 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 841 | 1 | 1 | 21d ago |
+| 16 | [49Agents](https://github.com/alpbahadur/49Agents) | 404 | 2 | 1 | today |
+| 17 | [ADE](https://github.com/arul28/ADE) | 87 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
