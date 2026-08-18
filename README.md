@@ -4,8 +4,11 @@ A comparison of agentic development environments. The daily section is an **acti
 
 **[Live site →](https://jo-chemla.github.io/awesome-ADE/)**
 
+**Table implementation:** Adapted from the [shadcn/ui Data Table](https://ui.shadcn.com/docs/components/data-table), powered by [TanStack Table](https://tanstack.com/table) and modified for this project as a fully client-side implementation.
+
 Great resources:
 - [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators)
+- [Picrew/awesome-agent-harness](https://github.com/Picrew/awesome-agent-harness)
 
 ## GitHub activity leaderboard
 
