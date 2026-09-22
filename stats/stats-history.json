@@ -6028,5 +6028,173 @@
         "c100": 5
       }
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "generatedAt": "2026-09-22T09:18:45Z",
+    "tools": [
+      {
+        "key": "49agents",
+        "name": "49Agents",
+        "github": "https://github.com/alpbahadur/49Agents",
+        "stars": 606,
+        "pushedAt": "2026-09-09T13:32:31Z",
+        "c20": 2,
+        "c100": 1
+      },
+      {
+        "key": "ade",
+        "name": "ADE",
+        "github": "https://github.com/arul28/ADE",
+        "stars": 107,
+        "pushedAt": "2026-09-22T09:02:29Z",
+        "c20": 1,
+        "c100": 1
+      },
+      {
+        "key": "agent-orchestrator",
+        "name": "Agent Orchestrator (AO)",
+        "github": "https://github.com/Untrivial-ai/agent-orchestrator",
+        "stars": 12255,
+        "pushedAt": "2026-09-22T09:00:18Z",
+        "c20": 27,
+        "c100": 6
+      },
+      {
+        "key": "automaker",
+        "name": "Automaker",
+        "github": "https://github.com/AutoMaker-Org/automaker",
+        "stars": 3219,
+        "pushedAt": "2026-05-22T16:38:23Z",
+        "c20": 10,
+        "c100": 4
+      },
+      {
+        "key": "bb",
+        "name": "bb",
+        "github": "https://github.com/get-bb/bb",
+        "stars": 3840,
+        "pushedAt": "2026-09-22T06:56:38Z",
+        "c20": 7,
+        "c100": 4
+      },
+      {
+        "key": "claudecodeui",
+        "name": "Claude Code UI (CloudCLI)",
+        "github": "https://github.com/siteboon/claudecodeui",
+        "stars": 13768,
+        "pushedAt": "2026-09-22T09:08:56Z",
+        "c20": 2,
+        "c100": 2
+      },
+      {
+        "key": "emdash",
+        "name": "Emdash",
+        "github": "https://github.com/generalaction/emdash",
+        "stars": 5799,
+        "pushedAt": "2026-09-21T20:24:19Z",
+        "c20": 16,
+        "c100": 5
+      },
+      {
+        "key": "herder",
+        "name": "Herder (herdr)",
+        "github": "https://github.com/herdrdev/herdr",
+        "stars": 40126,
+        "pushedAt": "2026-09-21T23:20:47Z",
+        "c20": 5,
+        "c100": 2
+      },
+      {
+        "key": "jean",
+        "name": "Jean",
+        "github": "https://github.com/coollabsio/jean",
+        "stars": 1289,
+        "pushedAt": "2026-09-22T09:06:26Z",
+        "c20": 3,
+        "c100": 1
+      },
+      {
+        "key": "mux",
+        "name": "Mux",
+        "github": "https://github.com/coder/mux",
+        "stars": 2034,
+        "pushedAt": "2026-09-22T09:11:41Z",
+        "c20": 10,
+        "c100": 5
+      },
+      {
+        "key": "omg",
+        "name": "omg.dev",
+        "github": "https://github.com/BennyKok/omg.dev",
+        "stars": 535,
+        "pushedAt": "2026-09-22T09:17:15Z",
+        "c20": 2,
+        "c100": 2
+      },
+      {
+        "key": "openchamber",
+        "name": "OpenChamber",
+        "github": "https://github.com/openchamber/openchamber",
+        "stars": 10270,
+        "pushedAt": "2026-09-22T00:24:49Z",
+        "c20": 12,
+        "c100": 4
+      },
+      {
+        "key": "orca",
+        "name": "Orca",
+        "github": "https://github.com/stablyai/orca",
+        "stars": 75057,
+        "pushedAt": "2026-09-22T09:13:27Z",
+        "c20": 12,
+        "c100": 7
+      },
+      {
+        "key": "paseo",
+        "name": "Paseo",
+        "github": "https://github.com/getpaseo/paseo",
+        "stars": 18046,
+        "pushedAt": "2026-09-22T08:42:39Z",
+        "c20": 5,
+        "c100": 3
+      },
+      {
+        "key": "pi-gui",
+        "name": "pi-gui",
+        "github": "https://github.com/minghinmatthewlam/pi-gui",
+        "stars": 966,
+        "pushedAt": "2026-09-22T00:50:45Z",
+        "c20": 1,
+        "c100": 1
+      },
+      {
+        "key": "superset",
+        "name": "Superset",
+        "github": "https://github.com/superset-sh/superset",
+        "stars": 14477,
+        "pushedAt": "2026-09-22T07:51:29Z",
+        "c20": 6,
+        "c100": 3
+      },
+      {
+        "key": "t3code",
+        "name": "t3 code",
+        "github": "https://github.com/pingdotgg/t3code",
+        "stars": 23276,
+        "pushedAt": "2026-09-22T08:51:19Z",
+        "c20": 16,
+        "c100": 3
+      },
+      {
+        "key": "warp",
+        "name": "Warp 2.0",
+        "github": "https://github.com/warpdotdev/warp",
+        "stars": 65124,
+        "pushedAt": "2026-09-21T22:21:04Z",
+        "c20": 24,
+        "c100": 5
+      }
+    ]
   }
 ]
