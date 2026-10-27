@@ -1,0 +1,22 @@
+---
+key: monocode
+name: "MonoCode"
+category: "CLI orchestrator"
+website: "https://usemono.dev"
+github: "https://github.com/hardbeat920/monocode"
+license: "MIT, open source"
+platform:
+  windows: full
+  linux: full
+  macos: full
+  android: beta
+  ios: beta
+pfNote: "Tauri/Rust desktop app for macOS, Windows and Linux; the Expo mobile app (iOS/Android) is in-repo and pairs with the desktop over QUIC"
+parallel: "Each tab is an agent session, split panes side by side; /operator lets an agent open sessions and manage worktrees; experimental cross-project Monos agents with memory and scheduled tasks"
+isolation: "Separate git worktree per parallel task"
+locality: "Local desktop app; experimental remote hosts over SSH"
+remote: "Experimental: add a Windows/Linux/macOS host over SSH, MonoCode installs a background host service that keeps sessions alive across disconnects"
+mobileCtl: "Companion iOS/Android app (built from source) paired over QUIC with the desktop: read transcripts, send messages, start sessions, view changes"
+---
+
+MonoCode is a Tauri desktop GUI for Claude Code, Codex, Cursor, Grok Build, OpenCode, Antigravity, Pi, omp, fx, Hermes Agent and Devin, using the subscriptions you already have (it does not sell tokens). Sessions are tabs, worktrees isolate parallel tasks, and an `/operator` mode lets an agent orchestrate other sessions. A separate [monocode-server](https://github.com/visualfusion/monocode-server) project provides a hardened containerized remote host.

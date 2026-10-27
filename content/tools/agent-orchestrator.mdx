@@ -1,22 +1,22 @@
 ---
 key: agent-orchestrator
-name: "Agent Orchestrator (AO)"
+name: "Orchestrator.inc (formerly Agent Orchestrator)"
 category: "CLI orchestrator"
-website: "http://aoagents.dev/"
-github: "https://github.com/Untrivial-ai/agent-orchestrator"
+website: "https://orchestrator.inc"
+github: "https://github.com/OrchestratorInc/agent-orchestrator"
 license: "Apache-2.0, open source"
 platform:
-  windows: unknown
-  linux: unknown
+  windows: full
+  linux: full
   macos: full
-  android: unknown
-  ios: unknown
-pfNote: "macOS via Homebrew; mobile companion app pairs over LAN/Tailscale for remote monitoring"
-parallel: "Fleet of worker agents (25+ supported harnesses — Claude Code, Codex, Cursor, OpenCode, Copilot, Aider, Goose, Devin, more), coordinated by a main orchestrator agent"
+  android: full
+  ios: full
+pfNote: "Desktop app for macOS, Windows and Linux plus iPhone and Android apps (repo moved from Untrivial-ai to OrchestratorInc)"
+parallel: "Fleet of worker agents (30+ supported harnesses — Claude Code, Codex, Cursor, OpenCode, Copilot, Aider, Goose, Devin, more), coordinated by a main orchestrator agent"
 isolation: "Each worker agent spawned into its own git worktree"
-locality: "Local — orchestrator and agents run on your machine; mobile app only monitors/notifies"
-remote: "Mobile companion watches sessions, opens a terminal, and notifies when an agent needs you — execution and code stay local"
-mobileCtl: "Monitoring/notifications only, via the mobile companion app"
+locality: "Both: local desktop (code, worktrees and agents on your machine) or AO Cloud where everything lives in the cloud"
+remote: "iPhone/Android app pairs with the desktop via QR code, works on home Wi-Fi and away; optional AO Cloud"
+mobileCtl: "Native iPhone (App Store) + Android (Play Store) apps to control agents running on your desktop, answer their questions from your phone"
 ---
 
 Positions itself as fleet management specifically for CI/review overhead —

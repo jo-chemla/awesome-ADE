@@ -1,0 +1,22 @@
+---
+key: happy
+name: "Happy"
+category: "CLI orchestrator"
+website: "https://happy.engineering/"
+github: "https://github.com/slopus/happy"
+license: "MIT, open source"
+platform:
+  windows: full
+  linux: full
+  macos: full
+  android: full
+  ios: full
+pfNote: "Desktop app (macOS/Windows/Linux) lives in slopus/happy-desktop; this repo holds the iOS/Android/web app, the original CLI, and the relay server"
+parallel: "Multi-provider harness (Claude, Codex, Grok) with subagent delegation on any provider; multiple sessions per project"
+isolation: "Not explicitly documented as git-worktree-based"
+locality: "Local: agents run on your own hardware; an end-to-end encrypted relay syncs sessions to your phone"
+remote: "E2E-encrypted relay (self-hostable) streams sessions to mobile/web; multiplayer sessions let a colleague watch and steer the same agent"
+mobileCtl: "Native iOS (App Store) + Android (Google Play) apps, E2E encrypted"
+---
+
+Happy started as a CLI wrapper (`happy claude`, `happy codex`) that mirrors a terminal session to a phone, and has grown into Happy Harness: a multi-provider desktop app reusing your Claude/Codex/Grok subscriptions, with mobile continuity and multiplayer sessions. The star count here is for the mobile/CLI/relay repo.

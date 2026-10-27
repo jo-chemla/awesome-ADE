@@ -1,0 +1,22 @@
+---
+key: synara
+name: "Synara"
+category: "Agent workspace"
+website: "https://www.trysynara.com/"
+github: "https://github.com/Emanuele-web04/synara"
+license: "MIT, open source"
+platform:
+  windows: full
+  linux: full
+  macos: full
+  android: none
+  ios: none
+pfNote: "Native desktop builds for Windows x64, macOS (Intel + Apple Silicon) and Linux x64; also ships a server/web mode"
+parallel: "Parallel threads per project across Codex, Claude Code, Cursor, Antigravity, Grok Build, Factory Droid, OpenCode, Pi and Devin; handoff of a thread to another provider with context"
+isolation: "Local checkout or isolated managed git worktree per thread"
+locality: "Local-first desktop app; optional server + web mode"
+remote: "Server/web mode; External MCP lets other local clients (Codex, Claude Code) create Synara tasks"
+mobileCtl: "No"
+---
+
+Synara is a local-first desktop workspace that wraps the coding-agent CLIs you already have installed. Each project holds threads; each thread pairs an agent session with workspace surfaces (diffs, terminal, browser with WebMCP, files/editor, git/PRs). Managed worktrees isolate parallel threads, handoffs move a thread to a different provider, and automations schedule recurring agent runs.
