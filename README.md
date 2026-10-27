@@ -21,20 +21,20 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
-| 1 | [Orca](https://github.com/stablyai/orca) | 107,424 | 14 | 8 | today |
-| 2 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,721 | 26 | 5 | today |
-| 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 46,087 | 6 | 3 | yesterday |
-| 4 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,808 | 24 | 10 | 4d ago |
-| 5 | [t3 code](https://github.com/pingdotgg/t3code) | 30,602 | 27 | 9 | today |
+| 1 | [Orca](https://github.com/stablyai/orca) | 107,491 | 14 | 8 | today |
+| 2 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,720 | 26 | 5 | today |
+| 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 46,097 | 6 | 3 | yesterday |
+| 4 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,814 | 24 | 10 | 4d ago |
+| 5 | [t3 code](https://github.com/pingdotgg/t3code) | 30,625 | 27 | 9 | today |
 | 6 | [Happy](https://github.com/slopus/happy) | 24,339 | 7 | 5 | today |
-| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,183 | 5 | 3 | today |
-| 8 | [Superset](https://github.com/superset-sh/superset) | 15,608 | 6 | 4 | today |
-| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,303 | 2 | 2 | today |
-| 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,742 | 28 | 11 | today |
-| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,224 | 18 | 4 | today |
-| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,094 | 16 | 5 | yesterday |
-| 13 | [bb](https://github.com/get-bb/bb) | 4,633 | 7 | 5 | today |
-| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,445 | 3 | 1 | today |
+| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,186 | 5 | 3 | today |
+| 8 | [Superset](https://github.com/superset-sh/superset) | 15,616 | 6 | 4 | today |
+| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,305 | 2 | 2 | today |
+| 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,744 | 28 | 11 | today |
+| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,226 | 18 | 4 | today |
+| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,095 | 16 | 5 | yesterday |
+| 13 | [bb](https://github.com/get-bb/bb) | 4,638 | 7 | 5 | today |
+| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,446 | 3 | 1 | today |
 | 15 | [Synara](https://github.com/Emanuele-web04/synara) | 2,138 | 15 | 7 | today |
 | 16 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,060 | 10 | 5 | today |
 | 17 | [Jean](https://github.com/coollabsio/jean) | 1,367 | 3 | 1 | today |
