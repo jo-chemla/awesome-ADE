@@ -31,15 +31,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3213,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -188,15 +179,6 @@
         "pushedAt": "2026-08-18T02:13:20Z",
         "c20": 25,
         "c100": 5
-      },
-      {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3214,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
       },
       {
         "key": "bb",
@@ -349,15 +331,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -410,15 +383,6 @@
         "pushedAt": "2026-08-19T02:21:27Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 472,
-        "pushedAt": "2026-08-19T03:24:20Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -517,15 +481,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3216,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -578,15 +533,6 @@
         "pushedAt": "2026-08-20T04:31:08Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 474,
-        "pushedAt": "2026-08-20T04:46:48Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -685,15 +631,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -746,15 +683,6 @@
         "pushedAt": "2026-08-21T02:46:08Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 476,
-        "pushedAt": "2026-08-21T04:51:24Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -853,15 +781,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -914,15 +833,6 @@
         "pushedAt": "2026-08-22T04:49:54Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 476,
-        "pushedAt": "2026-08-22T04:12:42Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -1021,15 +931,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -1082,15 +983,6 @@
         "pushedAt": "2026-08-23T04:44:40Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 477,
-        "pushedAt": "2026-08-23T04:25:46Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -1189,15 +1081,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -1250,15 +1133,6 @@
         "pushedAt": "2026-08-24T04:56:04Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 478,
-        "pushedAt": "2026-08-24T04:46:37Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -1357,15 +1231,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -1418,15 +1283,6 @@
         "pushedAt": "2026-08-24T21:47:17Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 478,
-        "pushedAt": "2026-08-25T03:45:11Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -1525,15 +1381,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3213,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -1586,15 +1433,6 @@
         "pushedAt": "2026-08-26T04:32:46Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 485,
-        "pushedAt": "2026-08-26T04:42:33Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -1693,15 +1531,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3214,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -1754,15 +1583,6 @@
         "pushedAt": "2026-08-27T15:14:00Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 486,
-        "pushedAt": "2026-08-27T15:03:50Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -1861,15 +1681,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3213,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -1922,15 +1733,6 @@
         "pushedAt": "2026-08-28T16:18:02Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 499,
-        "pushedAt": "2026-08-28T08:43:08Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -2029,15 +1831,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3213,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -2090,15 +1883,6 @@
         "pushedAt": "2026-08-29T09:24:59Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 500,
-        "pushedAt": "2026-08-28T08:43:08Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -2197,15 +1981,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3212,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -2258,15 +2033,6 @@
         "pushedAt": "2026-08-30T09:26:33Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 503,
-        "pushedAt": "2026-08-30T06:43:53Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -2365,15 +2131,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3212,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -2426,15 +2183,6 @@
         "pushedAt": "2026-08-31T08:48:34Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 506,
-        "pushedAt": "2026-08-31T10:19:10Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -2533,15 +2281,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3214,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -2594,15 +2333,6 @@
         "pushedAt": "2026-09-01T09:22:00Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 510,
-        "pushedAt": "2026-09-01T09:04:37Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -2701,15 +2431,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3215,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -2762,15 +2483,6 @@
         "pushedAt": "2026-09-02T08:46:23Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 512,
-        "pushedAt": "2026-09-02T05:43:18Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -2869,15 +2581,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3217,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -2930,15 +2633,6 @@
         "pushedAt": "2026-09-03T08:53:42Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 513,
-        "pushedAt": "2026-09-03T08:44:47Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -3037,15 +2731,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -3098,15 +2783,6 @@
         "pushedAt": "2026-09-04T08:47:01Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 513,
-        "pushedAt": "2026-09-04T08:49:58Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -3205,15 +2881,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3217,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -3266,15 +2933,6 @@
         "pushedAt": "2026-09-05T08:19:49Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 514,
-        "pushedAt": "2026-09-05T06:15:54Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -3373,15 +3031,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -3434,15 +3083,6 @@
         "pushedAt": "2026-09-06T08:20:03Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 517,
-        "pushedAt": "2026-09-06T06:12:54Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -3541,15 +3181,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -3602,15 +3233,6 @@
         "pushedAt": "2026-09-07T09:14:19Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 518,
-        "pushedAt": "2026-09-07T02:06:21Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -3709,15 +3331,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -3770,15 +3383,6 @@
         "pushedAt": "2026-09-08T08:51:05Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 525,
-        "pushedAt": "2026-09-08T06:31:52Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -3877,15 +3481,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3216,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -3938,15 +3533,6 @@
         "pushedAt": "2026-09-09T08:57:24Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 526,
-        "pushedAt": "2026-09-08T16:15:52Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -4045,15 +3631,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3217,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -4106,15 +3683,6 @@
         "pushedAt": "2026-09-10T08:50:46Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 526,
-        "pushedAt": "2026-09-10T07:22:08Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -4213,15 +3781,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -4274,15 +3833,6 @@
         "pushedAt": "2026-09-11T08:53:10Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 528,
-        "pushedAt": "2026-09-11T08:23:10Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -4381,15 +3931,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -4442,15 +3983,6 @@
         "pushedAt": "2026-09-12T08:19:40Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 528,
-        "pushedAt": "2026-09-12T08:35:10Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -4549,15 +4081,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -4610,15 +4133,6 @@
         "pushedAt": "2026-09-13T08:42:26Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 530,
-        "pushedAt": "2026-09-13T09:23:55Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -4717,15 +4231,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -4778,15 +4283,6 @@
         "pushedAt": "2026-09-14T09:52:08Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 531,
-        "pushedAt": "2026-09-14T09:14:20Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -4885,15 +4381,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -4946,15 +4433,6 @@
         "pushedAt": "2026-09-15T09:24:02Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 532,
-        "pushedAt": "2026-09-15T09:15:04Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -5053,15 +4531,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3218,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -5114,15 +4583,6 @@
         "pushedAt": "2026-09-16T09:17:15Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 532,
-        "pushedAt": "2026-09-16T05:55:10Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -5221,15 +4681,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3220,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -5282,15 +4733,6 @@
         "pushedAt": "2026-09-17T09:17:33Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 531,
-        "pushedAt": "2026-09-17T08:08:00Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -5389,15 +4831,6 @@
         "c100": 5
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3219,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -5450,15 +4883,6 @@
         "pushedAt": "2026-09-18T08:50:21Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 531,
-        "pushedAt": "2026-09-18T06:58:58Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -5557,15 +4981,6 @@
         "c100": 6
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3219,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -5618,15 +5033,6 @@
         "pushedAt": "2026-09-19T08:42:42Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 531,
-        "pushedAt": "2026-09-19T08:24:25Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -5725,15 +5131,6 @@
         "c100": 6
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3219,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -5786,15 +5183,6 @@
         "pushedAt": "2026-09-20T08:47:13Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 532,
-        "pushedAt": "2026-09-20T09:02:48Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -5893,15 +5281,6 @@
         "c100": 6
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3219,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -5954,15 +5333,6 @@
         "pushedAt": "2026-09-21T09:48:05Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 533,
-        "pushedAt": "2026-09-21T09:56:53Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -6061,15 +5431,6 @@
         "c100": 6
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3219,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -6122,15 +5483,6 @@
         "pushedAt": "2026-09-22T09:11:41Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 535,
-        "pushedAt": "2026-09-22T09:17:15Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -6229,15 +5581,6 @@
         "c100": 6
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3219,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -6290,15 +5633,6 @@
         "pushedAt": "2026-09-23T09:15:29Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 535,
-        "pushedAt": "2026-09-23T08:35:50Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -6397,15 +5731,6 @@
         "c100": 8
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3220,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -6458,15 +5783,6 @@
         "pushedAt": "2026-09-24T09:13:54Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 537,
-        "pushedAt": "2026-09-24T09:00:32Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -6565,15 +5881,6 @@
         "c100": 8
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3221,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -6626,15 +5933,6 @@
         "pushedAt": "2026-09-25T09:35:36Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 538,
-        "pushedAt": "2026-09-25T09:12:55Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -6733,15 +6031,6 @@
         "c100": 8
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3221,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -6794,15 +6083,6 @@
         "pushedAt": "2026-09-26T09:20:07Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 541,
-        "pushedAt": "2026-09-26T03:49:59Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -6901,15 +6181,6 @@
         "c100": 8
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3221,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -6962,15 +6233,6 @@
         "pushedAt": "2026-09-27T09:52:32Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 541,
-        "pushedAt": "2026-09-27T08:44:10Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -7069,15 +6331,6 @@
         "c100": 8
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3222,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -7130,15 +6383,6 @@
         "pushedAt": "2026-09-28T10:56:00Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 542,
-        "pushedAt": "2026-09-28T10:43:41Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -7237,15 +6481,6 @@
         "c100": 8
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -7298,15 +6533,6 @@
         "pushedAt": "2026-09-29T10:40:55Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 543,
-        "pushedAt": "2026-09-29T10:02:31Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -7405,15 +6631,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -7466,15 +6683,6 @@
         "pushedAt": "2026-09-30T10:26:09Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 543,
-        "pushedAt": "2026-09-30T10:29:51Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -7573,15 +6781,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -7634,15 +6833,6 @@
         "pushedAt": "2026-10-01T10:56:02Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 546,
-        "pushedAt": "2026-10-01T10:49:11Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -7741,15 +6931,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -7802,15 +6983,6 @@
         "pushedAt": "2026-10-02T10:23:40Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 546,
-        "pushedAt": "2026-10-02T08:20:34Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -7909,15 +7081,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -7970,15 +7133,6 @@
         "pushedAt": "2026-10-03T09:49:56Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 545,
-        "pushedAt": "2026-10-03T09:29:33Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -8077,15 +7231,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -8138,15 +7283,6 @@
         "pushedAt": "2026-10-04T10:33:36Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 546,
-        "pushedAt": "2026-10-04T08:56:30Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -8245,15 +7381,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -8306,15 +7433,6 @@
         "pushedAt": "2026-10-05T10:13:00Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-05T08:52:32Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -8413,15 +7531,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -8474,15 +7583,6 @@
         "pushedAt": "2026-10-06T11:12:41Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-06T07:38:16Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -8581,15 +7681,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -8642,15 +7733,6 @@
         "pushedAt": "2026-10-07T08:53:34Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-07T11:05:12Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -8749,15 +7831,6 @@
         "c100": 9
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3229,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -8810,15 +7883,6 @@
         "pushedAt": "2026-10-08T11:21:08Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-08T11:17:52Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -8917,15 +7981,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3229,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -8978,15 +8033,6 @@
         "pushedAt": "2026-10-09T11:15:20Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-09T10:52:47Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -9085,15 +8131,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -9146,15 +8183,6 @@
         "pushedAt": "2026-10-10T10:34:57Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 546,
-        "pushedAt": "2026-10-10T07:45:34Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -9253,15 +8281,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3226,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -9314,15 +8333,6 @@
         "pushedAt": "2026-10-11T10:48:40Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 546,
-        "pushedAt": "2026-10-11T10:18:18Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -9421,15 +8431,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3225,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -9482,15 +8483,6 @@
         "pushedAt": "2026-10-12T12:00:43Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-12T09:41:14Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -9589,15 +8581,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -9650,15 +8633,6 @@
         "pushedAt": "2026-10-13T11:43:31Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 548,
-        "pushedAt": "2026-10-13T06:15:06Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -9757,15 +8731,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -9818,15 +8783,6 @@
         "pushedAt": "2026-10-14T09:30:06Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 548,
-        "pushedAt": "2026-10-14T09:29:37Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -9925,15 +8881,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3229,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -9986,15 +8933,6 @@
         "pushedAt": "2026-10-15T09:08:55Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 548,
-        "pushedAt": "2026-10-15T09:04:16Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -10093,15 +9031,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3230,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -10154,15 +9083,6 @@
         "pushedAt": "2026-10-16T09:01:47Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 548,
-        "pushedAt": "2026-10-15T20:05:32Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -10261,15 +9181,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3230,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -10322,15 +9233,6 @@
         "pushedAt": "2026-10-17T08:24:42Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 548,
-        "pushedAt": "2026-10-17T06:19:26Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -10429,15 +9331,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3229,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -10490,15 +9383,6 @@
         "pushedAt": "2026-10-18T08:48:31Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-18T05:54:09Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -10597,15 +9481,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3229,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -10658,15 +9533,6 @@
         "pushedAt": "2026-10-19T09:53:14Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-19T07:08:39Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -10765,15 +9631,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -10826,15 +9683,6 @@
         "pushedAt": "2026-10-20T09:25:40Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-20T04:47:59Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -10933,15 +9781,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -10994,15 +9833,6 @@
         "pushedAt": "2026-10-21T09:21:52Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 547,
-        "pushedAt": "2026-10-21T08:15:26Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -11101,15 +9931,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -11162,15 +9983,6 @@
         "pushedAt": "2026-10-22T09:19:51Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 549,
-        "pushedAt": "2026-10-22T09:00:19Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -11269,15 +10081,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3228,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -11330,15 +10133,6 @@
         "pushedAt": "2026-10-23T09:16:59Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 549,
-        "pushedAt": "2026-10-23T09:19:19Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -11437,15 +10231,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -11498,15 +10283,6 @@
         "pushedAt": "2026-10-24T08:53:10Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 549,
-        "pushedAt": "2026-10-24T08:46:02Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -11605,15 +10381,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -11666,15 +10433,6 @@
         "pushedAt": "2026-10-25T09:03:53Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 549,
-        "pushedAt": "2026-10-24T20:06:31Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -11773,15 +10531,6 @@
         "c100": 11
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -11834,15 +10583,6 @@
         "pushedAt": "2026-10-26T09:33:52Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 550,
-        "pushedAt": "2026-10-25T20:04:24Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
@@ -11950,15 +10690,6 @@
         "c100": 10
       },
       {
-        "key": "automaker",
-        "name": "Automaker",
-        "github": "https://github.com/AutoMaker-Org/automaker",
-        "stars": 3227,
-        "pushedAt": "2026-05-22T16:38:23Z",
-        "c20": 10,
-        "c100": 4
-      },
-      {
         "key": "bb",
         "name": "bb",
         "github": "https://github.com/get-bb/bb",
@@ -12029,15 +10760,6 @@
         "pushedAt": "2026-10-27T08:44:14Z",
         "c20": 10,
         "c100": 5
-      },
-      {
-        "key": "omg",
-        "name": "omg.dev",
-        "github": "https://github.com/BennyKok/omg.dev",
-        "stars": 551,
-        "pushedAt": "2026-10-27T04:26:18Z",
-        "c20": 2,
-        "c100": 2
       },
       {
         "key": "openchamber",
