@@ -26,27 +26,26 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 46,087 | 6 | 3 | yesterday |
 | 4 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,808 | 24 | 10 | 4d ago |
 | 5 | [t3 code](https://github.com/pingdotgg/t3code) | 30,602 | 27 | 9 | today |
-| 6 | [cmux](https://github.com/manaflow-ai/cmux) | 28,540 | 10 | 6 | today |
-| 7 | [Happy](https://github.com/slopus/happy) | 24,339 | 7 | 5 | today |
-| 8 | [Paseo](https://github.com/getpaseo/paseo) | 22,183 | 5 | 3 | today |
-| 9 | [Superset](https://github.com/superset-sh/superset) | 15,608 | 6 | 4 | today |
-| 10 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,303 | 2 | 2 | today |
-| 11 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,742 | 28 | 11 | today |
-| 12 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,224 | 18 | 4 | today |
-| 13 | [Emdash](https://github.com/generalaction/emdash) | 6,094 | 16 | 5 | yesterday |
-| 14 | [bb](https://github.com/get-bb/bb) | 4,633 | 7 | 5 | today |
-| 15 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,445 | 3 | 1 | today |
-| 16 | [Zeron](https://github.com/zeronsh/zeron) | 3,391 | 8 | 3 | today |
-| 17 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,227 | 10 | 4 | 2026-05-22 |
-| 18 | [Supacode](https://github.com/supabitapp/supacode) | 2,397 | 3 | 2 | yesterday |
-| 19 | [Synara](https://github.com/Emanuele-web04/synara) | 2,138 | 15 | 7 | today |
-| 20 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,060 | 10 | 5 | today |
-| 21 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | 1,979 | 5 | 2 | yesterday |
-| 22 | [Jean](https://github.com/coollabsio/jean) | 1,367 | 3 | 1 | today |
-| 23 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,324 | 3 | 1 | today |
-| 24 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 26d ago |
-| 25 | [omg.dev](https://github.com/BennyKok/omg.dev) | 551 | 2 | 2 | today |
-| 26 | [ADE](https://github.com/arul28/ADE) | 126 | 1 | 1 | today |
+| 6 | [Happy](https://github.com/slopus/happy) | 24,339 | 7 | 5 | today |
+| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,183 | 5 | 3 | today |
+| 8 | [Superset](https://github.com/superset-sh/superset) | 15,608 | 6 | 4 | today |
+| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,303 | 2 | 2 | today |
+| 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,742 | 28 | 11 | today |
+| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,224 | 18 | 4 | today |
+| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,094 | 16 | 5 | yesterday |
+| 13 | [bb](https://github.com/get-bb/bb) | 4,633 | 7 | 5 | today |
+| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,445 | 3 | 1 | today |
+| 15 | [Zeron](https://github.com/zeronsh/zeron) | 3,391 | 8 | 3 | today |
+| 16 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,227 | 10 | 4 | 2026-05-22 |
+| 17 | [Supacode](https://github.com/supabitapp/supacode) | 2,397 | 3 | 2 | yesterday |
+| 18 | [Synara](https://github.com/Emanuele-web04/synara) | 2,138 | 15 | 7 | today |
+| 19 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,060 | 10 | 5 | today |
+| 20 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | 1,979 | 5 | 2 | yesterday |
+| 21 | [Jean](https://github.com/coollabsio/jean) | 1,367 | 3 | 1 | today |
+| 22 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,324 | 3 | 1 | today |
+| 23 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 26d ago |
+| 24 | [omg.dev](https://github.com/BennyKok/omg.dev) | 551 | 2 | 2 | today |
+| 25 | [ADE](https://github.com/arul28/ADE) | 126 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
@@ -64,7 +63,6 @@ The feature matrix is static and maintained through the individual files in [`co
 | [Automaker](https://github.com/AutoMaker-Org/automaker) | Agentic development studio | W ✓ · L ✓ · M ✓ | Multi-agent task execution from a Kanban-style feature board | Git worktree isolation | Local/self-hosted | No dedicated native mobile app stated |
 | [bb](https://github.com/get-bb/bb) | CLI orchestrator | W β · L β · M ✓ | Multiple concurrent agent threads, delegation across providers (Claude, OpenAI, Cursor, etc.) | Each thread keeps its own independent execution context | Local-first, plus remote-machine access | No |
 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | Terminal + cloud IDE | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Runs Claude Code, Cursor CLI, Codex, Gemini CLI, and OpenCode side by side; each team member gets an isolated container | Per-user/session isolated container (hosted) or local process (self-hosted) | Both — self-host the AGPL-3.0 core, or use the hosted cloudcli.ai service | Full mobile PWA — chat, terminal, file explorer, and git from a phone |
-| [cmux](https://github.com/manaflow-ai/cmux) | Terminal multiplexer | M ✓ · I β | Vertical tabs/splits for many Claude Code, Codex, OpenCode and pi sessions, with per-pane notifications (OSC 9/99/777 + hooks); cmux claude-teams spawns Claude teammates as native splits | Workspace per agent in the terminal; git worktrees are left to the agent CLI (no built-in worktree manager) | Local macOS app; remote machines via SSH workspaces | iOS beta (TestFlight): attach to terminals from your phone with forwarded notifications |
 | [Emdash](https://github.com/generalaction/emdash) | Agent multiplexer | W ✓ · L ✓ · M ✓ | Multiple coding agents in parallel, each in its own Git worktree | Dedicated git worktree and branch per task | Both — local projects and remote machines | No dedicated native mobile app stated |
 | [Happy](https://github.com/slopus/happy) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-provider harness (Claude, Codex, Grok) with subagent delegation on any provider; multiple sessions per project | Not explicitly documented as git-worktree-based | Local: agents run on your own hardware; an end-to-end encrypted relay syncs sessions to your phone | Native iOS (App Store) + Android (Google Play) apps, E2E encrypted |
 | [Herder (herdr)](https://github.com/herdrdev/herdr) | Terminal multiplexer | W β · L ✓ · M ✓ | Core purpose — terminal multiplexer for N parallel CLI agents | Native `herdr worktree create` | Local, with `--remote` SSH flag to a remote host | No |
