@@ -35,17 +35,14 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | 12 | [Emdash](https://github.com/generalaction/emdash) | 6,094 | 16 | 5 | yesterday |
 | 13 | [bb](https://github.com/get-bb/bb) | 4,633 | 7 | 5 | today |
 | 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,445 | 3 | 1 | today |
-| 15 | [Zeron](https://github.com/zeronsh/zeron) | 3,391 | 8 | 3 | today |
-| 16 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,227 | 10 | 4 | 2026-05-22 |
-| 17 | [Supacode](https://github.com/supabitapp/supacode) | 2,397 | 3 | 2 | yesterday |
-| 18 | [Synara](https://github.com/Emanuele-web04/synara) | 2,138 | 15 | 7 | today |
-| 19 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,060 | 10 | 5 | today |
-| 20 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | 1,979 | 5 | 2 | yesterday |
-| 21 | [Jean](https://github.com/coollabsio/jean) | 1,367 | 3 | 1 | today |
-| 22 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,324 | 3 | 1 | today |
-| 23 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 26d ago |
-| 24 | [omg.dev](https://github.com/BennyKok/omg.dev) | 551 | 2 | 2 | today |
-| 25 | [ADE](https://github.com/arul28/ADE) | 126 | 1 | 1 | today |
+| 15 | [Automaker](https://github.com/AutoMaker-Org/automaker) | 3,227 | 10 | 4 | 2026-05-22 |
+| 16 | [Synara](https://github.com/Emanuele-web04/synara) | 2,138 | 15 | 7 | today |
+| 17 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,060 | 10 | 5 | today |
+| 18 | [Jean](https://github.com/coollabsio/jean) | 1,367 | 3 | 1 | today |
+| 19 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,324 | 3 | 1 | today |
+| 20 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 26d ago |
+| 21 | [omg.dev](https://github.com/BennyKok/omg.dev) | 551 | 2 | 2 | today |
+| 22 | [ADE](https://github.com/arul28/ADE) | 126 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
@@ -68,20 +65,17 @@ The feature matrix is static and maintained through the individual files in [`co
 | [Herder (herdr)](https://github.com/herdrdev/herdr) | Terminal multiplexer | W β · L ✓ · M ✓ | Core purpose — terminal multiplexer for N parallel CLI agents | Native `herdr worktree create` | Local, with `--remote` SSH flag to a remote host | No |
 | [Jean](https://github.com/coollabsio/jean) | CLI orchestrator | W ✓ · L ✓ · M ✓ | Runs Claude Code, Codex, Cursor CLI, and OpenCode as pluggable agent backends | Native git worktree per chat session | Local desktop app, with a built-in headless server (browser-accessible) mode | No |
 | [MonoCode](https://github.com/hardbeat920/monocode) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A β · I β | Each tab is an agent session, split panes side by side; /operator lets an agent open sessions and manage worktrees; experimental cross-project Monos agents with memory and scheduled tasks | Separate git worktree per parallel task | Local desktop app; experimental remote hosts over SSH | Companion iOS/Android app (built from source) paired over QUIC with the desktop: read transcripts, send messages, start sessions, view changes |
-| [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | Agentic development studio | W ✓ · L ✓ · M ✓ · A β · I ✓ | Several coding agents at once (Codex, Claude Code; OpenCode and Copilot in alpha; Gemini provider), tracked on a session kanban | Each session isolated in its own git worktree (optional one-click worktrees) | Local desktop app | iOS companion: see which agents need you, reply by text or voice, swipe through diffs, queue the next task, push notifications |
 | [omg.dev](https://github.com/BennyKok/omg.dev) | CLI orchestrator | L ✓ · M ✓ | Runs Claude Code, Codex, OpenCode, Cursor, Grok, Copilot, and Pi side by side; agents can delegate to subagents | None by design — tmux-backed sessions run directly with shell access on the host machine | Local execution on your own machine/VPS, remote control-plane | Installable web PWA for checking on work, answering prompts, and steering sessions from a phone |
 | [OpenChamber](https://github.com/openchamber/openchamber) | Agent workspace | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-run supports up to five models, optionally with separate worktrees | Optional per-run git worktrees | Both — local workstation/server and remote access | Native iOS/Android plus Web/PWA for steering sessions, reviewing changes, and terminal access |
 | [Orca](https://github.com/stablyai/orca) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | 30+ simultaneous CLI agents, session forking | Native git worktree per task | Both — local, remote/self-hosted servers, experimental cloud VM sandboxes | iOS (App Store/TestFlight) + Android (APK) |
 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Fleet of worker agents (30+ supported harnesses — Claude Code, Codex, Cursor, OpenCode, Copilot, Aider, Goose, Devin, more), coordinated by a main orchestrator agent | Each worker agent spawned into its own git worktree | Both: local desktop (code, worktrees and agents on your machine) or AO Cloud where everything lives in the cloud | Native iPhone (App Store) + Android (Play Store) apps to control agents running on your desktop, answer their questions from your phone |
 | [Paseo](https://github.com/getpaseo/paseo) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Core purpose — agents across multiple devices | Git worktree per agent run | Both — daemon on laptop, home server, or VPS/VM; clients everywhere | Native iOS + Android with desktop feature parity |
 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | CLI orchestrator | L ✓ · M ✓ | Multi-workspace sessions — independent session history per project folder | Not explicitly documented as git-worktree-based | Local desktop app (Electron) | No |
-| [Supacode](https://github.com/supabitapp/supacode) | CLI orchestrator | M ✓ | Several coding agents side by side, each task with its own git worktree and real terminal; sessions persist in the background | Worktree-first: every task gets its own git worktree | Local macOS app; remote SSH repositories in beta | No |
 | [Superset](https://github.com/superset-sh/superset) | CLI orchestrator | L β · M ✓ · A β | Designed for 10-100+ simultaneous agents | Isolated git worktree per agent/task | Both — local + 'Remote Workspaces' via Superset Relay proxy | Android app in beta (per user) |
 | [Synara](https://github.com/Emanuele-web04/synara) | Agent workspace | W ✓ · L ✓ · M ✓ | Parallel threads per project across Codex, Claude Code, Cursor, Antigravity, Grok Build, Factory Droid, OpenCode, Pi and Devin; handoff of a thread to another provider with context | Local checkout or isolated managed git worktree per thread | Local-first desktop app; optional server + web mode | No |
 | [t3 code](https://github.com/pingdotgg/t3code) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-agent orchestration (Agent + Workflow tools), no fixed cap stated | Git worktree isolation | Local execution, remote control-plane | Native iOS + Android |
 | [Warp 2.0](https://github.com/warpdotdev/warp) | Terminal + cloud IDE | W ✓ · L ✓ · M ✓ | Native multi-agent + "Oz" cloud orchestration for hundreds in parallel | Oz: Docker-based sandbox isolation (not literal git worktrees) | Both — local terminal + Oz cloud orchestration platform | No |
 | [Xum (formerly Mux)](https://github.com/coder/xum) | Agent multiplexer | W ✓ · L ✓ · M ✓ | Multiple AI coding agents in parallel, with multi-model support | Local directories, git worktrees, or remote SSH workspaces | Both — local execution and remote compute over SSH | Responsive browser UI in server mode |
-| [Zeron](https://github.com/zeronsh/zeron) | CLI orchestrator | W ✓ · L ✓ · M ✓ | Control plane for Claude Code, Codex, Cursor, Devin, Grok, Hermes, Pi and Antigravity sessions, local by default | Not explicitly documented as git-worktree-based | Local-first desktop, or headless daemon on a Linux server; optional multi-device sync | No native app; cross-device sync is between desktops/servers |
 
 </details>
 

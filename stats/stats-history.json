@@ -12031,15 +12031,6 @@
         "c100": 5
       },
       {
-        "key": "nimbalyst",
-        "name": "Nimbalyst",
-        "github": "https://github.com/nimbalyst/nimbalyst",
-        "stars": 1979,
-        "pushedAt": "2026-10-26T20:54:18Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "omg",
         "name": "omg.dev",
         "github": "https://github.com/BennyKok/omg.dev",
@@ -12085,15 +12076,6 @@
         "c100": 1
       },
       {
-        "key": "supacode",
-        "name": "Supacode",
-        "github": "https://github.com/supabitapp/supacode",
-        "stars": 2397,
-        "pushedAt": "2026-10-26T19:56:59Z",
-        "c20": 3,
-        "c100": 2
-      },
-      {
         "key": "superset",
         "name": "Superset",
         "github": "https://github.com/superset-sh/superset",
@@ -12128,15 +12110,6 @@
         "pushedAt": "2026-10-27T07:11:46Z",
         "c20": 26,
         "c100": 5
-      },
-      {
-        "key": "zeron",
-        "name": "Zeron",
-        "github": "https://github.com/zeronsh/zeron",
-        "stars": 3391,
-        "pushedAt": "2026-10-27T08:01:36Z",
-        "c20": 8,
-        "c100": 3
       }
     ]
   }
