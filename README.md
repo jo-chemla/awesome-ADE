@@ -15,32 +15,32 @@ Great resources:
 The leaderboard is regenerated daily from the GitHub API and keeps historical snapshots in [`stats/stats-history.json`](./stats/stats-history.json). It includes only tools with a public GitHub repository.
 
 <!-- DAILY_TABLE:START -->
-## GitHub activity leaderboard — 2026-10-27
+## GitHub activity leaderboard — 2026-10-28
 
 Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
-| 1 | [Orca](https://github.com/stablyai/orca) | 107,491 | 14 | 8 | today |
-| 2 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,720 | 26 | 5 | today |
-| 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 46,097 | 6 | 3 | yesterday |
-| 4 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,814 | 24 | 10 | 4d ago |
-| 5 | [t3 code](https://github.com/pingdotgg/t3code) | 30,625 | 27 | 9 | today |
-| 6 | [Happy](https://github.com/slopus/happy) | 24,339 | 7 | 5 | today |
-| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,186 | 5 | 3 | today |
-| 8 | [Superset](https://github.com/superset-sh/superset) | 15,616 | 6 | 4 | today |
-| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,305 | 2 | 2 | today |
-| 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,744 | 28 | 11 | today |
-| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,226 | 18 | 4 | today |
-| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,095 | 16 | 5 | yesterday |
-| 13 | [bb](https://github.com/get-bb/bb) | 4,638 | 7 | 5 | today |
-| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,446 | 3 | 1 | today |
-| 15 | [Synara](https://github.com/Emanuele-web04/synara) | 2,138 | 15 | 7 | today |
-| 16 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,060 | 10 | 5 | today |
-| 17 | [Jean](https://github.com/coollabsio/jean) | 1,367 | 3 | 1 | today |
-| 18 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,324 | 3 | 1 | today |
-| 19 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 26d ago |
-| 20 | [ADE](https://github.com/arul28/ADE) | 126 | 1 | 1 | today |
+| 1 | [Orca](https://github.com/stablyai/orca) | 108,511 | 14 | 8 | today |
+| 2 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,731 | 26 | 5 | today |
+| 3 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 46,271 | 6 | 3 | today |
+| 4 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,848 | 24 | 10 | 5d ago |
+| 5 | [t3 code](https://github.com/pingdotgg/t3code) | 30,961 | 27 | 9 | today |
+| 6 | [Happy](https://github.com/slopus/happy) | 24,373 | 7 | 5 | today |
+| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,260 | 5 | 3 | today |
+| 8 | [Superset](https://github.com/superset-sh/superset) | 15,665 | 6 | 4 | today |
+| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,319 | 2 | 2 | yesterday |
+| 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,812 | 28 | 11 | today |
+| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,271 | 18 | 4 | today |
+| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,102 | 16 | 5 | 2d ago |
+| 13 | [bb](https://github.com/get-bb/bb) | 4,660 | 7 | 5 | today |
+| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,459 | 3 | 1 | today |
+| 15 | [Synara](https://github.com/Emanuele-web04/synara) | 2,147 | 15 | 7 | yesterday |
+| 16 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,061 | 10 | 5 | today |
+| 17 | [Jean](https://github.com/coollabsio/jean) | 1,374 | 3 | 1 | today |
+| 18 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,331 | 3 | 1 | yesterday |
+| 19 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 27d ago |
+| 20 | [ADE](https://github.com/arul28/ADE) | 127 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
