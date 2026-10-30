@@ -1,0 +1,22 @@
+---
+key: herdr-app
+name: "Herdr app"
+category: "Agent multiplexer"
+website: "https://herdr.dev"
+github: "https://github.com/herdrdev/herdr-app"
+license: "Apache-2.0, open source"
+platform:
+  windows: full
+  linux: full
+  macos: full
+  android: none
+  ios: none
+pfNote: "macOS Apple Silicon builds (Intel from source), Linux x86-64/ARM64 (needs Vulkan), Windows x64 installer; launched 2026-10-29"
+parallel: "Spaces > tabs > panes of terminals and agents; agents sidebar shows Working/Blocked/Done/Idle across spaces, including workers spawned by other agents"
+isolation: "Not git-worktree-based; terminals live in herdr-core and survive closing, updating or crashing the app"
+locality: "Local app driving a local herdr-core, plus remote cores on SSH machines"
+remote: "Add SSH machines; their spaces run terminals remotely and keep going when your laptop sleeps; any terminal is addressable (vps/t7) from another app, script or machine"
+mobileCtl: "No"
+---
+
+Desktop GUI from the herdr team, built on the new herdr-core runtime (`hc`) rather than the herdr TUI engine. Every part of the window is a file: layouts and JavaScript mods draw panels, menus and dialogs, so you can ask your agent to change the app itself. herdr-core lets agents start other agents, send them work and hear back, with status reported through the OSC 7501 Program Status Protocol.

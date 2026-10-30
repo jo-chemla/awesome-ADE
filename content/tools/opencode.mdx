@@ -1,0 +1,22 @@
+---
+key: opencode
+name: "OpenCode"
+category: "Agent workspace"
+website: "https://opencode.ai"
+github: "https://github.com/anomalyco/opencode"
+license: "MIT, open source"
+platform:
+  windows: beta
+  linux: beta
+  macos: beta
+  android: none
+  ios: none
+pfNote: "Desktop app (beta) for macOS (Intel + Apple Silicon), Windows (x64/arm64) and Linux (deb/rpm/AppImage); the TUI, IDE extensions and web UI cover the rest"
+parallel: "Multiple sessions per project; primary agents (build, plan) delegate to subagents (general, explore, custom)"
+isolation: "Desktop app can start a new session in the main checkout, an existing worktree, or a freshly created git worktree + branch"
+locality: "Local, with a headless server mode"
+remote: "opencode serve / opencode web expose the server over the network (hostname, mDNS discovery, basic auth); attach a TUI to a remote server"
+mobileCtl: "No native app; the web UI can be reached from a phone browser"
+---
+
+OpenCode is the open-source coding agent itself (not a wrapper around other CLIs), with a TUI, IDE extensions, a web UI and a beta desktop app. It works with 75+ model providers, and as of 2026-10-29 again supports Claude subscriptions, with the OpenCode team stating it has Anthropic's permission ([PR #58782](https://github.com/anomalyco/opencode/pull/58782)).
