@@ -19,4 +19,11 @@ remote: "Add SSH machines; their spaces run terminals remotely and keep going wh
 mobileCtl: "No"
 ---
 
-Desktop GUI from the herdr team, built on the new herdr-core runtime (`hc`) rather than the herdr TUI engine. Every part of the window is a file: layouts and JavaScript mods draw panels, menus and dialogs, so you can ask your agent to change the app itself. herdr-core lets agents start other agents, send them work and hear back, with status reported through the OSC 7501 Program Status Protocol.
+Desktop GUI from the herdr team, built on the new herdr-core runtime (`hc`) rather than the herdr TUI engine. Its pitch is that you don't wait for a feature, you ask your agent to add it: every part of the window is a file, and layouts and JavaScript mods draw the panels, menus and dialogs. herdr-core lets agents start other agents, send them work and hear back, with status reported through the OSC 7501 Program Status Protocol.
+
+Two galleries let you install a layout or mod by handing one line to your agent:
+
+- [Layouts](https://herdr.dev/layouts) replace the whole window. Examples include an agent kanban board, a mission-control screen, a chat-style view where agents post like teammates, and a threads inbox with diffs on the side.
+- [Mods](https://herdr.dev/mods) add one piece to your current layout, such as a tmux-style key prefix.
+
+At launch (2026-10-30) the galleries held only herdr's own examples. Community entries come from public GitHub repos tagged `herdr-layout` or `herdr-mod`. The herdr team pitches things like a git graph panel, Linear issues that start an agent, server restart buttons and scheduled morning agents as mods you can ask for.
