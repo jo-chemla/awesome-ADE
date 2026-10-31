@@ -4,7 +4,7 @@ A comparison of agentic development environments. The daily section is an **acti
 
 **[Live site →](https://jo-chemla.github.io/awesome-ADE/)**
 
-**Table implementation:** Adapted from the [shadcn/ui Data Table](https://ui.shadcn.com/docs/components/data-table), powered by [TanStack Table](https://tanstack.com/table) and modified for this project as a fully client-side implementation.
+**Table implementation:** Adapted from the [shadcn/ui Data Table](https://ui.shadcn.com/docs/components/data-table), powered by [TanStack Table](https://tanstack.com/table) v9 and modified for this project as a fully client-side implementation. Filters cover category, platforms, a log-scale stars range, last push and license; clicking a row opens a detail panel. Filter and panel ideas follow [openstatus data-table-filters](https://data-table.openstatus.dev).
 
 Great resources:
 - [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators)
@@ -112,7 +112,7 @@ remote: "One line on remote/SSH support"
 mobileCtl: "One line on mobile app support, or "No""
 ---
 
-Optional free-form note shown in a popover on that row.
+Optional free-form note shown in the row's detail panel.
 ```
 
 Open a PR — no code changes needed for a new row. To correct an existing entry, edit its file directly.

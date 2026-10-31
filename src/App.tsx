@@ -38,6 +38,7 @@ export default function App() {
           stars: stats?.stars ?? null,
           c20: stats?.c20 ?? null,
           c100: stats?.c100 ?? null,
+          pushedAt: stats?.pushedAt || null,
           updatedLabel: stats
             ? formatUpdatedLabel(stats.pushedAt)
             : tool.github

@@ -3,7 +3,7 @@ import type { ToolFrontmatter } from "@/lib/types"
 
 // Every content/tools/<key>.mdx is a contribution unit: frontmatter holds
 // the structured fields the table renders, the optional body (compiled to
-// a component) holds free-form notes shown in a per-row popover. Adding a
+// a component) holds free-form notes shown in the row's detail sheet. Adding a
 // tool to this comparison is "add one file here" — no code change needed.
 const modules = import.meta.glob<{ frontmatter: ToolFrontmatter; default: ComponentType }>(
   "/content/tools/*.mdx",

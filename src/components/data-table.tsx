@@ -1,18 +1,12 @@
-import { useState } from "react"
+import { useCallback, useMemo, useState } from "react"
 import { ChevronsLeftRight, ChevronsRightLeft } from "lucide-react"
 import {
   type ColumnDef,
   type ColumnFiltersState,
+  type ColumnVisibilityState,
   type SortingState,
-  type VisibilityState,
   flexRender,
-  getCoreRowModel,
-  getFacetedRowModel,
-  getFacetedUniqueValues,
-  getFilteredRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable,
+  useTable,
 } from "@tanstack/react-table"
 
 import {
@@ -25,7 +19,10 @@ import {
 } from "@/components/ui/table"
 import { DataTablePagination } from "@/components/data-table-pagination"
 import { DataTableToolbar } from "@/components/data-table-toolbar"
-import { FOLD_CONFIG } from "@/components/columns"
+import { ToolSheet } from "@/components/tool-sheet"
+import { FILTER_ONLY_COLUMNS, FOLD_CONFIG } from "@/components/columns"
+import { toolTableFeatures, type ToolTableFeatures } from "@/lib/table-features"
+import type { Tool } from "@/lib/types"
 import { cn } from "@/lib/utils"
 
 // Groups start coalesced to their single most-telling column (★ Stars for
@@ -35,8 +32,12 @@ const INITIAL_FOLDED: Record<string, boolean> = Object.fromEntries(
   Object.keys(FOLD_CONFIG).map((id) => [id, true]),
 )
 
-function initialVisibilityFromFold(folded: Record<string, boolean>): VisibilityState {
-  const visibility: VisibilityState = {}
+const HIDDEN_FILTER_COLUMNS: ColumnVisibilityState = Object.fromEntries(
+  FILTER_ONLY_COLUMNS.map((id) => [id, false]),
+)
+
+function visibilityFromFold(folded: Record<string, boolean>): ColumnVisibilityState {
+  const visibility: ColumnVisibilityState = { ...HIDDEN_FILTER_COLUMNS }
   for (const [groupId, config] of Object.entries(FOLD_CONFIG)) {
     const isFolded = folded[groupId]
     for (const id of config.expandedOnly) visibility[id] = !isFolded
@@ -45,45 +46,50 @@ function initialVisibilityFromFold(folded: Record<string, boolean>): VisibilityS
   return visibility
 }
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[]
-  data: TData[]
+interface DataTableProps {
+  columns: ColumnDef<ToolTableFeatures, Tool>[]
+  data: Tool[]
 }
 
-export function DataTable<TData, TValue>({
-  columns,
-  data,
-}: DataTableProps<TData, TValue>) {
+export function DataTable({ columns, data }: DataTableProps) {
   const [sorting, setSorting] = useState<SortingState>([
     { id: "stars", desc: true },
   ])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [foldedGroups, setFoldedGroups] = useState(INITIAL_FOLDED)
-  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(() =>
-    initialVisibilityFromFold(INITIAL_FOLDED),
+  const [columnVisibility, setColumnVisibility] = useState<ColumnVisibilityState>(() =>
+    visibilityFromFold(INITIAL_FOLDED),
   )
+  const [selectedKey, setSelectedKey] = useState<string | null>(null)
 
   function toggleFold(groupId: string) {
     const next = { ...foldedGroups, [groupId]: !foldedGroups[groupId] }
     setFoldedGroups(next)
-    setColumnVisibility((prev) => ({ ...prev, ...initialVisibilityFromFold(next) }))
+    setColumnVisibility((prev) => ({ ...prev, ...visibilityFromFold(next) }))
   }
 
-  const table = useReactTable({
+  const table = useTable({
+    features: toolTableFeatures,
     data,
     columns,
+    getRowId: (row) => row.key,
     state: { sorting, columnFilters, columnVisibility },
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
-    onColumnVisibilityChange: setColumnVisibility,
-    getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
-    initialState: { pagination: { pageSize: 20 } },
+    onColumnVisibilityChange: (updater) =>
+      // Filter-only columns stay hidden whatever a header menu asks for.
+      setColumnVisibility((prev) => ({
+        ...(typeof updater === "function" ? updater(prev) : updater),
+        ...HIDDEN_FILTER_COLUMNS,
+      })),
+    initialState: { pagination: { pageIndex: 0, pageSize: 20 } },
   })
+
+  // Every row that survives the filters, in sort order and across all pages,
+  // so the sheet can step past the edge of the current page.
+  const sortedRows = table.getSortedRowModel().rows
+  const visibleTools = useMemo(() => sortedRows.map((row) => row.original), [sortedRows])
+  const onSelect = useCallback((key: string | null) => setSelectedKey(key), [])
 
   return (
     <div className="space-y-2">
@@ -134,11 +140,18 @@ export function DataTable<TData, TValue>({
             ))}
           </TableHeader>
           <TableBody>
-            {table.getRowModel().rows?.length ? (
+            {table.getRowModel().rows.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
                   key={row.id}
-                  data-state={row.getIsSelected() && "selected"}
+                  data-state={row.id === selectedKey ? "selected" : undefined}
+                  className="cursor-pointer"
+                  tabIndex={0}
+                  title="Show details"
+                  onClick={() => setSelectedKey(row.id)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") setSelectedKey(row.id)
+                  }}
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>
@@ -150,7 +163,7 @@ export function DataTable<TData, TValue>({
             ) : (
               <TableRow>
                 <TableCell
-                  colSpan={columns.length}
+                  colSpan={table.getVisibleLeafColumns().length}
                   className="h-24 text-center text-muted-foreground"
                 >
                   No tools match these filters.
@@ -161,6 +174,7 @@ export function DataTable<TData, TValue>({
         </Table>
       </div>
       <DataTablePagination table={table} />
+      <ToolSheet tools={visibleTools} selectedKey={selectedKey} onSelect={onSelect} />
     </div>
   )
 }

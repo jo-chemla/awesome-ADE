@@ -1,14 +1,24 @@
 import type { ColumnDef } from "@tanstack/react-table"
-import { Info } from "lucide-react"
 
 import type { PlatformStatus, Tool } from "@/lib/types"
+import type { ToolTableFeatures } from "@/lib/table-features"
+import {
+  PLATFORMS,
+  licenseFamily,
+  pushedWithinDays,
+  supportedPlatforms,
+  type PlatformId,
+} from "@/lib/tool-filters"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { DataTableColumnHeader } from "@/components/data-table-column-header"
 
-function PlatformBadge({ status }: { status: PlatformStatus }) {
+type ToolColumnDef = ColumnDef<ToolTableFeatures, Tool>
+
+// Links inside a row must not also open the detail sheet the row opens.
+const stopRowClick = (event: React.MouseEvent) => event.stopPropagation()
+
+export function PlatformBadge({ status }: { status: PlatformStatus }) {
   const map: Record<PlatformStatus, { label: string; className: string }> = {
     full: { label: "Full", className: "bg-green-500/10 text-green-700 dark:text-green-400" },
     beta: { label: "Beta", className: "bg-amber-500/15 text-amber-700 dark:text-amber-400" },
@@ -26,24 +36,16 @@ const PLATFORM_STATUS_DOT: Record<PlatformStatus, string> = {
   unknown: "bg-transparent ring-1 ring-inset ring-muted-foreground/30",
 }
 
-const PLATFORM_LABELS: { id: keyof Tool["pf"]; letter: string; title: string }[] = [
-  { id: "windows", letter: "W", title: "Windows" },
-  { id: "linux", letter: "L", title: "Linux" },
-  { id: "macos", letter: "M", title: "macOS" },
-  { id: "android", letter: "A", title: "Android" },
-  { id: "ios", letter: "I", title: "iOS" },
-]
-
 // Folded-group stand-in for the 5 individual platform columns — one compact
 // dot per OS instead of 5 full badge columns, so "Platform Support" can
 // collapse to roughly the width of a single column.
 function PlatformSummaryCell({ pf }: { pf: Tool["pf"] }) {
   return (
     <div className="flex items-center gap-1.5">
-      {PLATFORM_LABELS.map(({ id, letter, title }) => (
+      {PLATFORMS.map(({ id, letter, label }) => (
         <span
           key={id}
-          title={`${title}: ${pf[id]}`}
+          title={`${label}: ${pf[id]}`}
           className="flex items-center gap-0.5 text-[10px] text-muted-foreground"
         >
           <span className={cn("h-2 w-2 rounded-full", PLATFORM_STATUS_DOT[pf[id]])} />
@@ -54,10 +56,7 @@ function PlatformSummaryCell({ pf }: { pf: Tool["pf"] }) {
   )
 }
 
-function platformColumn(
-  id: keyof Tool["pf"],
-  title: string
-): ColumnDef<Tool> {
+function platformColumn(id: PlatformId, title: string): ToolColumnDef {
   return {
     id,
     accessorFn: (row) => row.pf[id],
@@ -65,13 +64,11 @@ function platformColumn(
       <DataTableColumnHeader column={column} title={title} />
     ),
     cell: ({ getValue }) => <PlatformBadge status={getValue() as PlatformStatus} />,
-    filterFn: (row, columnId, filterValue: string[]) =>
-      filterValue.includes(row.getValue(columnId) as string),
     enableSorting: false,
   }
 }
 
-function featureColumn(id: keyof Tool, title: string): ColumnDef<Tool> {
+function featureColumn(id: keyof Tool, title: string): ToolColumnDef {
   return {
     id,
     accessorFn: (row) => row[id],
@@ -87,6 +84,10 @@ function featureColumn(id: keyof Tool, title: string): ColumnDef<Tool> {
   }
 }
 
+// Columns that exist only to carry a toolbar filter (and its facet counts).
+// They are never shown; DataTable pins their visibility to false.
+export const FILTER_ONLY_COLUMNS = ["platforms", "license", "pushed"]
+
 // Which leaf columns to hide/show when a group header's fold toggle is
 // clicked — read by DataTable, which owns the columnVisibility state.
 export const FOLD_CONFIG: Record<string, { expandedOnly: string[]; collapsedOnly: string[] }> = {
@@ -97,7 +98,7 @@ export const FOLD_CONFIG: Record<string, { expandedOnly: string[]; collapsedOnly
   },
 }
 
-export const columns: ColumnDef<Tool>[] = [
+export const columns: ToolColumnDef[] = [
   {
     id: "identity",
     header: "Identity",
@@ -111,25 +112,14 @@ export const columns: ColumnDef<Tool>[] = [
         filterFn: "includesString",
         cell: ({ row }) => (
           <div className="flex min-w-[160px] flex-col gap-1">
-            <div className="flex items-center gap-1.5">
-              <span className="font-semibold">{row.original.name}</span>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button variant="ghost" size="icon" className="h-5 w-5 cursor-pointer">
-                    <Info className="h-3.5 w-3.5 text-muted-foreground" />
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="text-xs leading-relaxed">
-                  <row.original.Notes />
-                </PopoverContent>
-              </Popover>
-            </div>
+            <span className="font-semibold">{row.original.name}</span>
             <div className="flex gap-3 text-xs">
               <a
                 className="text-blue-600 hover:underline dark:text-blue-400"
                 href={row.original.website}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={stopRowClick}
               >
                 Website
               </a>
@@ -139,6 +129,7 @@ export const columns: ColumnDef<Tool>[] = [
                   href={row.original.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={stopRowClick}
                 >
                   GitHub
                 </a>
@@ -187,8 +178,12 @@ export const columns: ColumnDef<Tool>[] = [
             </span>
           )
         },
-        filterFn: (row, columnId, filterValue: number) =>
-          (row.getValue(columnId) as number | null ?? -1) >= filterValue,
+        // [min, max]; a row whose stars haven't loaded can't be placed in a
+        // range, so it drops out while the filter is active.
+        filterFn: (row, columnId, [min, max]: [number, number]) => {
+          const stars = row.getValue(columnId) as number | null
+          return stars != null && stars >= min && stars <= max
+        },
         sortUndefined: "last",
       },
       {
@@ -252,5 +247,33 @@ export const columns: ColumnDef<Tool>[] = [
       featureColumn("locality", "Local vs cloud"),
       featureColumn("mobileCtl", "Mobile control"),
     ],
+  },
+  {
+    id: "platforms",
+    accessorFn: (row) => supportedPlatforms(row.pf),
+    // Every selected platform must be supported: "runs on Windows and iOS".
+    filterFn: (row, columnId, selected: PlatformId[]) => {
+      const supported = row.getValue(columnId) as PlatformId[]
+      return selected.every((id) => supported.includes(id))
+    },
+    enableSorting: false,
+    enableHiding: false,
+  },
+  {
+    id: "license",
+    accessorFn: (row) => licenseFamily(row.license),
+    filterFn: (row, columnId, selected: string[]) =>
+      selected.includes(row.getValue(columnId) as string),
+    enableSorting: false,
+    enableHiding: false,
+  },
+  {
+    id: "pushed",
+    accessorFn: (row) => row.pushedAt,
+    // Filter value is a day count; tools without live push data drop out.
+    filterFn: (row, columnId, days: number) =>
+      pushedWithinDays(row.getValue(columnId) as string | null, days),
+    enableSorting: false,
+    enableHiding: false,
   },
 ]

@@ -36,6 +36,9 @@ export interface Tool extends Omit<ToolFrontmatter, "platform" | "updatedLabel">
   stars: number | null
   c20: number | null
   c100: number | null
+  // ISO date of the repo's last push, from the live GitHub fetch; null while
+  // loading, on fetch failure, or for tools without a public repo.
+  pushedAt: string | null
   updatedLabel: string
   Notes: ComponentType
 }

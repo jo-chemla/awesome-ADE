@@ -1,4 +1,6 @@
 import type { Column } from "@tanstack/react-table"
+import type { ToolTableFeatures } from "@/lib/table-features"
+import type { Tool } from "@/lib/types"
 import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -11,17 +13,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-interface DataTableColumnHeaderProps<TData, TValue>
+interface DataTableColumnHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
-  column: Column<TData, TValue>
+  column: Column<ToolTableFeatures, Tool, any>
   title: string
 }
 
-export function DataTableColumnHeader<TData, TValue>({
+export function DataTableColumnHeader({
   column,
   title,
   className,
-}: DataTableColumnHeaderProps<TData, TValue>) {
+}: DataTableColumnHeaderProps) {
   if (!column.getCanSort()) {
     return <div className={cn("text-xs font-semibold", className)}>{title}</div>
   }
