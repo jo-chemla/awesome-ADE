@@ -21,28 +21,29 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
-| 1 | [OpenCode](https://github.com/anomalyco/opencode) | 223,428 | 39 | 23 | today |
-| 2 | [Orca](https://github.com/stablyai/orca) | 111,382 | 14 | 8 | today |
+| 1 | [OpenCode](https://github.com/anomalyco/opencode) | 223,437 | 39 | 23 | today |
+| 2 | [Orca](https://github.com/stablyai/orca) | 111,401 | 14 | 8 | today |
 | 3 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,795 | 26 | 5 | today |
-| 4 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 47,007 | 6 | 3 | 2d ago |
-| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,939 | 24 | 10 | 8d ago |
-| 6 | [t3 code](https://github.com/pingdotgg/t3code) | 33,312 | 29 | 10 | today |
-| 7 | [Happy](https://github.com/slopus/happy) | 24,430 | 7 | 5 | today |
+| 4 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 47,019 | 6 | 3 | 2d ago |
+| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,942 | 24 | 10 | 8d ago |
+| 6 | [t3 code](https://github.com/pingdotgg/t3code) | 33,367 | 29 | 10 | today |
+| 7 | [Happy](https://github.com/slopus/happy) | 24,431 | 7 | 5 | today |
 | 8 | [Paseo](https://github.com/getpaseo/paseo) | 22,572 | 5 | 3 | today |
-| 9 | [Superset](https://github.com/superset-sh/superset) | 15,774 | 8 | 4 | today |
-| 10 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,359 | 2 | 2 | today |
-| 11 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,943 | 29 | 11 | today |
-| 12 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,392 | 19 | 4 | today |
+| 9 | [Superset](https://github.com/superset-sh/superset) | 15,775 | 8 | 4 | today |
+| 10 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,360 | 2 | 2 | today |
+| 11 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,944 | 29 | 11 | today |
+| 12 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,394 | 19 | 4 | today |
 | 13 | [Emdash](https://github.com/generalaction/emdash) | 6,128 | 16 | 5 | yesterday |
-| 14 | [bb](https://github.com/get-bb/bb) | 4,786 | 8 | 5 | today |
-| 15 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,496 | 3 | 1 | yesterday |
+| 14 | [bb](https://github.com/get-bb/bb) | 4,787 | 8 | 5 | today |
+| 15 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,495 | 3 | 1 | yesterday |
 | 16 | [Synara](https://github.com/Emanuele-web04/synara) | 2,155 | 15 | 7 | today |
 | 17 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,061 | 10 | 5 | today |
-| 18 | [Jean](https://github.com/coollabsio/jean) | 1,384 | 3 | 1 | yesterday |
-| 19 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,346 | 3 | 1 | 3d ago |
-| 20 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,073 | 1 | 1 | today |
-| 21 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 2026-10-01 |
-| 22 | [ADE](https://github.com/arul28/ADE) | 130 | 1 | 1 | today |
+| 18 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,046 | 7 | 1 | today |
+| 19 | [Jean](https://github.com/coollabsio/jean) | 1,384 | 3 | 1 | yesterday |
+| 20 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,346 | 3 | 1 | 3d ago |
+| 21 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,079 | 1 | 1 | today |
+| 22 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 2026-10-01 |
+| 23 | [ADE](https://github.com/arul28/ADE) | 130 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
@@ -63,6 +64,7 @@ The feature matrix is static and maintained through the individual files in [`co
 | [Happy](https://github.com/slopus/happy) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-provider harness (Claude, Codex, Grok) with subagent delegation on any provider; multiple sessions per project | Not explicitly documented as git-worktree-based | Local: agents run on your own hardware; an end-to-end encrypted relay syncs sessions to your phone | Native iOS (App Store) + Android (Google Play) apps, E2E encrypted |
 | [Herder (herdr)](https://github.com/herdrdev/herdr) | Terminal multiplexer | W β · L ✓ · M ✓ | Core purpose — terminal multiplexer for N parallel CLI agents | Native `herdr worktree create` | Local, with `--remote` SSH flag to a remote host | No |
 | [Herdr app](https://github.com/herdrdev/herdr-app) | Agent multiplexer | W ✓ · L ✓ · M ✓ | Spaces > tabs > panes of terminals and agents; agents sidebar shows Working/Blocked/Done/Idle across spaces, including workers spawned by other agents | Not git-worktree-based; terminals live in herdr-core and survive closing, updating or crashing the app | Local app driving a local herdr-core, plus remote cores on SSH machines | No |
+| [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | Agent multiplexer | W ✓ · L ✓ · M ✓ | One sidebar for workspaces, worktrees and every agent with its daemon status dot (idle, working, waiting on you); tabs and splits painted natively from the daemon's terminal cells | Git worktrees managed from the sidebar: new worktree, fan out, checkpoints, delete checkout | Local client for your own herdr daemon, plus saved SSH hosts | No |
 | [Jean](https://github.com/coollabsio/jean) | CLI orchestrator | W ✓ · L ✓ · M ✓ | Runs Claude Code, Codex, Cursor CLI, and OpenCode as pluggable agent backends | Native git worktree per chat session | Local desktop app, with a built-in headless server (browser-accessible) mode | No |
 | [MonoCode](https://github.com/hardbeat920/monocode) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A β · I β | Each tab is an agent session, split panes side by side; /operator lets an agent open sessions and manage worktrees; experimental cross-project Monos agents with memory and scheduled tasks | Separate git worktree per parallel task | Local desktop app; experimental remote hosts over SSH | Companion iOS/Android app (built from source) paired over QUIC with the desktop: read transcripts, send messages, start sessions, view changes |
 | [OpenChamber](https://github.com/openchamber/openchamber) | Agent workspace | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-run supports up to five models, optionally with separate worktrees | Optional per-run git worktrees | Both — local workstation/server and remote access | Native iOS/Android plus Web/PWA for steering sessions, reviewing changes, and terminal access |

@@ -1,0 +1,22 @@
+---
+key: herdr-gpui
+name: "Herdr UI (herdr-gpui)"
+category: "Agent multiplexer"
+website: "https://herdrui.dev"
+github: "https://github.com/penso/herdr-gpui"
+license: "Apache-2.0, open source"
+platform:
+  windows: full
+  linux: full
+  macos: full
+  android: none
+  ios: none
+pfNote: "Native Rust/GPUI app: signed universal macOS build (14.2+, Homebrew cask), Linux x86-64/ARM64 (deb, rpm, pacman, tarball), Windows x64/ARM64 installer. Requires the herdr daemon installed separately"
+parallel: "One sidebar for workspaces, worktrees and every agent with its daemon status dot (idle, working, waiting on you); tabs and splits painted natively from the daemon's terminal cells"
+isolation: "Git worktrees managed from the sidebar: new worktree, fan out, checkpoints, delete checkout"
+locality: "Local client for your own herdr daemon, plus saved SSH hosts"
+remote: "Saved SSH hosts with per-host CPU/memory; Teleport moves a worktree to another host with its commits, uncommitted changes, tabs, running programs and agent sessions"
+mobileCtl: "No"
+---
+
+Herdr UI is an unofficial native client for the [herdr](https://herdr.dev/) daemon (`herdr server`, the engine behind the herdr TUI), not affiliated with the herdr team and separate from their own [Herdr app](https://github.com/herdrdev/herdr-app). It paints the daemon's terminal cells directly instead of wrapping the TUI. On top it adds a Review Changes tab where you leave PR-style notes on an agent's diff and send them back to that agent, browser tabs with element annotations agents can open, plan-usage meters for signed-in AI services, and macOS Dock or Windows taskbar badges when an agent needs you.
