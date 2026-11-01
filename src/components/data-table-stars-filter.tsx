@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Separator } from "@/components/ui/separator"
 import { Slider } from "@/components/ui/slider"
+import { HeaderFilterButton } from "@/components/header-filter-button"
 
 const STEP = 0.05
 const MIN_STARS = starsFromLog(STARS_LOG_MIN)
@@ -24,22 +25,26 @@ const FULL_RANGE = [STARS_LOG_MIN, STARS_LOG_MAX]
 
 interface DataTableStarsFilterProps {
   column?: Column<ToolTableFeatures, Tool>
+  variant?: "toolbar" | "header"
 }
 
 // Two-thumb range over GitHub stars. The filter value is [min, max] in
 // stars; dragging both thumbs back to the ends clears it.
-export function DataTableStarsFilter({ column }: DataTableStarsFilterProps) {
+export function DataTableStarsFilter({ column, variant = "toolbar" }: DataTableStarsFilterProps) {
   const range = column?.getFilterValue() as [number, number] | undefined
 
   // The thumbs keep their exact log position locally. Deriving it back from
   // the rounded star counts would pull a thumb behind its last keyboard
   // step, so arrow keys could never move past the first step.
   const [logValue, setLogValue] = useState(FULL_RANGE)
-  // Reset or "Clear filters" elsewhere empties the filter: follow it.
+  // Follow changes made elsewhere: Reset, or the same filter opened from the
+  // toolbar or the column header. Skip our own updates, which already match.
   const [lastRange, setLastRange] = useState(range)
   if (range !== lastRange) {
     setLastRange(range)
     if (!range) setLogValue(FULL_RANGE)
+    else if (range[0] !== starsFromLog(logValue[0]) || range[1] !== starsFromLog(logValue[1]))
+      setLogValue([Math.log10(range[0]), Math.log10(range[1])])
   }
 
   function onValueChange(next: number[]) {
@@ -52,6 +57,9 @@ export function DataTableStarsFilter({ column }: DataTableStarsFilterProps) {
   return (
     <Popover>
       <PopoverTrigger asChild>
+        {variant === "header" ? (
+          <HeaderFilterButton title="stars" active={!!range} />
+        ) : (
         <Button variant="outline" size="sm" className="h-8 border-dashed">
           <PlusCircle className="size-3.5" />
           ★ Stars
@@ -64,6 +72,7 @@ export function DataTableStarsFilter({ column }: DataTableStarsFilterProps) {
             </>
           )}
         </Button>
+        )}
       </PopoverTrigger>
       <PopoverContent className="w-[260px] space-y-3" align="start">
         <div className="flex items-center justify-between text-xs">

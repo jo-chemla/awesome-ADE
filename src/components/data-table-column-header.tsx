@@ -17,19 +17,27 @@ interface DataTableColumnHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<ToolTableFeatures, Tool, any>
   title: string
+  // Funnel button from column-filters, shown after the title.
+  filter?: React.ReactNode
 }
 
 export function DataTableColumnHeader({
   column,
   title,
+  filter,
   className,
 }: DataTableColumnHeaderProps) {
   if (!column.getCanSort()) {
-    return <div className={cn("text-xs font-semibold", className)}>{title}</div>
+    return (
+      <div className={cn("flex items-center gap-1 text-xs font-semibold", className)}>
+        {title}
+        {filter}
+      </div>
+    )
   }
 
   return (
-    <div className={cn("flex items-center gap-2", className)}>
+    <div className={cn("flex items-center gap-0.5", className)}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
@@ -63,6 +71,7 @@ export function DataTableColumnHeader({
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+      {filter}
     </div>
   )
 }

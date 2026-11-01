@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/command"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Separator } from "@/components/ui/separator"
+import { HeaderFilterButton } from "@/components/header-filter-button"
 
 interface DataTableFacetedFilterProps {
   // Pinned to the tool table's feature set: TanStack v9 types are invariant
@@ -31,6 +32,9 @@ interface DataTableFacetedFilterProps {
   single?: { toFilterValue: (value: string) => unknown; fromFilterValue: (filter: unknown) => string }
   // Short line under the options, e.g. how several selections combine.
   hint?: string
+  // "header" swaps the dashed toolbar button for a funnel icon in a column
+  // header; the popover is the same either way.
+  variant?: "toolbar" | "header"
 }
 
 export function DataTableFacetedFilter({
@@ -40,6 +44,7 @@ export function DataTableFacetedFilter({
   counts,
   single,
   hint,
+  variant = "toolbar",
 }: DataTableFacetedFilterProps) {
   const facets = counts ?? column?.getFacetedUniqueValues()
   const filterValue = column?.getFilterValue()
@@ -54,6 +59,9 @@ export function DataTableFacetedFilter({
   return (
     <Popover>
       <PopoverTrigger asChild>
+        {variant === "header" ? (
+          <HeaderFilterButton title={title ?? ""} active={selectedValues.size > 0} />
+        ) : (
         <Button variant="outline" size="sm" className="h-8 border-dashed">
           <PlusCircle className="size-3.5" />
           {title}
@@ -91,6 +99,7 @@ export function DataTableFacetedFilter({
             </>
           )}
         </Button>
+        )}
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0" align="start">
         <Command>

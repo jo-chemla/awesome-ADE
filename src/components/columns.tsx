@@ -12,6 +12,13 @@ import {
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
 import { DataTableColumnHeader } from "@/components/data-table-column-header"
+import {
+  CategoryFilter,
+  NameFilter,
+  PlatformsFilter,
+  PushedFilter,
+  StarsFilter,
+} from "@/components/column-filters"
 
 type ToolColumnDef = ColumnDef<ToolTableFeatures, Tool>
 
@@ -60,8 +67,12 @@ function platformColumn(id: PlatformId, title: string): ToolColumnDef {
   return {
     id,
     accessorFn: (row) => row.pf[id],
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title={title} />
+    header: ({ column, table }) => (
+      <DataTableColumnHeader
+        column={column}
+        title={title}
+        filter={<PlatformsFilter table={table} variant="header" />}
+      />
     ),
     cell: ({ getValue }) => <PlatformBadge status={getValue() as PlatformStatus} />,
     enableSorting: false,
@@ -106,8 +117,12 @@ export const columns: ToolColumnDef[] = [
       {
         id: "name",
         accessorKey: "name",
-        header: ({ column }) => (
-          <DataTableColumnHeader column={column} title="Tool" />
+        header: ({ column, table }) => (
+          <DataTableColumnHeader
+            column={column}
+            title="Tool"
+            filter={<NameFilter table={table} variant="header" />}
+          />
         ),
         filterFn: "includesString",
         cell: ({ row }) => (
@@ -146,8 +161,12 @@ export const columns: ToolColumnDef[] = [
       {
         id: "category",
         accessorKey: "category",
-        header: ({ column }) => (
-          <DataTableColumnHeader column={column} title="Category" />
+        header: ({ column, table }) => (
+          <DataTableColumnHeader
+            column={column}
+            title="Category"
+            filter={<CategoryFilter table={table} variant="header" />}
+          />
         ),
         cell: ({ getValue }) => (
           <Badge variant="secondary" className="font-normal">
@@ -167,8 +186,12 @@ export const columns: ToolColumnDef[] = [
       {
         id: "stars",
         accessorKey: "stars",
-        header: ({ column }) => (
-          <DataTableColumnHeader column={column} title="★ Stars" />
+        header: ({ column, table }) => (
+          <DataTableColumnHeader
+            column={column}
+            title="★ Stars"
+            filter={<StarsFilter table={table} variant="header" />}
+          />
         ),
         cell: ({ getValue }) => {
           const v = getValue() as number | null
@@ -212,8 +235,12 @@ export const columns: ToolColumnDef[] = [
       {
         id: "updated",
         accessorKey: "updatedLabel",
-        header: ({ column }) => (
-          <DataTableColumnHeader column={column} title="Last updated" />
+        header: ({ column, table }) => (
+          <DataTableColumnHeader
+            column={column}
+            title="Last updated"
+            filter={<PushedFilter table={table} variant="header" />}
+          />
         ),
         cell: ({ getValue }) => (
           <span className="text-sm">{getValue() as string}</span>
@@ -227,7 +254,13 @@ export const columns: ToolColumnDef[] = [
     columns: [
       {
         id: "platformSummary",
-        header: "Platforms",
+        header: ({ column, table }) => (
+          <DataTableColumnHeader
+            column={column}
+            title="Platforms"
+            filter={<PlatformsFilter table={table} variant="header" />}
+          />
+        ),
         cell: ({ row }) => <PlatformSummaryCell pf={row.original.pf} />,
         enableSorting: false,
       },
