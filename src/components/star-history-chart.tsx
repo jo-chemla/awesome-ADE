@@ -210,7 +210,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
   const labelsCovered = pills.length > 0 && hoverX + pillReach > plotRight
 
   return (
-    <section className="w-full space-y-2 pt-4 lg:w-1/2">
+    <section className="mx-auto w-full space-y-2 pt-4 lg:w-3/4">
       <div>
         <h2 className="text-sm font-semibold">GitHub stars over time</h2>
         <p className="text-xs text-muted-foreground">
