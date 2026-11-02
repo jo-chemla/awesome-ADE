@@ -24,26 +24,25 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | 1 | [OpenCode](https://github.com/anomalyco/opencode) | 223,703 | 39 | 23 | today |
 | 2 | [Orca](https://github.com/stablyai/orca) | 112,045 | 14 | 8 | today |
 | 3 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,817 | 26 | 5 | yesterday |
-| 4 | [Herder (herdr)](https://github.com/herdrdev/herdr) | 47,222 | 6 | 3 | today |
-| 5 | [t3 code](https://github.com/pingdotgg/t3code) | 36,457 | 30 | 10 | today |
-| 6 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,964 | 24 | 10 | 9d ago |
-| 7 | [Happy](https://github.com/slopus/happy) | 24,441 | 7 | 5 | today |
-| 8 | [Paseo](https://github.com/getpaseo/paseo) | 22,678 | 5 | 3 | today |
-| 9 | [Superset](https://github.com/superset-sh/superset) | 15,808 | 8 | 4 | today |
-| 10 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,373 | 2 | 2 | yesterday |
-| 11 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,978 | 29 | 11 | today |
-| 12 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,425 | 19 | 4 | today |
-| 13 | [Emdash](https://github.com/generalaction/emdash) | 6,136 | 16 | 5 | 2d ago |
-| 14 | [bb](https://github.com/get-bb/bb) | 4,795 | 8 | 5 | today |
-| 15 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,502 | 3 | 1 | today |
-| 16 | [Synara](https://github.com/Emanuele-web04/synara) | 2,158 | 15 | 7 | yesterday |
-| 17 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,067 | 7 | 1 | today |
-| 18 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,061 | 10 | 5 | today |
-| 19 | [Jean](https://github.com/coollabsio/jean) | 1,386 | 3 | 1 | today |
-| 20 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,372 | 3 | 1 | 4d ago |
-| 21 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,290 | 1 | 1 | today |
-| 22 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 2026-10-01 |
-| 23 | [ADE](https://github.com/arul28/ADE) | 130 | 1 | 1 | today |
+| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 36,457 | 30 | 10 | today |
+| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,964 | 24 | 10 | 9d ago |
+| 6 | [Happy](https://github.com/slopus/happy) | 24,441 | 7 | 5 | today |
+| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,678 | 5 | 3 | today |
+| 8 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | 15,808 | 8 | 4 | today |
+| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,373 | 2 | 2 | yesterday |
+| 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 13,978 | 29 | 11 | today |
+| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,425 | 19 | 4 | today |
+| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,136 | 16 | 5 | 2d ago |
+| 13 | [bb](https://github.com/get-bb/bb) | 4,795 | 8 | 5 | today |
+| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,502 | 3 | 1 | today |
+| 15 | [Synara](https://github.com/Emanuele-web04/synara) | 2,158 | 15 | 7 | yesterday |
+| 16 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,067 | 7 | 1 | today |
+| 17 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,061 | 10 | 5 | today |
+| 18 | [Jean](https://github.com/coollabsio/jean) | 1,386 | 3 | 1 | today |
+| 19 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,372 | 3 | 1 | 4d ago |
+| 20 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,290 | 1 | 1 | today |
+| 21 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 2026-10-01 |
+| 22 | [ADE](https://github.com/arul28/ADE) | 130 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
@@ -62,7 +61,6 @@ The feature matrix is static and maintained through the individual files in [`co
 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | Terminal + cloud IDE | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Runs Claude Code, Cursor CLI, Codex, Gemini CLI, and OpenCode side by side; each team member gets an isolated container | Per-user/session isolated container (hosted) or local process (self-hosted) | Both — self-host the AGPL-3.0 core, or use the hosted cloudcli.ai service | Full mobile PWA — chat, terminal, file explorer, and git from a phone |
 | [Emdash](https://github.com/generalaction/emdash) | Agent multiplexer | W ✓ · L ✓ · M ✓ | Multiple coding agents in parallel, each in its own Git worktree | Dedicated git worktree and branch per task | Both — local projects and remote machines | No dedicated native mobile app stated |
 | [Happy](https://github.com/slopus/happy) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-provider harness (Claude, Codex, Grok) with subagent delegation on any provider; multiple sessions per project | Not explicitly documented as git-worktree-based | Local: agents run on your own hardware; an end-to-end encrypted relay syncs sessions to your phone | Native iOS (App Store) + Android (Google Play) apps, E2E encrypted |
-| [Herder (herdr)](https://github.com/herdrdev/herdr) | Terminal multiplexer | W β · L ✓ · M ✓ | Core purpose — terminal multiplexer for N parallel CLI agents | Native `herdr worktree create` | Local, with `--remote` SSH flag to a remote host | No |
 | [Herdr app](https://github.com/herdrdev/herdr-app) | Agent multiplexer | W ✓ · L ✓ · M ✓ | Spaces > tabs > panes of terminals and agents; agents sidebar shows Working/Blocked/Done/Idle across spaces, including workers spawned by other agents | Not git-worktree-based; terminals live in herdr-core and survive closing, updating or crashing the app | Local app driving a local herdr-core, plus remote cores on SSH machines | No |
 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | Agent multiplexer | W ✓ · L ✓ · M ✓ | One sidebar for workspaces, worktrees and every agent with its daemon status dot (idle, working, waiting on you); tabs and splits painted natively from the daemon's terminal cells | Git worktrees managed from the sidebar: new worktree, fan out, checkpoints, delete checkout | Local client for your own herdr daemon, plus saved SSH hosts | No |
 | [Jean](https://github.com/coollabsio/jean) | CLI orchestrator | W ✓ · L ✓ · M ✓ | Runs Claude Code, Codex, Cursor CLI, and OpenCode as pluggable agent backends | Native git worktree per chat session | Local desktop app, with a built-in headless server (browser-accessible) mode | No |
@@ -73,7 +71,7 @@ The feature matrix is static and maintained through the individual files in [`co
 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Fleet of worker agents (30+ supported harnesses — Claude Code, Codex, Cursor, OpenCode, Copilot, Aider, Goose, Devin, more), coordinated by a main orchestrator agent | Each worker agent spawned into its own git worktree | Both: local desktop (code, worktrees and agents on your machine) or AO Cloud where everything lives in the cloud | Native iPhone (App Store) + Android (Play Store) apps to control agents running on your desktop, answer their questions from your phone |
 | [Paseo](https://github.com/getpaseo/paseo) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Core purpose — agents across multiple devices | Git worktree per agent run | Both — daemon on laptop, home server, or VPS/VM; clients everywhere | Native iOS + Android with desktop feature parity |
 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | CLI orchestrator | L ✓ · M ✓ | Multi-workspace sessions — independent session history per project folder | Not explicitly documented as git-worktree-based | Local desktop app (Electron) | No |
-| [Superset](https://github.com/superset-sh/superset) | CLI orchestrator | L β · M ✓ · A β | Designed for 10-100+ simultaneous agents | Isolated git worktree per agent/task | Both — local + 'Remote Workspaces' via Superset Relay proxy | Android app in beta (per user) |
+| [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | CLI orchestrator | L β · M ✓ · A β · I ✓ | Designed for 10-100+ simultaneous agents | Isolated git worktree per agent/task | Both — local + 'Remote Workspaces' via a relay proxy | iPhone and iPad app on the App Store (Pro plan); Android app in beta (per user), with official Android support still in a draft PR |
 | [Synara](https://github.com/Emanuele-web04/synara) | Agent workspace | W ✓ · L ✓ · M ✓ | Parallel threads per project across Codex, Claude Code, Cursor, Antigravity, Grok Build, Factory Droid, OpenCode, Pi and Devin; handoff of a thread to another provider with context | Local checkout or isolated managed git worktree per thread | Local-first desktop app; optional server + web mode | No |
 | [t3 code](https://github.com/pingdotgg/t3code) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-agent orchestration (Agent + Workflow tools), no fixed cap stated | Git worktree isolation | Local execution, remote control-plane | Native iOS + Android |
 | [Warp 2.0](https://github.com/warpdotdev/warp) | Terminal + cloud IDE | W ✓ · L ✓ · M ✓ | Native multi-agent + "Oz" cloud orchestration for hundreds in parallel | Oz: Docker-based sandbox isolation (not literal git worktrees) | Both — local terminal + Oz cloud orchestration platform | No |

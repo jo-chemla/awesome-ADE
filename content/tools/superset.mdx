@@ -1,22 +1,25 @@
 ---
 key: superset
-name: "Superset"
+name: "Paradev (formerly Superset)"
 category: "CLI orchestrator"
-website: "https://superset.sh"
-github: "https://github.com/superset-sh/superset"
+website: "https://paradev.com"
+github: "https://github.com/ParadevAI/Paradev"
 license: "Elastic License 2.0"
 platform:
   windows: none
   linux: beta
   macos: full
   android: beta
-  ios: none
+  ios: full
+pfNote: "macOS (Apple Silicon and Intel); Linux as an experimental x64 AppImage; Windows not yet available; iPhone and iPad app needs the Pro plan and iOS/iPadOS 26"
 parallel: "Designed for 10-100+ simultaneous agents"
 isolation: "Isolated git worktree per agent/task"
-locality: "Both — local + 'Remote Workspaces' via Superset Relay proxy"
-remote: "Run headless on a remote/VPS host via `superset start --daemon`, control from local desktop app"
-mobileCtl: "Android app in beta (per user)"
+locality: "Both — local + 'Remote Workspaces' via a relay proxy"
+remote: "Run headless on a remote/VPS host via `superset start --daemon` (the CLI keeps the old name), control from local desktop app"
+mobileCtl: "iPhone and iPad app on the App Store (Pro plan); Android app in beta (per user), with official Android support still in a draft PR"
 ---
+
+Paradev (formerly Superset) is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription. Renamed from Superset on 2026-10-26.
 
 License is Elastic License 2.0 (source-available), not an OSI open-source
 license, despite being marketed as "open source."

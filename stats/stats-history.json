@@ -58,15 +58,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 29906,
-        "pushedAt": "2026-08-17T07:17:02Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -206,15 +197,6 @@
         "pushedAt": "2026-08-17T14:08:11Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 30106,
-        "pushedAt": "2026-08-18T01:37:12Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -358,15 +340,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 30406,
-        "pushedAt": "2026-08-19T01:43:29Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -506,15 +479,6 @@
         "pushedAt": "2026-08-19T16:59:07Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 30727,
-        "pushedAt": "2026-08-20T03:13:55Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -658,15 +622,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 31107,
-        "pushedAt": "2026-08-20T22:39:03Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -806,15 +761,6 @@
         "pushedAt": "2026-08-21T16:30:14Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 31419,
-        "pushedAt": "2026-08-22T02:25:57Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -958,15 +904,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 31626,
-        "pushedAt": "2026-08-23T00:45:26Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -1106,15 +1043,6 @@
         "pushedAt": "2026-08-23T12:44:51Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 31841,
-        "pushedAt": "2026-08-24T01:52:38Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -1258,15 +1186,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 32131,
-        "pushedAt": "2026-08-24T23:59:57Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -1406,15 +1325,6 @@
         "pushedAt": "2026-08-25T20:10:28Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 32393,
-        "pushedAt": "2026-08-25T20:44:57Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -1558,15 +1468,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 32840,
-        "pushedAt": "2026-08-27T15:08:37Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -1706,15 +1607,6 @@
         "pushedAt": "2026-08-28T15:45:32Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 33143,
-        "pushedAt": "2026-08-28T15:25:07Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -1858,15 +1750,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 33288,
-        "pushedAt": "2026-08-28T22:31:32Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -2006,15 +1889,6 @@
         "pushedAt": "2026-08-29T23:14:58Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 33508,
-        "pushedAt": "2026-08-30T00:03:26Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -2158,15 +2032,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 33883,
-        "pushedAt": "2026-08-31T10:49:18Z",
-        "c20": 4,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -2306,15 +2171,6 @@
         "pushedAt": "2026-08-31T20:32:06Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 34214,
-        "pushedAt": "2026-08-31T22:28:11Z",
-        "c20": 4,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -2458,15 +2314,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 34560,
-        "pushedAt": "2026-09-01T23:45:20Z",
-        "c20": 5,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -2606,15 +2453,6 @@
         "pushedAt": "2026-09-02T22:13:56Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 34920,
-        "pushedAt": "2026-09-03T00:28:14Z",
-        "c20": 5,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -2758,15 +2596,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 35203,
-        "pushedAt": "2026-09-03T23:20:44Z",
-        "c20": 5,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -2906,15 +2735,6 @@
         "pushedAt": "2026-09-05T08:12:45Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 35409,
-        "pushedAt": "2026-09-05T01:55:30Z",
-        "c20": 5,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -3058,15 +2878,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 35619,
-        "pushedAt": "2026-09-05T23:27:06Z",
-        "c20": 5,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -3206,15 +3017,6 @@
         "pushedAt": "2026-09-07T09:00:13Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 35948,
-        "pushedAt": "2026-09-06T23:27:05Z",
-        "c20": 5,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -3358,15 +3160,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 36366,
-        "pushedAt": "2026-09-08T00:34:55Z",
-        "c20": 5,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -3506,15 +3299,6 @@
         "pushedAt": "2026-09-08T14:43:16Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 36899,
-        "pushedAt": "2026-09-08T23:35:32Z",
-        "c20": 5,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -3658,15 +3442,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 37259,
-        "pushedAt": "2026-09-09T23:41:02Z",
-        "c20": 5,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -3806,15 +3581,6 @@
         "pushedAt": "2026-09-11T08:55:34Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 37597,
-        "pushedAt": "2026-09-11T00:57:31Z",
-        "c20": 5,
-        "c100": 1
       },
       {
         "key": "jean",
@@ -3958,15 +3724,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 37848,
-        "pushedAt": "2026-09-12T00:47:34Z",
-        "c20": 5,
-        "c100": 1
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -4106,15 +3863,6 @@
         "pushedAt": "2026-09-11T16:49:50Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 38077,
-        "pushedAt": "2026-09-13T01:05:28Z",
-        "c20": 5,
-        "c100": 2
       },
       {
         "key": "jean",
@@ -4258,15 +4006,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 38347,
-        "pushedAt": "2026-09-14T06:23:00Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -4406,15 +4145,6 @@
         "pushedAt": "2026-09-14T14:04:17Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 38618,
-        "pushedAt": "2026-09-15T01:39:06Z",
-        "c20": 5,
-        "c100": 2
       },
       {
         "key": "jean",
@@ -4558,15 +4288,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 38854,
-        "pushedAt": "2026-09-15T21:58:23Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -4706,15 +4427,6 @@
         "pushedAt": "2026-09-16T19:55:41Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 39115,
-        "pushedAt": "2026-09-17T01:14:58Z",
-        "c20": 5,
-        "c100": 2
       },
       {
         "key": "jean",
@@ -4858,15 +4570,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 39335,
-        "pushedAt": "2026-09-18T02:33:20Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -5006,15 +4709,6 @@
         "pushedAt": "2026-09-18T20:03:03Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 39506,
-        "pushedAt": "2026-09-18T18:56:25Z",
-        "c20": 5,
-        "c100": 2
       },
       {
         "key": "jean",
@@ -5158,15 +4852,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 39739,
-        "pushedAt": "2026-09-20T01:41:28Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -5306,15 +4991,6 @@
         "pushedAt": "2026-09-20T12:20:30Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 39958,
-        "pushedAt": "2026-09-21T00:57:43Z",
-        "c20": 5,
-        "c100": 2
       },
       {
         "key": "jean",
@@ -5458,15 +5134,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 40126,
-        "pushedAt": "2026-09-21T23:20:47Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -5606,15 +5273,6 @@
         "pushedAt": "2026-09-22T14:44:11Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 40328,
-        "pushedAt": "2026-09-23T01:58:28Z",
-        "c20": 5,
-        "c100": 2
       },
       {
         "key": "jean",
@@ -5758,15 +5416,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 40505,
-        "pushedAt": "2026-09-24T01:47:48Z",
-        "c20": 5,
-        "c100": 2
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -5906,15 +5555,6 @@
         "pushedAt": "2026-09-25T08:26:41Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 40676,
-        "pushedAt": "2026-09-24T20:12:04Z",
-        "c20": 5,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -6058,15 +5698,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 40811,
-        "pushedAt": "2026-09-26T00:13:21Z",
-        "c20": 5,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -6206,15 +5837,6 @@
         "pushedAt": "2026-09-27T09:29:15Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 40940,
-        "pushedAt": "2026-09-27T00:26:23Z",
-        "c20": 5,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -6358,15 +5980,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 41136,
-        "pushedAt": "2026-09-28T10:54:07Z",
-        "c20": 5,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -6506,15 +6119,6 @@
         "pushedAt": "2026-09-29T03:00:49Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 41354,
-        "pushedAt": "2026-09-29T00:47:13Z",
-        "c20": 5,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -6658,15 +6262,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 41570,
-        "pushedAt": "2026-09-30T01:08:31Z",
-        "c20": 5,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -6806,15 +6401,6 @@
         "pushedAt": "2026-10-01T10:22:55Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 41741,
-        "pushedAt": "2026-10-01T09:35:59Z",
-        "c20": 5,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -6958,15 +6544,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 41899,
-        "pushedAt": "2026-10-02T04:14:38Z",
-        "c20": 5,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -7106,15 +6683,6 @@
         "pushedAt": "2026-10-02T12:40:48Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 42027,
-        "pushedAt": "2026-10-02T23:21:24Z",
-        "c20": 5,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -7258,15 +6826,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 42143,
-        "pushedAt": "2026-10-02T23:21:24Z",
-        "c20": 5,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -7406,15 +6965,6 @@
         "pushedAt": "2026-10-02T12:40:48Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 42387,
-        "pushedAt": "2026-10-05T10:52:34Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -7558,15 +7108,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 42577,
-        "pushedAt": "2026-10-05T21:46:23Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -7706,15 +7247,6 @@
         "pushedAt": "2026-10-07T09:04:40Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 42734,
-        "pushedAt": "2026-10-07T01:53:30Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -7858,15 +7390,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 42892,
-        "pushedAt": "2026-10-07T23:30:50Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -8006,15 +7529,6 @@
         "pushedAt": "2026-10-09T10:37:47Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 43053,
-        "pushedAt": "2026-10-08T20:13:57Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -8158,15 +7672,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 43171,
-        "pushedAt": "2026-10-08T20:13:57Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -8306,15 +7811,6 @@
         "pushedAt": "2026-10-10T17:20:47Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 43326,
-        "pushedAt": "2026-10-11T02:20:37Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -8458,15 +7954,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 43522,
-        "pushedAt": "2026-10-12T11:37:20Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -8606,15 +8093,6 @@
         "pushedAt": "2026-10-10T17:20:47Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 43737,
-        "pushedAt": "2026-10-13T01:26:23Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -8758,15 +8236,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 43915,
-        "pushedAt": "2026-10-14T00:40:37Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -8906,15 +8375,6 @@
         "pushedAt": "2026-10-14T15:21:36Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 44114,
-        "pushedAt": "2026-10-14T17:18:26Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -9058,15 +8518,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 44285,
-        "pushedAt": "2026-10-15T23:05:24Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -9206,15 +8657,6 @@
         "pushedAt": "2026-10-14T15:21:36Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 44431,
-        "pushedAt": "2026-10-15T23:05:24Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -9358,15 +8800,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 44566,
-        "pushedAt": "2026-10-15T23:05:24Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -9506,15 +8939,6 @@
         "pushedAt": "2026-10-17T11:55:57Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 44729,
-        "pushedAt": "2026-10-18T18:57:09Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -9658,15 +9082,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 44891,
-        "pushedAt": "2026-10-18T18:57:09Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -9806,15 +9221,6 @@
         "pushedAt": "2026-10-20T03:13:21Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 45096,
-        "pushedAt": "2026-10-18T18:57:09Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -9958,15 +9364,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 45284,
-        "pushedAt": "2026-10-21T21:43:09Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -10106,15 +9503,6 @@
         "pushedAt": "2026-10-23T08:09:29Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 45463,
-        "pushedAt": "2026-10-22T21:39:01Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -10258,15 +9646,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 45602,
-        "pushedAt": "2026-10-23T21:54:15Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -10408,15 +9787,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 45746,
-        "pushedAt": "2026-10-23T21:54:15Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -10556,15 +9926,6 @@
         "pushedAt": "2026-10-23T17:04:52Z",
         "c20": 16,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 45916,
-        "pushedAt": "2026-10-23T21:54:15Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -10724,15 +10085,6 @@
         "pushedAt": "2026-10-27T07:36:22Z",
         "c20": 7,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 46097,
-        "pushedAt": "2026-10-26T22:18:12Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "jean",
@@ -10912,15 +10264,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 46271,
-        "pushedAt": "2026-10-28T01:52:52Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -11098,15 +10441,6 @@
         "c100": 5
       },
       {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 46478,
-        "pushedAt": "2026-10-28T19:45:39Z",
-        "c20": 6,
-        "c100": 3
-      },
-      {
         "key": "jean",
         "name": "Jean",
         "github": "https://github.com/coollabsio/jean",
@@ -11282,15 +10616,6 @@
         "pushedAt": "2026-10-30T19:50:53Z",
         "c20": 7,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 46904,
-        "pushedAt": "2026-10-29T12:57:41Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "herdr-app",
@@ -11486,15 +10811,6 @@
         "pushedAt": "2026-10-31T06:48:00Z",
         "c20": 7,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 47019,
-        "pushedAt": "2026-10-29T12:57:41Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "herdr-app",
@@ -11699,15 +11015,6 @@
         "pushedAt": "2026-11-01T10:31:47Z",
         "c20": 7,
         "c100": 5
-      },
-      {
-        "key": "herder",
-        "name": "Herder (herdr)",
-        "github": "https://github.com/herdrdev/herdr",
-        "stars": 47222,
-        "pushedAt": "2026-11-01T09:25:31Z",
-        "c20": 6,
-        "c100": 3
       },
       {
         "key": "herdr-app",

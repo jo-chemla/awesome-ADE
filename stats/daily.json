@@ -75,15 +75,6 @@
       "c100": 5
     },
     {
-      "key": "herder",
-      "name": "Herder (herdr)",
-      "github": "https://github.com/herdrdev/herdr",
-      "stars": 47222,
-      "pushedAt": "2026-11-01T09:25:31Z",
-      "c20": 6,
-      "c100": 3
-    },
-    {
       "key": "herdr-app",
       "name": "Herdr app",
       "github": "https://github.com/herdrdev/herdr-app",
@@ -175,8 +166,8 @@
     },
     {
       "key": "superset",
-      "name": "Superset",
-      "github": "https://github.com/superset-sh/superset",
+      "name": "Paradev (formerly Superset)",
+      "github": "https://github.com/ParadevAI/Paradev",
       "stars": 15808,
       "pushedAt": "2026-11-01T10:16:18Z",
       "c20": 8,
