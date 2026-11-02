@@ -17,6 +17,9 @@ isolation: "Local checkout or isolated managed git worktree per thread"
 locality: "Local-first desktop app; optional server + web mode"
 remote: "Server/web mode; External MCP lets other local clients (Codex, Claude Code) create Synara tasks"
 mobileCtl: "No"
+androidThreads:
+  "Native mobile app for iOS and Android": "https://github.com/Emanuele-web04/synara/issues/265"
+  "RFC PR, private local-first Mobile Companion": "https://github.com/Emanuele-web04/synara/pull/382"
 ---
 
 Synara is a local-first desktop workspace that wraps the coding-agent CLIs you already have installed. Each project holds threads; each thread pairs an agent session with workspace surfaces (diffs, terminal, browser with WebMCP, files/editor, git/PRs). Managed worktrees isolate parallel threads, handoffs move a thread to a different provider, and automations schedule recurring agent runs.

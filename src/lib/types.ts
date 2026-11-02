@@ -24,6 +24,9 @@ export interface ToolFrontmatter {
   locality: string
   remote: string
   mobileCtl: string
+  // Issue or PR title -> URL, for threads about an Android companion app: one
+  // that talks to the server or desktop where the agents run.
+  androidThreads?: Record<string, string>
   // Only used for repos GitHub can't track (no public repo) — ignored once
   // a live fetch succeeds.
   updatedLabel?: string

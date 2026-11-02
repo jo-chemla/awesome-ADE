@@ -108,6 +108,8 @@ isolation: "One line on its worktree/sandbox model"
 locality: "One line: local, cloud, or both"
 remote: "One line on remote/SSH support"
 mobileCtl: "One line on mobile app support, or "No""
+androidThreads: # optional, issues or PRs about an Android companion app
+  "Issue or PR title": "https://github.com/org/repo/issues/1"
 ---
 
 Optional free-form note shown in the row's detail panel.

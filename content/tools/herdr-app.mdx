@@ -17,6 +17,8 @@ isolation: "Not git-worktree-based; terminals live in herdr-core and survive clo
 locality: "Local app driving a local herdr-core, plus remote cores on SSH machines"
 remote: "Add SSH machines; their spaces run terminals remotely and keep going when your laptop sleeps; any terminal is addressable (vps/t7) from another app, script or machine"
 mobileCtl: "No"
+androidThreads:
+  "Any plans for mobile access to Herdr App?": "https://github.com/herdrdev/herdr-app/issues/306"
 ---
 
 Desktop GUI from the herdr team, built on the new herdr-core runtime (`hc`) rather than the herdr TUI engine. Its pitch is that you don't wait for a feature, you ask your agent to add it: every part of the window is a file, and layouts and JavaScript mods draw the panels, menus and dialogs. herdr-core lets agents start other agents, send them work and hear back, with status reported through the OSC 7501 Program Status Protocol.

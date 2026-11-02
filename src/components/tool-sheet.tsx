@@ -163,6 +163,26 @@ export function ToolSheet({ tools, selectedKey, onSelect }: ToolSheetProps) {
                 ))}
               </section>
 
+              {tool.androidThreads && (
+                <section className="space-y-1">
+                  <SectionTitle>Android companion threads</SectionTitle>
+                  <ul className="space-y-1">
+                    {Object.entries(tool.androidThreads).map(([title, url]) => (
+                      <li key={url}>
+                        <a
+                          className="text-blue-600 hover:underline dark:text-blue-400"
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {title} <ExternalLink className="inline size-3 align-baseline" />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
               <Separator />
 
               <section className="space-y-2">

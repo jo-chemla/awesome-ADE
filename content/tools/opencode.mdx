@@ -17,6 +17,9 @@ isolation: "Desktop app can start a new session in the main checkout, an existin
 locality: "Local, with a headless server mode"
 remote: "opencode serve / opencode web expose the server over the network (hostname, mDNS discovery, basic auth); attach a TUI to a remote server"
 mobileCtl: "No official native app; the web UI can be reached from a phone browser. Unaffiliated community clients exist, e.g. dzianisv/opencode-mobile on Android"
+androidThreads:
+  "Remote control of desktop sessions from a phone or the web": "https://github.com/anomalyco/opencode/issues/58368"
+  "First-class mobile shell for the web app": "https://github.com/anomalyco/opencode/issues/59069"
 ---
 
 OpenCode is the open-source coding agent itself (not a wrapper around other CLIs), with a TUI, IDE extensions, a web UI and a desktop app. It works with 75+ model providers, and as of 2026-10-29 again supports Claude subscriptions, with the OpenCode team stating it has Anthropic's permission ([PR #58782](https://github.com/anomalyco/opencode/pull/58782)).
