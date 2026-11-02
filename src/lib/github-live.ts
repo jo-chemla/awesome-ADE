@@ -50,9 +50,9 @@ export async function fetchLiveStats(github: string | null): Promise<LiveStats |
       fetch(`https://api.github.com/repos/${repoPath}`),
       fetch(`https://api.github.com/repos/${repoPath}/contributors?per_page=100&anon=true`),
     ])
-    if (!repoRes.ok) return null
+    if (!repoRes.ok || !contribRes.ok) return null
     const repo = await repoRes.json()
-    const contributors = contribRes.ok ? await contribRes.json() : []
+    const contributors = await contribRes.json()
     const contributions: number[] = Array.isArray(contributors)
       ? contributors.map((c: { contributions?: number }) => c.contributions ?? 0)
       : []
@@ -66,8 +66,7 @@ export async function fetchLiveStats(github: string | null): Promise<LiveStats |
     writeCache(repoPath, data)
     return data
   } catch {
-    // Offline, CORS-blocked, or rate-limited — the row just falls back to
-    // "—" rather than breaking the page.
+    // Offline or CORS-blocked — the row falls back to the daily snapshot.
     return null
   }
 }

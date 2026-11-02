@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
 
+import dailyStats from "../stats/daily.json"
 import { DataTable } from "@/components/data-table"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { columns } from "@/components/columns"
@@ -11,6 +12,10 @@ import type { Tool } from "@/lib/types"
 // Left unset, the "contribute" link is just hidden rather than pointing
 // somewhere wrong.
 const REPO_URL = import.meta.env.VITE_REPO_URL as string | undefined
+
+// What a row shows until its live stats load, or when GitHub's 60 requests an
+// hour per IP run out: a single visit with an empty cache spends 44 of them.
+const SNAPSHOT = new Map<string, LiveStats>(dailyStats.tools.map((row) => [row.key, row]))
 
 export default function App() {
   // Keyed by tool key, undefined = still loading, null = fetch failed/no repo.
@@ -31,7 +36,7 @@ export default function App() {
   const data: Tool[] = useMemo(
     () =>
       STATIC_TOOLS.map((tool) => {
-        const stats = live[tool.key]
+        const stats = live[tool.key] ?? SNAPSHOT.get(tool.key)
         const loaded = tool.key in live
         return {
           ...tool,
