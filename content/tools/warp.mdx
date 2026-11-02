@@ -1,10 +1,10 @@
 ---
 key: warp
-name: "Warp 2.0"
+name: "Warp"
 category: "Terminal + cloud IDE"
 website: "https://www.warp.dev"
 github: "https://github.com/warpdotdev/warp"
-license: "AGPL-3.0 (core open-sourced Aug 2025)"
+license: "AGPL-3.0 (UI crates MIT; client open-sourced Apr 2026)"
 platform:
   windows: full
   linux: full
@@ -12,10 +12,12 @@ platform:
   android: none
   ios: none
 parallel: "Native multi-agent + \"Oz\" cloud orchestration for hundreds in parallel"
-isolation: "Oz: Docker-based sandbox isolation (not literal git worktrees)"
+isolation: "Git worktree per agent, detected automatically with a Code Review panel each; Oz cloud runs use Docker sandboxes"
 locality: "Both — local terminal + Oz cloud orchestration platform"
 remote: "SSH extension brings full local experience (incl. agent, MCP) to remote hosts"
 mobileCtl: "No"
 ---
 
-No additional notes yet — open a PR to add one.
+An agentic development environment grown out of a terminal. Use its built-in agent, paid with Warp credits or your own API key (a Claude subscription can't power it), or run CLI agents such as Claude Code, Codex or OpenCode in its panes. Those CLI sessions don't appear in Warp's agent panels.
+
+Its star count isn't directly comparable with the rest of this list. The repo dates from 2021 but its code only went public on 2026-04-28: about 26k stars came before that, and about 26k more in that one week.

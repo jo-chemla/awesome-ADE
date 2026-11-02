@@ -23,7 +23,7 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | ---: | --- | ---: | ---: | ---: | --- |
 | 1 | [OpenCode](https://github.com/anomalyco/opencode) | 223,986 | 39 | 23 | today |
 | 2 | [Orca](https://github.com/stablyai/orca) | 113,153 | 14 | 8 | today |
-| 3 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,828 | 26 | 5 | 2d ago |
+| 3 | [Warp](https://github.com/warpdotdev/warp) | 65,828 | 26 | 5 | 2d ago |
 | 4 | [t3 code](https://github.com/pingdotgg/t3code) | 39,873 | 31 | 10 | today |
 | 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,990 | 24 | 10 | 10d ago |
 | 6 | [Happy](https://github.com/slopus/happy) | 24,447 | 7 | 5 | today |
@@ -74,7 +74,7 @@ The feature matrix is static and maintained through the individual files in [`co
 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | CLI orchestrator | L β · M ✓ · A β · I ✓ | Designed for 10-100+ simultaneous agents | Isolated git worktree per agent/task | Both — local + 'Remote Workspaces' via a relay proxy | iPhone and iPad app on the App Store (Pro plan); Android app in beta (per user), with official Android support still in a draft PR |
 | [Synara](https://github.com/Emanuele-web04/synara) | Agent workspace | W ✓ · L ✓ · M ✓ | Parallel threads per project across Codex, Claude Code, Cursor, Antigravity, Grok Build, Factory Droid, OpenCode, Pi and Devin; handoff of a thread to another provider with context | Local checkout or isolated managed git worktree per thread | Local-first desktop app; optional server + web mode | No |
 | [t3 code](https://github.com/pingdotgg/t3code) | CLI orchestrator | W ✓ · L ✓ · M ✓ · A ✓ · I ✓ | Multi-agent orchestration (Agent + Workflow tools), no fixed cap stated | Git worktree isolation | Local execution, remote control-plane | Native iOS + Android |
-| [Warp 2.0](https://github.com/warpdotdev/warp) | Terminal + cloud IDE | W ✓ · L ✓ · M ✓ | Native multi-agent + "Oz" cloud orchestration for hundreds in parallel | Oz: Docker-based sandbox isolation (not literal git worktrees) | Both — local terminal + Oz cloud orchestration platform | No |
+| [Warp](https://github.com/warpdotdev/warp) | Terminal + cloud IDE | W ✓ · L ✓ · M ✓ | Native multi-agent + "Oz" cloud orchestration for hundreds in parallel | Git worktree per agent, detected automatically with a Code Review panel each; Oz cloud runs use Docker sandboxes | Both — local terminal + Oz cloud orchestration platform | No |
 | [Xum (formerly Mux)](https://github.com/coder/xum) | Agent multiplexer | W ✓ · L ✓ · M ✓ | Multiple AI coding agents in parallel, with multi-model support | Local directories, git worktrees, or remote SSH workspaces | Both — local execution and remote compute over SSH | Responsive browser UI in server mode |
 
 </details>
