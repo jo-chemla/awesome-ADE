@@ -78,4 +78,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Tailwind v4 leaves buttons on the default cursor. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [role="slider"] {
+    @apply cursor-pointer;
+  }
 }
