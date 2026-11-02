@@ -23,14 +23,16 @@ interface DataTablePaginationProps {
 
 export function DataTablePagination({ table }: DataTablePaginationProps) {
   return (
-    <div className="flex items-center justify-between px-2 py-3">
-      <div className="text-muted-foreground flex-1 text-sm">
+    <div className="flex flex-wrap items-center justify-between gap-y-2 px-2 py-3">
+      <div className="text-muted-foreground w-full text-sm sm:w-auto sm:flex-1">
         {table.getFilteredRowModel().rows.length} of{" "}
         {table.getCoreRowModel().rows.length} tool(s) shown.
       </div>
-      <div className="flex items-center gap-6 lg:gap-8">
+      <div className="flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 sm:w-auto sm:justify-start sm:gap-x-6 lg:gap-x-8">
         <div className="flex items-center gap-2">
-          <p className="text-sm font-medium">Rows per page</p>
+          <p className="text-sm font-medium">
+            Rows<span className="hidden sm:inline"> per page</span>
+          </p>
           <Select
             value={`${table.state.pagination.pageSize}`}
             onValueChange={(value) => {
@@ -49,7 +51,7 @@ export function DataTablePagination({ table }: DataTablePaginationProps) {
             </SelectContent>
           </Select>
         </div>
-        <div className="flex w-[100px] items-center justify-center text-sm font-medium">
+        <div className="flex items-center justify-center text-sm font-medium whitespace-nowrap sm:w-[100px]">
           Page {table.state.pagination.pageIndex + 1} of{" "}
           {table.getPageCount() || 1}
         </div>

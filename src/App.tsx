@@ -6,10 +6,9 @@ import { columns } from "@/components/columns"
 import { STATIC_TOOLS } from "@/lib/load-tools"
 import type { Tool } from "@/lib/types"
 
-// Set once you've pushed this to your own GitHub repo — see .env.example.
-// Left unset, the "contribute" link is just hidden rather than pointing
-// somewhere wrong.
-const REPO_URL = import.meta.env.VITE_REPO_URL as string | undefined
+// A fork can point the links at its own repo — see .env.example.
+const REPO_URL =
+  (import.meta.env.VITE_REPO_URL as string | undefined) ?? "https://github.com/jo-chemla/awesome-ADE"
 
 function formatUpdatedLabel(pushedAt: string): string {
   if (!pushedAt) return "—"
@@ -48,7 +47,7 @@ export default function App() {
             Agentic Dev Environments — feature &amp; activity comparison
           </h1>
           <div className="flex shrink-0 items-center gap-1">
-            <GitHubLink href={REPO_URL ?? "https://github.com/jo-chemla/awesome-ADE"} />
+            <GitHubLink href={REPO_URL} />
             <ThemeToggle />
           </div>
         </div>
@@ -59,19 +58,15 @@ export default function App() {
           accounts included since they reflect real commit history). Feature
           and platform columns come from each project's own docs/site,
           committed as data in this repo.
-          {REPO_URL && (
-            <>
-              {" "}
-              <a
-                className="text-blue-600 hover:underline dark:text-blue-400"
-                href={`${REPO_URL}/tree/main/content/tools`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contribute or correct an entry →
-              </a>
-            </>
-          )}
+          {" "}
+          <a
+            className="text-blue-600 hover:underline dark:text-blue-400"
+            href={`${REPO_URL}/tree/main/content/tools`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contribute or correct an entry →
+          </a>
         </p>
       </div>
 
