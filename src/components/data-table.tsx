@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/table"
 import { DataTablePagination } from "@/components/data-table-pagination"
 import { DataTableToolbar } from "@/components/data-table-toolbar"
+import { StarHistoryChart } from "@/components/star-history-chart"
 import { ToolSheet } from "@/components/tool-sheet"
 import { FILTER_ONLY_COLUMNS, FOLD_CONFIG } from "@/components/columns"
 import { toolTableFeatures, type ToolTableFeatures } from "@/lib/table-features"
@@ -99,6 +100,8 @@ export function DataTable({ columns, data }: DataTableProps) {
   const sortedRows = table.getSortedRowModel().rows
   const visibleTools = useMemo(() => sortedRows.map((row) => row.original), [sortedRows])
   const onSelect = useCallback((key: string | null) => setSelectedKey(key), [])
+  const filteredRows = table.getFilteredRowModel().rows
+  const filteredTools = useMemo(() => filteredRows.map((row) => row.original), [filteredRows])
 
   return (
     <div className="space-y-2">
@@ -183,6 +186,7 @@ export function DataTable({ columns, data }: DataTableProps) {
         </Table>
       </div>
       <DataTablePagination table={table} />
+      <StarHistoryChart tools={filteredTools} />
       <ToolSheet tools={visibleTools} selectedKey={selectedKey} onSelect={onSelect} />
     </div>
   )

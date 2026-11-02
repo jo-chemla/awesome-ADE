@@ -18,6 +18,7 @@ TOOLS_DIR = ROOT / "content" / "tools"
 STATS_DIR = ROOT / "stats"
 DAILY_PATH = STATS_DIR / "daily.json"
 HISTORY_PATH = STATS_DIR / "stats-history.json"
+STAR_HISTORY_PATH = STATS_DIR / "star-history.json"
 README_PATH = ROOT / "README.md"
 
 START = "<!-- DAILY_TABLE:START -->"
@@ -108,6 +109,93 @@ def fetch_stats(repo: str, token: str | None) -> dict[str, object]:
         "c20": sum(n >= 20 for n in contributions),
         "c100": sum(n >= 100 for n in contributions),
     }
+
+
+def fetch_star_days(repo: str, token: str | None) -> dict[dt.date, int]:
+    """Stars gained per day, over the repo's whole life."""
+    days: dict[dt.date, int] = {}
+    # The endpoint serves 30 weeks a page, newest first, and stops at page 100.
+    for page in range(1, 101):
+        weeks = github_get(
+            f"https://api.github.com/repos/{repo}/stargazers/history?per_page=30&page={page}",
+            token,
+        )
+        for week in weeks:
+            start = dt.datetime.fromtimestamp(week["week"], dt.timezone.utc).date()
+            for offset, stars in enumerate(week["days"]):
+                days[start + dt.timedelta(days=offset)] = stars
+        if len(weeks) < 30:
+            break
+    return days
+
+
+def update_star_history(tools: list[dict[str, object]], token: str | None, today: dt.date) -> None:
+    """Write each tool's cumulative stars per week, for the site's chart."""
+    previous = {"weeks": [], "tools": {}}
+    if STAR_HISTORY_PATH.exists():
+        previous = json.loads(STAR_HISTORY_PATH.read_text(encoding="utf-8"))
+
+    days_by_key: dict[str, dict[dt.date, int]] = {}
+    failed: list[str] = []
+    for tool in tools:
+        key = str(tool.get("key", ""))
+        repo = repo_path(tool.get("github"))
+        if not repo:
+            continue
+        try:
+            days_by_key[key] = fetch_star_days(repo, token)
+        except Exception as exc:
+            print(f"warning: star history for {key}: {exc}", file=sys.stderr)
+            failed.append(key)
+    if not days_by_key:
+        return
+
+    first_day = min(day for days in days_by_key.values() for day in days)
+    sundays = first_day - dt.timedelta(days=(first_day.weekday() + 1) % 7)
+    samples: list[dt.date] = []
+    while sundays < today:
+        samples.append(sundays)
+        sundays += dt.timedelta(days=7)
+    samples.append(today)
+
+    series: dict[str, list[int]] = {}
+    for key, days in days_by_key.items():
+        ordered = sorted(days.items())
+        total = index = 0
+        values = []
+        for sample in samples:
+            while index < len(ordered) and ordered[index][0] <= sample:
+                total += ordered[index][1]
+                index += 1
+            values.append(total)
+        series[key] = values
+
+    # Start once a second tool has traction, or one old repo stretches the axis
+    # across years where it is the only line.
+    start = next(
+        i for i in range(len(samples))
+        if sum(values[i] >= 100 for values in series.values()) >= 2 or i == len(samples) - 1
+    )
+    weeks = [sample.isoformat() for sample in samples[start:]]
+    tools_out = {key: values[start:] for key, values in sorted(series.items())}
+
+    # A tool whose fetch failed keeps its last known values, aligned on date.
+    old_weeks = previous.get("weeks", [])
+    for key in failed:
+        old = dict(zip(old_weeks, previous.get("tools", {}).get(key, [])))
+        if old:
+            known = 0
+            values = []
+            for week in weeks:
+                known = old.get(week, known)
+                values.append(known)
+            tools_out[key] = values
+
+    lines = ",\n".join(f"    {json.dumps(key)}: {json.dumps(values)}" for key, values in tools_out.items())
+    STAR_HISTORY_PATH.write_text(
+        f'{{\n  "weeks": {json.dumps(weeks)},\n  "tools": {{\n{lines}\n  }}\n}}\n',
+        encoding="utf-8",
+    )
 
 
 def load_tools() -> list[dict[str, object]]:
@@ -214,6 +302,7 @@ def main() -> int:
     history.sort(key=lambda entry: entry.get("date", ""))
     HISTORY_PATH.write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     update_readme(make_table(rows, today))
+    update_star_history(tools, token, dt.date.fromisoformat(today))
     return 0
 
 
