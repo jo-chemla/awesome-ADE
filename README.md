@@ -21,24 +21,24 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
-| 1 | [OpenCode](https://github.com/anomalyco/opencode) | 223,981 | 39 | 23 | today |
-| 2 | [Orca](https://github.com/stablyai/orca) | 113,127 | 14 | 8 | today |
-| 3 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,829 | 26 | 5 | 2d ago |
-| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 39,717 | 31 | 10 | today |
-| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,991 | 24 | 10 | 10d ago |
+| 1 | [OpenCode](https://github.com/anomalyco/opencode) | 223,986 | 39 | 23 | today |
+| 2 | [Orca](https://github.com/stablyai/orca) | 113,153 | 14 | 8 | today |
+| 3 | [Warp 2.0](https://github.com/warpdotdev/warp) | 65,828 | 26 | 5 | 2d ago |
+| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 39,873 | 31 | 10 | today |
+| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 33,990 | 24 | 10 | 10d ago |
 | 6 | [Happy](https://github.com/slopus/happy) | 24,447 | 7 | 5 | today |
-| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,792 | 5 | 3 | today |
-| 8 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | 15,835 | 8 | 4 | today |
-| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,391 | 2 | 2 | 2d ago |
+| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,796 | 5 | 3 | today |
+| 8 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | 15,838 | 8 | 4 | today |
+| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,392 | 2 | 2 | 2d ago |
 | 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 14,010 | 31 | 12 | today |
-| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,456 | 19 | 4 | today |
+| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,458 | 19 | 4 | today |
 | 12 | [Emdash](https://github.com/generalaction/emdash) | 6,145 | 16 | 5 | today |
-| 13 | [bb](https://github.com/get-bb/bb) | 4,814 | 8 | 5 | today |
+| 13 | [bb](https://github.com/get-bb/bb) | 4,815 | 8 | 5 | today |
 | 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 3,510 | 3 | 1 | today |
 | 15 | [Synara](https://github.com/Emanuele-web04/synara) | 2,161 | 15 | 7 | yesterday |
-| 16 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,096 | 7 | 1 | today |
+| 16 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,098 | 7 | 1 | today |
 | 17 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,062 | 10 | 5 | today |
-| 18 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,519 | 1 | 1 | today |
+| 18 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,531 | 1 | 1 | today |
 | 19 | [Jean](https://github.com/coollabsio/jean) | 1,387 | 3 | 1 | today |
 | 20 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,375 | 3 | 1 | 5d ago |
 | 21 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 2026-10-01 |
