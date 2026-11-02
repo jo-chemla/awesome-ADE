@@ -201,8 +201,8 @@ export const columns: ToolColumnDef[] = [
             </span>
           )
         },
-        // [min, max]; a row whose stars haven't loaded can't be placed in a
-        // range, so it drops out while the filter is active.
+        // [min, max]; a row without stars can't be placed in a range, so it
+        // drops out while the filter is active.
         filterFn: (row, columnId, [min, max]: [number, number]) => {
           const stars = row.getValue(columnId) as number | null
           return stars != null && stars >= min && stars <= max
@@ -303,7 +303,7 @@ export const columns: ToolColumnDef[] = [
   {
     id: "pushed",
     accessorFn: (row) => row.pushedAt,
-    // Filter value is a day count; tools without live push data drop out.
+    // Filter value is a day count; tools without push data drop out.
     filterFn: (row, columnId, days: number) =>
       pushedWithinDays(row.getValue(columnId) as string | null, days),
     enableSorting: false,

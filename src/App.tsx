@@ -1,11 +1,8 @@
-import { useEffect, useMemo, useState } from "react"
-
 import dailyStats from "../stats/daily.json"
 import { DataTable } from "@/components/data-table"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { columns } from "@/components/columns"
 import { STATIC_TOOLS } from "@/lib/load-tools"
-import { fetchLiveStats, formatUpdatedLabel, type LiveStats } from "@/lib/github-live"
 import type { Tool } from "@/lib/types"
 
 // Set once you've pushed this to your own GitHub repo — see .env.example.
@@ -13,50 +10,35 @@ import type { Tool } from "@/lib/types"
 // somewhere wrong.
 const REPO_URL = import.meta.env.VITE_REPO_URL as string | undefined
 
-// What a row shows until its live stats load, or when GitHub's 60 requests an
-// hour per IP run out: a single visit with an empty cache spends 44 of them.
-const SNAPSHOT = new Map<string, LiveStats>(dailyStats.tools.map((row) => [row.key, row]))
+function formatUpdatedLabel(pushedAt: string): string {
+  if (!pushedAt) return "—"
+  const days = Math.floor((Date.now() - new Date(pushedAt).getTime()) / 86_400_000)
+  if (days <= 0) return "today"
+  if (days === 1) return "yesterday"
+  if (days < 30) return `${days}d ago`
+  return new Date(pushedAt).toISOString().slice(0, 10)
+}
+
+const statsByKey = new Map(dailyStats.tools.map((row) => [row.key, row]))
+
+const data: Tool[] = STATIC_TOOLS.map((tool) => {
+  const stats = statsByKey.get(tool.key)
+  return {
+    ...tool,
+    pf: tool.platform,
+    stars: stats?.stars ?? null,
+    c20: stats?.c20 ?? null,
+    c100: stats?.c100 ?? null,
+    pushedAt: stats?.pushedAt || null,
+    updatedLabel: stats
+      ? formatUpdatedLabel(stats.pushedAt)
+      : tool.github
+        ? "—" // Added since the last daily run.
+        : (tool.updatedLabel ?? "no public repo"),
+  }
+})
 
 export default function App() {
-  // Keyed by tool key, undefined = still loading, null = fetch failed/no repo.
-  const [live, setLive] = useState<Record<string, LiveStats | null>>({})
-
-  useEffect(() => {
-    let cancelled = false
-    STATIC_TOOLS.forEach((tool) => {
-      fetchLiveStats(tool.github).then((stats) => {
-        if (!cancelled) setLive((prev) => ({ ...prev, [tool.key]: stats }))
-      })
-    })
-    return () => {
-      cancelled = true
-    }
-  }, [])
-
-  const data: Tool[] = useMemo(
-    () =>
-      STATIC_TOOLS.map((tool) => {
-        const stats = live[tool.key] ?? SNAPSHOT.get(tool.key)
-        const loaded = tool.key in live
-        return {
-          ...tool,
-          pf: tool.platform,
-          stars: stats?.stars ?? null,
-          c20: stats?.c20 ?? null,
-          c100: stats?.c100 ?? null,
-          pushedAt: stats?.pushedAt || null,
-          updatedLabel: stats
-            ? formatUpdatedLabel(stats.pushedAt)
-            : tool.github
-              ? loaded
-                ? "—" // fetch resolved to null: offline, rate-limited, or no repo
-                : "loading…"
-              : (tool.updatedLabel ?? "no public repo"),
-        }
-      }),
-    [live],
-  )
-
   return (
     <div className="mx-auto max-w-[1400px] space-y-4 p-6">
       <div>
@@ -67,8 +49,8 @@ export default function App() {
           <ThemeToggle />
         </div>
         <p className="mt-1 max-w-[75ch] text-sm text-muted-foreground">
-          Stars and contributor counts are fetched live from the GitHub API in
-          your browser on every page load (contributor count = lifetime
+          Stars and contributor counts are refreshed daily from the GitHub API
+          (contributor count = lifetime
           commits &ge;20, with &ge;100 shown as a secondary tag, bot/automation
           accounts included since they reflect real commit history). Feature
           and platform columns come from each project's own docs/site,

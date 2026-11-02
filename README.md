@@ -130,4 +130,4 @@ pnpm dev
 2. In **Settings → Pages**, set **Source** to "GitHub Actions".
 3. Push to `main` — [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml) builds the Vite app and deploys `dist/` to GitHub Pages automatically.
 
-The daily GitHub Action uses the repository's `GITHUB_TOKEN`; visitor-side live API fetching on the site remains separate from the historical leaderboard.
+The daily GitHub Action uses the repository's `GITHUB_TOKEN`, commits the stats, and starts a deploy, so the site makes no GitHub API calls from visitors' browsers.

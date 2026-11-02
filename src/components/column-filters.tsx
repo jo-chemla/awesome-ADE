@@ -132,7 +132,7 @@ export function PushedFilter({ table, variant }: FilterProps) {
       options={PUSHED_OPTIONS}
       counts={counts}
       single={PUSHED_SINGLE}
-      hint="Based on live GitHub data."
+      hint="Based on daily GitHub data."
       variant={variant}
     />
   )

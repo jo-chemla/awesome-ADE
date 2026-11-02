@@ -27,20 +27,20 @@ export interface ToolFrontmatter {
   // Issue or PR title -> URL, for threads about an Android companion app: one
   // that talks to the server or desktop where the agents run.
   androidThreads?: Record<string, string>
-  // Only used for repos GitHub can't track (no public repo) — ignored once
-  // a live fetch succeeds.
+  // Only used for repos GitHub can't track (no public repo) — ignored when the
+  // daily stats have the tool.
   updatedLabel?: string
 }
 
-// The frontmatter shape, plus the GitHub stats fetched client-side at
-// runtime — this is what actually reaches the table.
+// The frontmatter shape, plus the GitHub stats from the daily job — this is
+// what actually reaches the table.
 export interface Tool extends Omit<ToolFrontmatter, "platform" | "updatedLabel"> {
   pf: ToolFrontmatter["platform"]
   stars: number | null
   c20: number | null
   c100: number | null
-  // ISO date of the repo's last push, from the live GitHub fetch; null while
-  // loading, on fetch failure, or for tools without a public repo.
+  // ISO date of the repo's last push, from the daily job; null when it has no
+  // stats for the tool, or for tools without a public repo.
   pushedAt: string | null
   updatedLabel: string
   Notes: ComponentType

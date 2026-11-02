@@ -97,7 +97,7 @@ export function DataTableStarsFilter({ column, variant = "toolbar" }: DataTableS
           ))}
         </div>
         <p className="text-[11px] text-muted-foreground">
-          Log scale. Tools whose stars haven't loaded are hidden while this is set.
+          Log scale. Tools without a star count are hidden while this is set.
         </p>
         {range && (
           <Button
