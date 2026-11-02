@@ -1,5 +1,6 @@
 import dailyStats from "../stats/daily.json"
 import { DataTable } from "@/components/data-table"
+import { GitHubLink } from "@/components/github-link"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { columns } from "@/components/columns"
 import { STATIC_TOOLS } from "@/lib/load-tools"
@@ -46,7 +47,10 @@ export default function App() {
           <h1 className="text-xl font-bold">
             Agentic Dev Environments — feature &amp; activity comparison
           </h1>
-          <ThemeToggle />
+          <div className="flex shrink-0 items-center gap-1">
+            <GitHubLink href={REPO_URL ?? "https://github.com/jo-chemla/awesome-ADE"} />
+            <ThemeToggle />
+          </div>
         </div>
         <p className="mt-1 max-w-[75ch] text-sm text-muted-foreground">
           Stars and contributor counts are refreshed daily from the GitHub API
