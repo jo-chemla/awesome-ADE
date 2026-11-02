@@ -234,7 +234,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
       </div>
       <div
         ref={containerRef}
-        className="relative"
+        className="relative cursor-default"
         onPointerMove={onPointerMove}
         onPointerLeave={() => setHoverIndex(null)}
       >
