@@ -4,7 +4,7 @@ A comparison of agentic development environments. The daily section is an **acti
 
 **[Live site →](https://jo-chemla.github.io/awesome-ADE/)**
 
-**Table implementation:** Adapted from the [shadcn/ui Data Table](https://ui.shadcn.com/docs/components/data-table), powered by [TanStack Table](https://tanstack.com/table) v9 and modified for this project as a fully client-side implementation. Filters cover category, platforms, a log-scale stars range, last push and license; clicking a row opens a detail panel. Filter and panel ideas follow [openstatus data-table-filters](https://data-table.openstatus.dev).
+**Table implementation:** Adapted from the [shadcn/ui Data Table](https://ui.shadcn.com/docs/components/data-table), powered by [TanStack Table](https://tanstack.com/table) v9 and modified for this project as a fully client-side implementation. Filters cover category, platforms, a log-scale stars range, last push and license; clicking a row opens a detail panel. Filter and panel ideas follow [openstatus data-table-filters](https://data-table.openstatus.dev). Filters and expanded column groups are kept in the URL with [nuqs](https://nuqs.dev), so any view can be shared, e.g. `?os=windows,android&minStars=15000&expand=platform`.
 
 Great resources:
 - [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators)

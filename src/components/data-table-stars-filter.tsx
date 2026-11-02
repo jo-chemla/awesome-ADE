@@ -8,7 +8,9 @@ import {
   STARS_LOG_MAX,
   STARS_LOG_MIN,
   formatStars,
-  starsFromLog,
+  formatStarsRange,
+  logFromStarsRange,
+  starsRangeFromLog,
 } from "@/lib/tool-filters"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -18,8 +20,6 @@ import { Slider } from "@/components/ui/slider"
 import { HeaderFilterButton } from "@/components/header-filter-button"
 
 const STEP = 0.05
-const MIN_STARS = starsFromLog(STARS_LOG_MIN)
-const MAX_STARS = starsFromLog(STARS_LOG_MAX)
 
 const FULL_RANGE = [STARS_LOG_MIN, STARS_LOG_MAX]
 
@@ -36,22 +36,24 @@ export function DataTableStarsFilter({ column, variant = "toolbar" }: DataTableS
   // The thumbs keep their exact log position locally. Deriving it back from
   // the rounded star counts would pull a thumb behind its last keyboard
   // step, so arrow keys could never move past the first step.
-  const [logValue, setLogValue] = useState(FULL_RANGE)
+  const [logValue, setLogValue] = useState(() => (range ? logFromStarsRange(range) : FULL_RANGE))
   // Follow changes made elsewhere: Reset, or the same filter opened from the
   // toolbar or the column header. Skip our own updates, which already match.
   const [lastRange, setLastRange] = useState(range)
   if (range !== lastRange) {
     setLastRange(range)
     if (!range) setLogValue(FULL_RANGE)
-    else if (range[0] !== starsFromLog(logValue[0]) || range[1] !== starsFromLog(logValue[1]))
-      setLogValue([Math.log10(range[0]), Math.log10(range[1])])
+    else {
+      const [min, max] = starsRangeFromLog(logValue)
+      if (range[0] !== min || range[1] !== max) setLogValue(logFromStarsRange(range))
+    }
   }
 
   function onValueChange(next: number[]) {
     const [lo, hi] = next
     setLogValue(next)
     const atEnds = lo <= STARS_LOG_MIN && hi >= STARS_LOG_MAX
-    column?.setFilterValue(atEnds ? undefined : [starsFromLog(lo), starsFromLog(hi)])
+    column?.setFilterValue(atEnds ? undefined : starsRangeFromLog(next))
   }
 
   return (
@@ -67,7 +69,7 @@ export function DataTableStarsFilter({ column, variant = "toolbar" }: DataTableS
             <>
               <Separator orientation="vertical" className="mx-1 h-4" />
               <Badge variant="secondary" className="rounded-sm px-1 font-normal">
-                {formatStars(range[0])} – {formatStars(range[1])}
+                {formatStarsRange(range)}
               </Badge>
             </>
           )}
@@ -78,7 +80,7 @@ export function DataTableStarsFilter({ column, variant = "toolbar" }: DataTableS
         <div className="flex items-center justify-between text-xs">
           <span className="font-medium">GitHub stars</span>
           <span className="font-mono text-muted-foreground tabular-nums">
-            {formatStars(range?.[0] ?? MIN_STARS)} – {formatStars(range?.[1] ?? MAX_STARS)}
+            {range ? formatStarsRange(range) : "Any"}
           </span>
         </div>
         <Slider

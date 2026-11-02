@@ -5,9 +5,11 @@ import {
   type ColumnFiltersState,
   type ColumnVisibilityState,
   type SortingState,
+  type Updater,
   flexRender,
   useTable,
 } from "@tanstack/react-table"
+import { useQueryStates } from "nuqs"
 
 import {
   Table,
@@ -22,15 +24,18 @@ import { DataTableToolbar } from "@/components/data-table-toolbar"
 import { ToolSheet } from "@/components/tool-sheet"
 import { FILTER_ONLY_COLUMNS, FOLD_CONFIG } from "@/components/columns"
 import { toolTableFeatures, type ToolTableFeatures } from "@/lib/table-features"
+import { filtersFromUrl, tableUrlParsers, urlFromFilters } from "@/lib/table-url-state"
 import type { Tool } from "@/lib/types"
 import { cn } from "@/lib/utils"
 
 // Groups start coalesced to their single most-telling column (★ Stars for
 // Activity, a compact per-OS dot row for Platform Support) — click a group
-// header's toggle to see every underlying column.
-const INITIAL_FOLDED: Record<string, boolean> = Object.fromEntries(
-  Object.keys(FOLD_CONFIG).map((id) => [id, true]),
-)
+// header's toggle to see every underlying column, or link to it with ?expand=.
+function foldedFromExpanded(expanded: string[] | null): Record<string, boolean> {
+  return Object.fromEntries(
+    Object.keys(FOLD_CONFIG).map((id) => [id, !expanded?.includes(id)]),
+  )
+}
 
 const HIDDEN_FILTER_COLUMNS: ColumnVisibilityState = Object.fromEntries(
   FILTER_ONLY_COLUMNS.map((id) => [id, false]),
@@ -55,16 +60,19 @@ export function DataTable({ columns, data }: DataTableProps) {
   const [sorting, setSorting] = useState<SortingState>([
     { id: "stars", desc: true },
   ])
-  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
-  const [foldedGroups, setFoldedGroups] = useState(INITIAL_FOLDED)
+  // Filters and fold state live in the URL, so any view can be shared as a link.
+  const [urlState, setUrlState] = useQueryStates(tableUrlParsers)
+  const columnFilters = useMemo(() => filtersFromUrl(urlState), [urlState])
+  const foldedGroups = useMemo(() => foldedFromExpanded(urlState.expand), [urlState.expand])
   const [columnVisibility, setColumnVisibility] = useState<ColumnVisibilityState>(() =>
-    visibilityFromFold(INITIAL_FOLDED),
+    visibilityFromFold(foldedFromExpanded(urlState.expand)),
   )
   const [selectedKey, setSelectedKey] = useState<string | null>(null)
 
   function toggleFold(groupId: string) {
     const next = { ...foldedGroups, [groupId]: !foldedGroups[groupId] }
-    setFoldedGroups(next)
+    const expanded = Object.keys(FOLD_CONFIG).filter((id) => !next[id])
+    setUrlState({ expand: expanded.length ? expanded : null })
     setColumnVisibility((prev) => ({ ...prev, ...visibilityFromFold(next) }))
   }
 
@@ -75,14 +83,15 @@ export function DataTable({ columns, data }: DataTableProps) {
     getRowId: (row) => row.key,
     state: { sorting, columnFilters, columnVisibility },
     onSortingChange: setSorting,
-    onColumnFiltersChange: setColumnFilters,
+    onColumnFiltersChange: (updater: Updater<ColumnFiltersState>) =>
+      setUrlState(urlFromFilters(typeof updater === "function" ? updater(columnFilters) : updater)),
     onColumnVisibilityChange: (updater) =>
       // Filter-only columns stay hidden whatever a header menu asks for.
       setColumnVisibility((prev) => ({
         ...(typeof updater === "function" ? updater(prev) : updater),
         ...HIDDEN_FILTER_COLUMNS,
       })),
-    initialState: { pagination: { pageIndex: 0, pageSize: 20 } },
+    initialState: { pagination: { pageIndex: 0, pageSize: 50 } },
   })
 
   // Every row that survives the filters, in sort order and across all pages,

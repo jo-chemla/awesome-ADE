@@ -52,6 +52,29 @@ export function starsFromLog(log: number) {
   return Math.round(raw / magnitude) * magnitude
 }
 
+// A filter range is open-ended at the slider's ends: a thumb resting at 100
+// keeps tools below 100 stars, and one at 1M keeps anything above it.
+export function starsRangeFromLog([lo, hi]: number[]): [number, number] {
+  return [
+    lo <= STARS_LOG_MIN ? 0 : starsFromLog(lo),
+    hi >= STARS_LOG_MAX ? Infinity : starsFromLog(hi),
+  ]
+}
+
+export function logFromStarsRange([min, max]: [number, number]) {
+  const clamp = (log: number) => Math.min(STARS_LOG_MAX, Math.max(STARS_LOG_MIN, log))
+  return [
+    min > 0 ? clamp(Math.log10(min)) : STARS_LOG_MIN,
+    Number.isFinite(max) && max > 0 ? clamp(Math.log10(max)) : STARS_LOG_MAX,
+  ]
+}
+
+export function formatStarsRange([min, max]: [number, number]) {
+  if (!Number.isFinite(max)) return `≥ ${formatStars(min)}`
+  if (min <= 0) return `≤ ${formatStars(max)}`
+  return `${formatStars(min)} – ${formatStars(max)}`
+}
+
 export function formatStars(n: number) {
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(n % 1_000_000 ? 1 : 0)}M`
   if (n >= 1_000) return `${(n / 1_000).toFixed(n % 1_000 && n < 10_000 ? 1 : 0)}k`

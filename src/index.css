@@ -78,6 +78,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .dark {
+    color-scheme: dark;
+  }
   /* Tailwind v4 leaves buttons on the default cursor. */
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),

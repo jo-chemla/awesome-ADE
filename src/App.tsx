@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react"
 
 import { DataTable } from "@/components/data-table"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { columns } from "@/components/columns"
 import { STATIC_TOOLS } from "@/lib/load-tools"
 import { fetchLiveStats, formatUpdatedLabel, type LiveStats } from "@/lib/github-live"
@@ -54,9 +55,12 @@ export default function App() {
   return (
     <div className="mx-auto max-w-[1400px] space-y-4 p-6">
       <div>
-        <h1 className="text-xl font-bold">
-          Agentic Dev Environments — feature &amp; activity comparison
-        </h1>
+        <div className="flex items-start justify-between gap-4">
+          <h1 className="text-xl font-bold">
+            Agentic Dev Environments — feature &amp; activity comparison
+          </h1>
+          <ThemeToggle />
+        </div>
         <p className="mt-1 max-w-[75ch] text-sm text-muted-foreground">
           Stars and contributor counts are fetched live from the GitHub API in
           your browser on every page load (contributor count = lifetime
