@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 
 import starHistory from "../../stats/star-history.json"
+import { cn } from "@/lib/utils"
 import type { Tool } from "@/lib/types"
 
 const { weeks, tools: seriesByKey } = starHistory as {
@@ -17,6 +18,7 @@ const SERIES_COUNT = 5
 const GRID_STARS = [1_000, 10_000, 100_000]
 const MIN_STARS = 100
 const TOOLTIP_ROWS = 6
+const PILL_GAP = 17
 
 const times = weeks.map((week) => Date.parse(week))
 const lastValue = (key: string) => seriesByKey[key]?.at(-1) ?? 0
@@ -81,19 +83,24 @@ function quarterTicks(everyMonths: number) {
 
 // Pushes end-of-line labels apart so close series stay readable, keeping them
 // inside the plot's height.
-function spreadLabels<T extends { y: number }>(labels: T[], maxY: number) {
+function spreadLabels<T extends { y: number }>(labels: T[], maxY: number, gap = LABEL_GAP) {
   const sorted = [...labels].sort((a, b) => a.y - b.y)
   for (let i = 1; i < sorted.length; i++) {
-    sorted[i].y = Math.max(sorted[i].y, sorted[i - 1].y + LABEL_GAP)
+    sorted[i].y = Math.max(sorted[i].y, sorted[i - 1].y + gap)
   }
   const overflow = (sorted.at(-1)?.y ?? 0) - maxY
   if (overflow > 0) {
     sorted[sorted.length - 1].y = maxY
     for (let i = sorted.length - 2; i >= 0; i--) {
-      sorted[i].y = Math.min(sorted[i].y, sorted[i + 1].y - LABEL_GAP)
+      sorted[i].y = Math.min(sorted[i].y, sorted[i + 1].y - gap)
     }
   }
   return sorted
+}
+
+// An estimate, enough to keep pills inside the chart and clear of the tooltip.
+function pillWidth(name: string) {
+  return name.length * 6 + 26
 }
 
 interface StarHistoryChartProps {
@@ -105,6 +112,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
+  const [hoverKey, setHoverKey] = useState<string | null>(null)
 
   useEffect(() => {
     const element = containerRef.current
@@ -161,7 +169,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
 
   const ticks = quarterTicks(width < LABELS_MIN_WIDTH ? 6 : 3)
 
-  function onPointerMove(event: React.PointerEvent<SVGSVGElement>) {
+  function onPointerMove(event: React.PointerEvent<HTMLDivElement>) {
     const left = event.currentTarget.getBoundingClientRect().left
     const pointer = event.clientX - left
     let nearest = 0
@@ -171,18 +179,38 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
     setHoverIndex(nearest)
   }
 
-  const hoverRows =
+  const allHoverRows =
     hoverIndex === null
       ? []
       : visible
           .map((tool) => ({ ...tool, stars: seriesByKey[tool.key][hoverIndex] }))
           .filter((row) => row.stars > 0)
           .sort((a, b) => b.stars - a.stars)
-          .slice(0, TOOLTIP_ROWS)
   const hoverX = hoverIndex === null ? 0 : x(times[hoverIndex])
 
+  // One pill per line crossing the crosshair. They stay centered on it so the
+  // pointer can reach any of them by moving straight up or down.
+  const pillRows = allHoverRows.filter((row) => row.stars >= MIN_STARS)
+  const pills = spreadLabels(
+    pillRows.map((row) => ({ ...row, pointY: y(row.stars), y: y(row.stars) })),
+    plotBottom,
+    Math.min(PILL_GAP, (plotBottom - MARGIN.top) / Math.max(1, pillRows.length)),
+  )
+  // The pointer can stay put while its pill goes away, when a tool has too few
+  // stars at the hovered week.
+  const selectedKey = pills.some((pill) => pill.key === hoverKey) ? hoverKey : null
+
+  // The selected tool joins the tooltip even when it ranks below the top rows.
+  const hoverRows = allHoverRows.filter(
+    (row, i) => i < TOOLTIP_ROWS || row.key === selectedKey,
+  )
+  const pillReach = Math.max(0, ...pills.map((pill) => pillWidth(pill.name) / 2))
+  const tooltipOffset = pillReach + 8
+  // The pills name the same lines, and would cover these labels near the right.
+  const labelsCovered = pills.length > 0 && hoverX + pillReach > plotRight
+
   return (
-    <section className="space-y-2 pt-4">
+    <section className="w-full space-y-2 pt-4 lg:w-1/2">
       <div>
         <h2 className="text-sm font-semibold">GitHub stars over time</h2>
         <p className="text-xs text-muted-foreground">
@@ -204,7 +232,12 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
           </span>
         )}
       </div>
-      <div ref={containerRef} className="relative">
+      <div
+        ref={containerRef}
+        className="relative"
+        onPointerMove={onPointerMove}
+        onPointerLeave={() => setHoverIndex(null)}
+      >
         {visible.length === 0 ? (
           <p className="py-10 text-center text-sm text-muted-foreground">
             No star history for these filters.
@@ -217,8 +250,6 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
               role="img"
               aria-label="GitHub stars over time for the tools in the table, on a log scale"
               className="block touch-pan-y"
-              onPointerMove={onPointerMove}
-              onPointerLeave={() => setHoverIndex(null)}
             >
               {GRID_STARS.map((stars) => (
                 <g key={stars}>
@@ -256,23 +287,29 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
                   })}
                 </text>
               ))}
-              {lines.map((line) => (
-                <path
-                  key={line.key}
-                  d={line.d}
-                  fill="none"
-                  stroke={line.color ?? "var(--muted-foreground)"}
-                  strokeOpacity={line.color ? 1 : 0.35}
-                  strokeWidth={line.color ? 2 : 1}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              ))}
-              {labels.map((label) => (
-                <text key={label.key} x={plotRight + 6} y={label.y} className="fill-foreground text-[11px]">
-                  {label.name} {formatStars(lastValue(label.key))}
-                </text>
-              ))}
+              {[...lines]
+                .sort((a, b) => Number(a.key === selectedKey) - Number(b.key === selectedKey))
+                .map((line) => {
+                  const selected = line.key === selectedKey
+                  return (
+                    <path
+                      key={line.key}
+                      d={line.d}
+                      fill="none"
+                      stroke={line.color ?? (selected ? "var(--foreground)" : "var(--muted-foreground)")}
+                      strokeOpacity={selected ? 1 : !line.color ? 0.35 : selectedKey ? 0.5 : 1}
+                      strokeWidth={selected ? 2.5 : line.color ? 2 : 1}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  )
+                })}
+              {!labelsCovered &&
+                labels.map((label) => (
+                  <text key={label.key} x={plotRight + 6} y={label.y} className="fill-foreground text-[11px]">
+                    {label.name} {formatStars(lastValue(label.key))}
+                  </text>
+                ))}
               {hoverIndex !== null && (
                 <line
                   x1={hoverX}
@@ -283,19 +320,60 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
                   strokeOpacity={0.4}
                 />
               )}
+              {pills.map((pill) => (
+                <circle
+                  key={pill.key}
+                  cx={hoverX}
+                  cy={pill.pointY}
+                  r={2.5}
+                  fill={colors.get(pill.key) ?? "var(--muted-foreground)"}
+                />
+              ))}
             </svg>
           )
         )}
+        {pills.map((pill) => {
+          const half = pillWidth(pill.name) / 2
+          return (
+            <div
+              key={pill.key}
+              className={cn(
+                "absolute z-10 inline-flex h-4 -translate-x-1/2 -translate-y-1/2 items-center gap-1 whitespace-nowrap rounded-full border bg-popover px-1.5 text-[10px] leading-none text-popover-foreground",
+                pill.key === selectedKey && "z-20 border-foreground font-bold",
+              )}
+              style={{
+                left: Math.min(Math.max(hoverX, half), width - half),
+                top: pill.y,
+              }}
+              onPointerEnter={() => setHoverKey(pill.key)}
+              onPointerLeave={() => setHoverKey(null)}
+            >
+              <span
+                className="size-1.5 shrink-0 rounded-full"
+                style={{ background: colors.get(pill.key) ?? "var(--muted-foreground)" }}
+              />
+              {pill.name}
+            </div>
+          )
+        })}
         {hoverIndex !== null && hoverRows.length > 0 && (
           <div
-            className="pointer-events-none absolute top-2 z-10 min-w-44 rounded-md border bg-popover p-2 text-xs text-popover-foreground shadow-sm"
+            className="pointer-events-none absolute top-2 z-30 min-w-44 rounded-md border bg-popover p-2 text-xs text-popover-foreground shadow-sm"
             style={
-              hoverX > width / 2 ? { right: width - hoverX + 12 } : { left: hoverX + 12 }
+              hoverX > width / 2
+                ? { right: Math.min(width - hoverX + tooltipOffset, width - 176) }
+                : { left: Math.min(hoverX + tooltipOffset, width - 176) }
             }
           >
             <div className="mb-1 font-semibold">{formatDate(times[hoverIndex])}</div>
             {hoverRows.map((row) => (
-              <div key={row.key} className="flex items-center justify-between gap-3">
+              <div
+                key={row.key}
+                className={cn(
+                  "flex items-center justify-between gap-3",
+                  row.key === selectedKey && "font-bold",
+                )}
+              >
                 <span className="inline-flex items-center gap-1.5">
                   <span
                     className="h-0.5 w-2.5 rounded-full"
