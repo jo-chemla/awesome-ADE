@@ -139,6 +139,16 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
     return () => observer.disconnect()
   }, [])
 
+  // A finger lifting leaves the chart without any pointer moving away, so on
+  // touch the crosshair stays until a tap lands elsewhere.
+  useEffect(() => {
+    function onPointerDown(event: PointerEvent) {
+      if (!containerRef.current?.contains(event.target as Node)) setHoverIndex(null)
+    }
+    document.addEventListener("pointerdown", onPointerDown)
+    return () => document.removeEventListener("pointerdown", onPointerDown)
+  }, [])
+
   const visible = useMemo(
     () =>
       tools
@@ -260,6 +270,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
         <p className="text-xs text-muted-foreground">
           Following the table's filters. Refreshed daily from GitHub's star history, which
           only counts current stars.
+          <span className="sm:hidden"> Tap the chart to name its lines.</span>
         </p>
       </div>
       <div className="flex flex-wrap gap-x-3.5 gap-y-1 text-xs">
@@ -278,9 +289,15 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
       </div>
       <div
         ref={containerRef}
-        className="relative cursor-default"
+        className="relative cursor-default touch-pan-y"
+        onPointerDown={(event) => {
+          if (event.pointerType === "touch") setHoverKey(null)
+          onPointerMove(event)
+        }}
         onPointerMove={onPointerMove}
-        onPointerLeave={() => setHoverIndex(null)}
+        onPointerLeave={(event) => {
+          if (event.pointerType !== "touch") setHoverIndex(null)
+        }}
       >
         {visible.length === 0 ? (
           <p className="py-10 text-center text-sm text-muted-foreground">
@@ -293,7 +310,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
               height={HEIGHT}
               role="img"
               aria-label={`GitHub stars over time for the tools in the table, on a ${scale} scale`}
-              className="block touch-pan-y"
+              className="block"
             >
               {gridStars.map((stars) => (
                 <g key={stars}>
@@ -418,7 +435,13 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
                 top: pill.y,
               }}
               onPointerEnter={() => setHoverKey(pill.key)}
-              onPointerLeave={() => setHoverKey(null)}
+              onPointerLeave={(event) => {
+                if (event.pointerType !== "touch") setHoverKey(null)
+              }}
+              onPointerDown={(event) => {
+                event.stopPropagation()
+                setHoverKey(pill.key)
+              }}
             >
               <span
                 className="size-1.5 shrink-0 rounded-full"
@@ -430,11 +453,17 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
         })}
         {hoverIndex !== null && hoverRows.length > 0 && (
           <div
-            className="pointer-events-none absolute top-2 z-30 min-w-44 rounded-md border bg-popover p-2 text-xs text-popover-foreground shadow-sm"
+            className={cn(
+              "pointer-events-none absolute z-30 min-w-44 rounded-md border bg-popover p-2 text-xs text-popover-foreground shadow-sm",
+              // On a narrow chart it would cover the pills, so it sits above the plot.
+              showLabels ? "top-2" : "inset-x-0 bottom-full mb-1",
+            )}
             style={
-              hoverX > width / 2
-                ? { right: Math.min(width - hoverX + tooltipOffset, width - 176) }
-                : { left: Math.min(hoverX + tooltipOffset, width - 176) }
+              !showLabels
+                ? undefined
+                : hoverX > width / 2
+                  ? { right: Math.min(width - hoverX + tooltipOffset, width - 176) }
+                  : { left: Math.min(hoverX + tooltipOffset, width - 176) }
             }
           >
             <div className="mb-1 font-semibold">{formatDate(times[hoverIndex])}</div>

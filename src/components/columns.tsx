@@ -99,6 +99,10 @@ function featureColumn(id: keyof Tool, title: string): ToolColumnDef {
 // They are never shown; DataTable pins their visibility to false.
 export const FILTER_ONLY_COLUMNS = ["platforms", "license", "pushed"]
 
+// On a phone the table is an overview of name, stars and platforms: tapping a
+// row opens the detail panel, which has these columns and the links.
+export const PHONE_HIDDEN_COLUMNS = ["category", "parallel", "isolation", "locality", "mobileCtl"]
+
 // Which leaf columns to hide/show when a group header's fold toggle is
 // clicked — read by DataTable, which owns the columnVisibility state.
 export const FOLD_CONFIG: Record<string, { expandedOnly: string[]; collapsedOnly: string[] }> = {
@@ -126,9 +130,11 @@ export const columns: ToolColumnDef[] = [
         ),
         filterFn: "includesString",
         cell: ({ row }) => (
-          <div className="flex min-w-[160px] flex-col gap-1">
-            <span className="font-semibold">{row.original.name}</span>
-            <div className="flex gap-3 text-xs">
+          <div className="flex flex-col gap-1 sm:min-w-[160px]">
+            <span className="font-semibold whitespace-normal sm:whitespace-nowrap">
+              {row.original.name}
+            </span>
+            <div className="hidden gap-3 text-xs sm:flex">
               <a
                 className="text-blue-600 hover:underline dark:text-blue-400"
                 href={row.original.website}
@@ -152,7 +158,7 @@ export const columns: ToolColumnDef[] = [
                 <span className="text-muted-foreground">no repo</span>
               )}
             </div>
-            <Badge variant="outline" className="w-fit font-normal">
+            <Badge variant="outline" className="hidden w-fit font-normal sm:inline-flex">
               {row.original.license}
             </Badge>
           </div>

@@ -43,7 +43,7 @@ export default function App() {
     <div className="mx-auto max-w-[1400px] space-y-4 p-6">
       <div>
         <div className="flex items-start justify-between gap-4">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-lg font-bold sm:text-xl">
             Agentic Dev Environments — feature &amp; activity comparison
           </h1>
           <div className="flex shrink-0 items-center gap-1">
@@ -53,11 +53,15 @@ export default function App() {
         </div>
         <p className="mt-1 max-w-[75ch] text-sm text-muted-foreground">
           Stars and contributor counts are refreshed daily from the GitHub API
-          (contributor count = lifetime
-          commits &ge;20, with &ge;100 shown as a secondary tag, bot/automation
-          accounts included since they reflect real commit history). Feature
-          and platform columns come from each project's own docs/site,
-          committed as data in this repo.
+          <span className="hidden sm:inline">
+            {" "}
+            (contributor count = lifetime
+            commits &ge;20, with &ge;100 shown as a secondary tag, bot/automation
+            accounts included since they reflect real commit history). Feature
+            and platform columns come from each project's own docs/site,
+            committed as data in this repo
+          </span>
+          .
           {" "}
           <a
             className="text-blue-600 hover:underline dark:text-blue-400"

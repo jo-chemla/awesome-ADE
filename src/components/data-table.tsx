@@ -23,7 +23,7 @@ import { DataTablePagination } from "@/components/data-table-pagination"
 import { DataTableToolbar } from "@/components/data-table-toolbar"
 import { StarHistoryChart } from "@/components/star-history-chart"
 import { ToolSheet } from "@/components/tool-sheet"
-import { FILTER_ONLY_COLUMNS, FOLD_CONFIG } from "@/components/columns"
+import { FILTER_ONLY_COLUMNS, FOLD_CONFIG, PHONE_HIDDEN_COLUMNS } from "@/components/columns"
 import { toolTableFeatures, type ToolTableFeatures } from "@/lib/table-features"
 import { filtersFromUrl, tableUrlParsers, urlFromFilters } from "@/lib/table-url-state"
 import type { Tool } from "@/lib/types"
@@ -37,6 +37,9 @@ function foldedFromExpanded(expanded: string[] | null): Record<string, boolean> 
     Object.keys(FOLD_CONFIG).map((id) => [id, !expanded?.includes(id)]),
   )
 }
+
+const phoneHiddenCell = (columnId: string) =>
+  PHONE_HIDDEN_COLUMNS.includes(columnId) ? "hidden sm:table-cell" : undefined
 
 const HIDDEN_FILTER_COLUMNS: ColumnVisibilityState = Object.fromEntries(
   FILTER_ONLY_COLUMNS.map((id) => [id, false]),
@@ -110,7 +113,10 @@ export function DataTable({ columns, data }: DataTableProps) {
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup, groupIndex) => (
-              <TableRow key={headerGroup.id}>
+              <TableRow
+                key={headerGroup.id}
+                className={groupIndex === 0 ? "hidden sm:table-row" : undefined}
+              >
                 {headerGroup.headers.map((header) => {
                   const isGroupRow = groupIndex === 0
                   const foldable = isGroupRow ? FOLD_CONFIG[header.column.id] : undefined
@@ -130,7 +136,7 @@ export function DataTable({ columns, data }: DataTableProps) {
                               "bg-muted/50 text-center text-[10px] font-semibold tracking-wide text-muted-foreground uppercase",
                               foldable && "cursor-pointer select-none hover:bg-muted",
                             )
-                          : undefined
+                          : phoneHiddenCell(header.column.id)
                       }
                     >
                       {header.isPlaceholder ? null : (
@@ -166,7 +172,7 @@ export function DataTable({ columns, data }: DataTableProps) {
                   }}
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell key={cell.id} className={phoneHiddenCell(cell.column.id)}>
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </TableCell>
                   ))}

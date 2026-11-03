@@ -51,7 +51,7 @@ export function NameFilter({ table, variant = "toolbar" }: FilterProps) {
       placeholder="Filter by name..."
       value={value}
       onChange={(event) => column?.setFilterValue(event.target.value)}
-      className={variant === "header" ? "h-8" : "h-8 w-[160px] lg:w-[220px]"}
+      className={variant === "header" ? "h-8" : "h-8 w-full sm:w-[160px] lg:w-[220px]"}
     />
   )
   if (variant === "toolbar") return input

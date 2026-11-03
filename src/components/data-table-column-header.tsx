@@ -31,7 +31,7 @@ export function DataTableColumnHeader({
     return (
       <div className={cn("flex items-center gap-1 text-xs font-semibold", className)}>
         {title}
-        {filter}
+        <span className="hidden sm:contents">{filter}</span>
       </div>
     )
   }
@@ -71,7 +71,8 @@ export function DataTableColumnHeader({
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      {filter}
+      {/* A phone uses the toolbar's filters, which are easier to tap. */}
+      <span className="hidden sm:contents">{filter}</span>
     </div>
   )
 }

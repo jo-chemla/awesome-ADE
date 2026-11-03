@@ -61,7 +61,7 @@ export function ToolSheet({ tools, selectedKey, onSelect }: ToolSheetProps) {
 
   return (
     <Sheet open={!!tool} onOpenChange={(open) => !open && onSelect(null)}>
-      <SheetContent className="w-full gap-0 overflow-y-auto sm:max-w-xl">
+      <SheetContent className="gap-0 overflow-y-auto data-[side=right]:w-full sm:max-w-xl">
         {tool && (
           <>
             <SheetHeader className="gap-2 border-b pr-12">
