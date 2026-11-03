@@ -28,7 +28,8 @@ try {
         padding: 18px 28px;
         background: var(--background);
       }
-      ${CHART} > div:first-child > p { display: none; }
+      ${CHART} > div:first-child > p,
+      ${CHART} [role=group] { display: none; }
       ${CHART} h2 { font-size: 20px; }
     `,
   })

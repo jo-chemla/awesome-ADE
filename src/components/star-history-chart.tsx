@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react"
+import { parseAsStringLiteral, useQueryState } from "nuqs"
 
 import starHistory from "../../stats/star-history.json"
+import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import type { Tool } from "@/lib/types"
 
@@ -19,6 +21,7 @@ const SERIES_COUNT = 5
 const GRID_STARS = [1_000, 10_000, 100_000]
 const MIN_STARS = 100
 const TOOLTIP_ROWS = 6
+const SCALES = ["log", "linear"] as const
 const PILL_GAP = 17
 
 const times = weeks.map((week) => Date.parse(week))
@@ -44,6 +47,15 @@ function assignColors(visibleKeys: string[]) {
     .sort((a, b) => lastValue(b) - lastValue(a))
   others.slice(0, free.length).forEach((key, i) => colors.set(key, free[i]))
   return colors
+}
+
+// Round gridlines from 0 up past `max`, about four of them.
+function linearTicks(max: number) {
+  const rough = max / 4
+  const magnitude = 10 ** Math.floor(Math.log10(rough))
+  const step = [1, 2, 5, 10].find((m) => m * magnitude >= rough)! * magnitude
+  const count = Math.ceil(max / step)
+  return Array.from({ length: count + 1 }, (_, i) => i * step)
 }
 
 function shortName(name: string) {
@@ -114,6 +126,10 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
   const [width, setWidth] = useState(0)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const [hoverKey, setHoverKey] = useState<string | null>(null)
+  const [scale, setScale] = useQueryState(
+    "scale",
+    parseAsStringLiteral(SCALES).withDefault("log"),
+  )
 
   useEffect(() => {
     const element = containerRef.current
@@ -139,10 +155,20 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
 
   const x = (time: number) =>
     MARGIN.left + ((time - times[0]) / (times[times.length - 1] - times[0])) * (plotRight - MARGIN.left)
-  const y = (stars: number) =>
-    MARGIN.top +
-    (1 - (Math.log10(stars) - Math.log10(MIN_STARS)) / (Math.log10(maxStars) - Math.log10(MIN_STARS))) *
-      (plotBottom - MARGIN.top)
+  // The log scale stays fixed so filtering doesn't move the lines. A linear one
+  // fits the visible tools, or the small ones would flatten against the axis.
+  const gridStars =
+    scale === "linear"
+      ? linearTicks(Math.max(1, ...visible.flatMap((tool) => seriesByKey[tool.key])))
+      : GRID_STARS
+  const linearMax = gridStars[gridStars.length - 1]
+  const y = (stars: number) => {
+    const share =
+      scale === "linear"
+        ? stars / linearMax
+        : (Math.log10(stars) - Math.log10(MIN_STARS)) / (Math.log10(maxStars) - Math.log10(MIN_STARS))
+    return MARGIN.top + (1 - share) * (plotBottom - MARGIN.top)
+  }
 
   const lines = visible
     .flatMap((tool) => {
@@ -214,9 +240,25 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
   return (
     <section className="mx-auto w-full space-y-2 pt-4 lg:w-3/4">
       <div>
-        <h2 className="text-sm font-semibold">GitHub stars over time</h2>
+        <div className="flex items-center justify-between gap-4">
+          <h2 className="text-sm font-semibold">GitHub stars over time</h2>
+          <div role="group" aria-label="Chart scale" className="flex shrink-0 rounded-md border p-0.5">
+            {SCALES.map((option) => (
+              <Button
+                key={option}
+                variant={scale === option ? "secondary" : "ghost"}
+                size="sm"
+                className="h-6 rounded-sm px-2 text-xs font-normal capitalize"
+                aria-pressed={scale === option}
+                onClick={() => setScale(option)}
+              >
+                {option}
+              </Button>
+            ))}
+          </div>
+        </div>
         <p className="text-xs text-muted-foreground">
-          Log scale, following the table's filters. Refreshed daily from GitHub's star history, which
+          Following the table's filters. Refreshed daily from GitHub's star history, which
           only counts current stars.
         </p>
       </div>
@@ -250,10 +292,10 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
               width={width}
               height={HEIGHT}
               role="img"
-              aria-label="GitHub stars over time for the tools in the table, on a log scale"
+              aria-label={`GitHub stars over time for the tools in the table, on a ${scale} scale`}
               className="block touch-pan-y"
             >
-              {GRID_STARS.map((stars) => (
+              {gridStars.map((stars) => (
                 <g key={stars}>
                   <line
                     x1={MARGIN.left}
@@ -270,7 +312,7 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
                     textAnchor="end"
                     className="fill-muted-foreground text-[11px]"
                   >
-                    {stars / 1000}k
+                    {stars >= 1000 ? `${stars / 1000}k` : stars}
                   </text>
                 </g>
               ))}
@@ -309,14 +351,25 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
               {!labelsCovered &&
                 labels.map((label) => (
                   <g key={label.key}>
-                    <line
-                      x1={plotRight}
-                      x2={plotRight + LABEL_LEADER}
-                      y1={label.lineY}
-                      y2={label.y - 4}
-                      stroke={colors.get(label.key) ?? "var(--muted-foreground)"}
-                      strokeOpacity={colors.has(label.key) ? 0.8 : 0.35}
-                    />
+                    {/* On a linear scale most lines end near zero, so a leader from
+                        there would read as the line itself spiking at the end. */}
+                    {scale === "linear" ? (
+                      <circle
+                        cx={plotRight + LABEL_LEADER - 3}
+                        cy={label.y - 4}
+                        r={2.5}
+                        fill={colors.get(label.key) ?? "var(--muted-foreground)"}
+                      />
+                    ) : (
+                      <line
+                        x1={plotRight}
+                        x2={plotRight + LABEL_LEADER}
+                        y1={label.lineY}
+                        y2={label.y - 4}
+                        stroke={colors.get(label.key) ?? "var(--muted-foreground)"}
+                        strokeOpacity={colors.has(label.key) ? 0.8 : 0.35}
+                      />
+                    )}
                     <text
                       x={plotRight + LABEL_LEADER + 3}
                       y={label.y}
