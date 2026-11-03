@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react"
 
 import type { Tool } from "@/lib/types"
-import { PLATFORMS, licenseFamily } from "@/lib/tool-filters"
+import { PLATFORMS } from "@/lib/tool-filters"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -95,8 +95,8 @@ export function ToolSheet({ tools, selectedKey, onSelect }: ToolSheetProps) {
               <SheetDescription asChild>
                 <div className="flex flex-wrap items-center gap-2">
                   <Badge variant="secondary" className="font-normal">{tool.category}</Badge>
-                  <Badge variant="outline" className="font-normal" title={tool.license}>
-                    {licenseFamily(tool.license)}
+                  <Badge variant="outline" className="h-auto font-normal whitespace-normal">
+                    {tool.license}
                   </Badge>
                   <span className="text-xs text-muted-foreground">
                     {index + 1} of {tools.length}
