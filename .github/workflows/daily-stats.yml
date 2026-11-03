@@ -33,8 +33,7 @@ jobs:
         run: python .github/scripts/update-stats.py
 
       - name: Commit daily snapshot
-        env:
-          GH_TOKEN: ${{ github.token }}
+        id: commit
         run: |
           if git diff --quiet; then
             echo "No changes to commit."
@@ -45,4 +44,34 @@ jobs:
           git add README.md stats/daily.json stats/stats-history.json stats/star-history.json
           git commit -m "chore: update daily activity stats"
           git push
-          gh workflow run deploy.yml --ref main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - uses: pnpm/action-setup@v4
+        if: steps.commit.outputs.changed == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.commit.outputs.changed == 'true'
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # A failed screenshot only leaves yesterday's image, so it can't block the
+      # deploy below.
+      - name: Refresh the social preview image
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+          pnpm exec vite preview --port 4173 --strictPort &
+          timeout 30 sh -c 'until curl -sf http://localhost:4173/ > /dev/null; do sleep 1; done'
+          node .github/scripts/og-image.mjs http://localhost:4173/ stars-chart.png
+          gh release upload og-image stars-chart.png --clobber
+
+      - name: Deploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

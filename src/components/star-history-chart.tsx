@@ -11,7 +11,8 @@ const { weeks, tools: seriesByKey } = starHistory as {
 
 const HEIGHT = 440
 const MARGIN = { top: 12, bottom: 24, left: 40 }
-const LABELS_WIDTH = 124
+const LABELS_WIDTH = 146
+const LABEL_LEADER = 10
 const LABELS_MIN_WIDTH = 520
 const LABEL_GAP = 14
 const SERIES_COUNT = 5
@@ -160,10 +161,11 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
 
   const labels = showLabels
     ? spreadLabels(
-        colored
+        visible
           .filter((tool) => lastValue(tool.key) >= MIN_STARS)
-          .map((tool) => ({ ...tool, y: y(lastValue(tool.key)) + 4 })),
+          .map((tool) => ({ ...tool, lineY: y(lastValue(tool.key)), y: y(lastValue(tool.key)) + 4 })),
         plotBottom,
+        Math.min(LABEL_GAP, (plotBottom - MARGIN.top) / Math.max(1, visible.length)),
       )
     : []
 
@@ -306,9 +308,26 @@ export function StarHistoryChart({ tools }: StarHistoryChartProps) {
                 })}
               {!labelsCovered &&
                 labels.map((label) => (
-                  <text key={label.key} x={plotRight + 6} y={label.y} className="fill-foreground text-[11px]">
-                    {label.name} {formatStars(lastValue(label.key))}
-                  </text>
+                  <g key={label.key}>
+                    <line
+                      x1={plotRight}
+                      x2={plotRight + LABEL_LEADER}
+                      y1={label.lineY}
+                      y2={label.y - 4}
+                      stroke={colors.get(label.key) ?? "var(--muted-foreground)"}
+                      strokeOpacity={colors.has(label.key) ? 0.8 : 0.35}
+                    />
+                    <text
+                      x={plotRight + LABEL_LEADER + 3}
+                      y={label.y}
+                      className={cn(
+                        "text-[11px]",
+                        colors.has(label.key) ? "fill-foreground" : "fill-muted-foreground",
+                      )}
+                    >
+                      {label.name} {formatStars(lastValue(label.key))}
+                    </text>
+                  </g>
                 ))}
               {hoverIndex !== null && (
                 <line

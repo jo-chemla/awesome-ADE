@@ -26,6 +26,12 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+      # Release files download as attachments, which link previews can reject,
+      # so the og:image is served from the site itself.
+      - name: Add the social preview image
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download og-image --pattern stars-chart.png --dir dist || echo "::warning::No social preview image"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

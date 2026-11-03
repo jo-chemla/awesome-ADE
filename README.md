@@ -84,6 +84,7 @@ The feature matrix is static and maintained through the individual files in [`co
 - **Static feature fields** — name, website/repo links, license, platform support, and feature descriptions — live in `content/tools/`, one `.mdx` file per tool.
 - **Daily activity fields** — GitHub stars, contributors ≥20 commits, contributors ≥100 commits, and last-push date — are fetched by the scheduled GitHub Action and stored in `stats/daily.json` and `stats/stats-history.json`.
 - Tools without a public GitHub repository are excluded from the leaderboard and activity JSON.
+- **Social preview image** — the daily job screenshots the stars chart and replaces `stars-chart.png` on the [`og-image` release](https://github.com/jo-chemla/awesome-ADE/releases/tag/og-image). Deploy copies that file into the site as its `og:image`.
 
 ## Contributing a tool
 
