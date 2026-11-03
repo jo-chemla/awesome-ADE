@@ -31,6 +31,7 @@ try {
       ${CHART} > div:first-child > p,
       ${CHART} [role=group] { display: none; }
       ${CHART} h2 { font-size: 20px; }
+      ${CHART} > div:nth-child(2) { font-size: 15px; font-weight: 600; column-gap: 20px; }
     `,
   })
   await page.locator(`${CHART} h2`).evaluate((heading) => {
@@ -41,6 +42,25 @@ try {
     (selector) => document.querySelector(`${selector} svg[role=img]`).clientWidth > 900,
     CHART,
   )
+  // Turns the legend into the ranking: "1. OpenCode 224k". It lists the colored
+  // tools by stars, and with no filter on those are the top 5.
+  await page.locator(`${CHART} > div:nth-child(2)`).evaluate((legend) => {
+    const labels = [...legend.parentElement.querySelectorAll("svg g > text")].map(
+      (label) => label.textContent,
+    )
+    const ranked = [...legend.children].filter(
+      (item) => !item.classList.contains("text-muted-foreground"),
+    )
+    ranked.forEach((item, i) => {
+      const name = item.textContent
+      const stars = labels.find((label) => label.startsWith(`${name} `)).slice(name.length + 1)
+      item.lastChild.nodeValue = `${i + 1}. ${name}`
+      const count = document.createElement("span")
+      count.className = "font-normal text-muted-foreground"
+      count.textContent = stars
+      item.append(count)
+    })
+  })
   await page.evaluate(() => document.fonts.ready)
   await page.screenshot({ path: output })
 } finally {
