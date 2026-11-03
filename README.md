@@ -22,14 +22,14 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
 | 1 | [OpenCode](https://github.com/anomalyco/opencode) | 224,193 | 39 | 23 | today |
-| 2 | [Orca](https://github.com/stablyai/orca) | 113,898 | 14 | 8 | today |
-| 3 | [Warp](https://github.com/warpdotdev/warp) | 65,845 | 26 | 5 | today |
-| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 42,633 | 31 | 10 | today |
+| 2 | [Orca](https://github.com/stablyai/orca) | 113,904 | 14 | 8 | today |
+| 3 | [Warp](https://github.com/warpdotdev/warp) | 65,846 | 26 | 5 | today |
+| 4 | [t3 code](https://github.com/pingdotgg/t3code) | 42,639 | 31 | 10 | today |
 | 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 34,003 | 24 | 10 | 11d ago |
 | 6 | [Happy](https://github.com/slopus/happy) | 24,462 | 7 | 5 | today |
-| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,872 | 5 | 3 | today |
+| 7 | [Paseo](https://github.com/getpaseo/paseo) | 22,873 | 5 | 3 | today |
 | 8 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | 15,861 | 8 | 4 | today |
-| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,408 | 2 | 2 | today |
+| 9 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,409 | 2 | 2 | today |
 | 10 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 14,036 | 31 | 12 | today |
 | 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 12,488 | 19 | 4 | today |
 | 12 | [Emdash](https://github.com/generalaction/emdash) | 6,167 | 16 | 5 | yesterday |
@@ -38,7 +38,7 @@ Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 | 15 | [Synara](https://github.com/Emanuele-web04/synara) | 2,162 | 15 | 7 | yesterday |
 | 16 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,121 | 8 | 1 | today |
 | 17 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,063 | 10 | 5 | today |
-| 18 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,703 | 1 | 1 | yesterday |
+| 18 | [Herdr app](https://github.com/herdrdev/herdr-app) | 1,705 | 1 | 1 | yesterday |
 | 19 | [Jean](https://github.com/coollabsio/jean) | 1,387 | 3 | 1 | today |
 | 20 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,382 | 3 | 1 | yesterday |
 | 21 | [49Agents](https://github.com/alpbahadur/49Agents) | 619 | 2 | 1 | 2026-10-01 |
