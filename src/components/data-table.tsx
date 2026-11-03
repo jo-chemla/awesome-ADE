@@ -41,6 +41,11 @@ function foldedFromExpanded(expanded: string[] | null): Record<string, boolean> 
 const phoneHiddenCell = (columnId: string) =>
   PHONE_HIDDEN_COLUMNS.includes(columnId) ? "hidden sm:table-cell" : undefined
 
+// Sticky cells can't be see-through, or rows would show through them as they
+// scroll past, so the translucent muted tint is mixed into an opaque color.
+const STICKY_NAME_CELL =
+  "lg:sticky lg:left-0 lg:z-10 bg-background transition-colors lg:shadow-[inset_-1px_0_0_var(--border)] group-hover/row:bg-[color-mix(in_oklab,var(--muted)_50%,var(--background))] group-data-[state=selected]/row:bg-muted"
+
 const HIDDEN_FILTER_COLUMNS: ColumnVisibilityState = Object.fromEntries(
   FILTER_ONLY_COLUMNS.map((id) => [id, false]),
 )
@@ -110,8 +115,15 @@ export function DataTable({ columns, data }: DataTableProps) {
     <div className="space-y-2">
       <DataTableToolbar table={table} />
       <div className="overflow-hidden rounded-md border">
-        <Table>
-          <TableHeader>
+        {/* Sticking needs the box that scrolls sideways to scroll down as well, so
+            it stops short of the viewport, leaving room for the page's heading. */}
+        {/* Separate borders, since Chrome lets rows show through a stuck header
+            when they collapse. Row lines are therefore drawn on the cells. */}
+        <Table
+          className="border-separate border-spacing-0"
+          containerClassName="sm:max-h-[max(24rem,calc(100dvh-17rem))]"
+        >
+          <TableHeader className="sticky top-0 z-20">
             {table.getHeaderGroups().map((headerGroup, groupIndex) => (
               <TableRow
                 key={headerGroup.id}
@@ -133,10 +145,15 @@ export function DataTable({ columns, data }: DataTableProps) {
                       className={
                         isGroupRow
                           ? cn(
-                              "bg-muted/50 text-center text-[10px] font-semibold tracking-wide text-muted-foreground uppercase",
+                              "bg-[color-mix(in_oklab,var(--muted)_50%,var(--background))] text-center text-[10px] font-semibold tracking-wide text-muted-foreground uppercase shadow-[inset_0_-1px_0_var(--border)]",
                               foldable && "cursor-pointer select-none hover:bg-muted",
                             )
-                          : phoneHiddenCell(header.column.id)
+                          : cn(
+                              "bg-background shadow-[inset_0_-1px_0_var(--border)]",
+                              phoneHiddenCell(header.column.id),
+                              header.column.id === "name" &&
+                                "lg:sticky lg:left-0 lg:z-10 lg:shadow-[inset_-1px_0_0_var(--border),inset_0_-1px_0_var(--border)]",
+                            )
                       }
                     >
                       {header.isPlaceholder ? null : (
@@ -157,13 +174,13 @@ export function DataTable({ columns, data }: DataTableProps) {
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody>
+          <TableBody className="[&_td]:border-b [&_tr:last-child_td]:border-b-0">
             {table.getRowModel().rows.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
                   key={row.id}
                   data-state={row.id === selectedKey ? "selected" : undefined}
-                  className="cursor-pointer"
+                  className="group/row cursor-pointer"
                   tabIndex={0}
                   title="Show details"
                   onClick={() => setSelectedKey(row.id)}
@@ -172,7 +189,13 @@ export function DataTable({ columns, data }: DataTableProps) {
                   }}
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className={phoneHiddenCell(cell.column.id)}>
+                    <TableCell
+                      key={cell.id}
+                      className={cn(
+                        phoneHiddenCell(cell.column.id),
+                        cell.column.id === "name" && STICKY_NAME_CELL,
+                      )}
+                    >
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </TableCell>
                   ))}
