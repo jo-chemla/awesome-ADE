@@ -40,7 +40,7 @@ const data: Tool[] = STATIC_TOOLS.map((tool) => {
 
 export default function App() {
   return (
-    <div className="mx-auto max-w-[1400px] space-y-4 p-6">
+    <div className="mx-auto max-w-[2000px] space-y-4 p-6">
       <div>
         <div className="flex items-start justify-between gap-4">
           <h1 className="text-lg font-bold sm:text-xl">

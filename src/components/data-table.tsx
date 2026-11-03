@@ -116,12 +116,13 @@ export function DataTable({ columns, data }: DataTableProps) {
       <DataTableToolbar table={table} />
       <div className="overflow-hidden rounded-md border">
         {/* Sticking needs the box that scrolls sideways to scroll down as well, so
-            it stops short of the viewport, leaving room for the page's heading. */}
+            it stops short of the viewport, leaving room for the page's heading
+            above and the top of the chart below. */}
         {/* Separate borders, since Chrome lets rows show through a stuck header
             when they collapse. Row lines are therefore drawn on the cells. */}
         <Table
           className="border-separate border-spacing-0"
-          containerClassName="sm:max-h-[max(24rem,calc(100dvh-17rem))]"
+          containerClassName="sm:max-h-[max(20rem,calc(100dvh-28rem))]"
         >
           <TableHeader className="sticky top-0 z-20">
             {table.getHeaderGroups().map((headerGroup, groupIndex) => (

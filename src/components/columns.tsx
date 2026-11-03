@@ -87,7 +87,7 @@ function featureColumn(id: keyof Tool, title: string): ToolColumnDef {
       <DataTableColumnHeader column={column} title={title} />
     ),
     cell: ({ getValue }) => (
-      <div className="max-w-[220px] min-w-[180px] text-xs whitespace-normal text-muted-foreground">
+      <div className="max-w-[320px] min-w-[176px] text-xs whitespace-normal text-muted-foreground">
         {getValue() as string}
       </div>
     ),
@@ -131,9 +131,7 @@ export const columns: ToolColumnDef[] = [
         filterFn: "includesString",
         cell: ({ row }) => (
           <div className="flex flex-col gap-1 sm:min-w-[160px]">
-            <span className="font-semibold whitespace-normal sm:whitespace-nowrap">
-              {row.original.name}
-            </span>
+            <span className="font-semibold whitespace-normal">{row.original.name}</span>
             <div className="hidden gap-3 text-xs sm:flex">
               <a
                 className="text-blue-600 hover:underline dark:text-blue-400"
@@ -158,7 +156,11 @@ export const columns: ToolColumnDef[] = [
                 <span className="text-muted-foreground">no repo</span>
               )}
             </div>
-            <Badge variant="outline" className="hidden w-fit font-normal sm:inline-flex">
+            <Badge
+              variant="outline"
+              title={row.original.license}
+              className="hidden w-fit max-w-[160px] truncate font-normal sm:block"
+            >
               {row.original.license}
             </Badge>
           </div>
