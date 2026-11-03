@@ -32,10 +32,24 @@ try {
       ${CHART} [role=group] { display: none; }
       ${CHART} h2 { font-size: 20px; }
       ${CHART} > div:nth-child(2) { font-size: 15px; font-weight: 600; column-gap: 20px; }
+      .og-cta {
+        flex-shrink: 0;
+        padding: 5px 14px;
+        border-radius: 999px;
+        background: var(--foreground);
+        color: var(--background);
+        font-size: 15px;
+        font-weight: 600;
+      }
     `,
   })
   await page.locator(`${CHART} h2`).evaluate((heading) => {
     heading.textContent = "Agentic Dev Environments: GitHub stars over time"
+    const toolCount = document.body.innerText.match(/of (\d+) tool/)[1]
+    const cta = document.createElement("span")
+    cta.className = "og-cta"
+    cta.textContent = `Compare all ${toolCount} tools →`
+    heading.after(cta)
   })
   // The chart measures its width with a ResizeObserver, so let it redraw.
   await page.waitForFunction(
