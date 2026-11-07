@@ -1,0 +1,24 @@
+---
+key: ovis
+name: "Ovis"
+category: "CLI orchestrator"
+website: "https://ovis.sh"
+github: "https://github.com/devswha/ovis"
+license: "MIT, open source"
+platform:
+  windows: full
+  linux: full
+  macos: full
+  android: beta
+  ios: beta
+pfNote: "Desktop apps for macOS (Apple Silicon + Intel), Windows (.exe) and Linux (.deb/AppImage, x64 + arm64); iPhone via TestFlight and Android via Google Play beta (ovis.sh/beta); any browser, installable as a PWA. Requires herdr 0.9.0+; Herdr desktop app terminals only on Linux/macOS"
+parallel: "Every workspace in one list, including remote PCs over SSH; each agent session (Claude Code, Codex, OpenCode, more) shows as a chat with prompts and approvals as tappable cards"
+isolation: "Not documented as git-worktree-based; sessions run in herdr on the host machine"
+locality: "Local: sessions stay on your computer, no account needed; your machine must stay on and reachable"
+remote: "Optional end-to-end encrypted Ovis relay (pair a phone by QR code), or bring your own Tailscale/VPN/SSH tunnel; remote PCs attach over SSH"
+mobileCtl: "iPhone (TestFlight) + Android (Google Play) betas, plus browser/PWA: answer prompts and approvals with a tap, push alerts when the app is closed, live terminal with a phone key bar"
+androidThreads:
+  "Android: connection never succeeds; bottom action bar taps (even arrow keys) open the IME": "https://github.com/devswha/ovis/issues/3274"
+---
+
+Ovis (formerly the herdr web UI) is the cross-device client for [herdr](https://github.com/herdrdev/herdr): the same agents that the Herdr app drives from a desktop multiplexer, viewed here as chats on desktop, phone or browser. Agents run on your own machine; Ovis adds tappable prompt/approval cards, push notifications, a one-click live terminal and a unified workspace list spanning local and SSH machines. Phones connect through an optional E2E-encrypted relay (the relay can't read traffic), Tailscale, a VPN or an SSH tunnel. Built with TypeScript/React on Bun, xterm.js and a Rust PTY sidecar. Anonymous usage counts are on by default and can be disabled in Settings or with `OVIS_TELEMETRY=0`. A browser demo lives at [ovis.sh/demo](https://ovis.sh/demo).
