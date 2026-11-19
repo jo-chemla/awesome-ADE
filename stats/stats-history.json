@@ -14710,5 +14710,218 @@
         "c100": 5
       }
     ]
+  },
+  {
+    "date": "2026-11-19",
+    "generatedAt": "2026-11-19T13:10:01Z",
+    "tools": [
+      {
+        "key": "49agents",
+        "name": "49Agents",
+        "github": "https://github.com/alpbahadur/49Agents",
+        "stars": 589,
+        "pushedAt": "2026-10-01T23:36:55Z",
+        "c20": 2,
+        "c100": 1
+      },
+      {
+        "key": "ade",
+        "name": "ADE",
+        "github": "https://github.com/arul28/ADE",
+        "stars": 146,
+        "pushedAt": "2026-11-19T10:01:59Z",
+        "c20": 1,
+        "c100": 1
+      },
+      {
+        "key": "agent-orchestrator",
+        "name": "Orchestrator.inc (formerly Agent Orchestrator)",
+        "github": "https://github.com/OrchestratorInc/agent-orchestrator",
+        "stars": 14915,
+        "pushedAt": "2026-11-19T13:08:12Z",
+        "c20": 34,
+        "c100": 13
+      },
+      {
+        "key": "aionui",
+        "name": "AionUi",
+        "github": "https://github.com/iOfficeAI/AionUi",
+        "stars": 34379,
+        "pushedAt": "2026-11-05T05:31:20Z",
+        "c20": 24,
+        "c100": 10
+      },
+      {
+        "key": "bb",
+        "name": "bb",
+        "github": "https://github.com/get-bb/bb",
+        "stars": 5805,
+        "pushedAt": "2026-11-19T12:48:50Z",
+        "c20": 9,
+        "c100": 5
+      },
+      {
+        "key": "claudecodeui",
+        "name": "Claude Code UI (CloudCLI)",
+        "github": "https://github.com/siteboon/claudecodeui",
+        "stars": 14692,
+        "pushedAt": "2026-11-18T10:49:28Z",
+        "c20": 2,
+        "c100": 2
+      },
+      {
+        "key": "emdash",
+        "name": "Emdash",
+        "github": "https://github.com/generalaction/emdash",
+        "stars": 6279,
+        "pushedAt": "2026-11-19T02:41:27Z",
+        "c20": 17,
+        "c100": 5
+      },
+      {
+        "key": "happy",
+        "name": "Happy",
+        "github": "https://github.com/slopus/happy",
+        "stars": 24710,
+        "pushedAt": "2026-11-19T10:15:08Z",
+        "c20": 7,
+        "c100": 5
+      },
+      {
+        "key": "herdr-app",
+        "name": "Herdr app",
+        "github": "https://github.com/herdrdev/herdr-app",
+        "stars": 3200,
+        "pushedAt": "2026-11-18T20:29:37Z",
+        "c20": 1,
+        "c100": 1
+      },
+      {
+        "key": "herdr-gpui",
+        "name": "Herdr UI (herdr-gpui)",
+        "github": "https://github.com/penso/herdr-gpui",
+        "stars": 2362,
+        "pushedAt": "2026-11-19T08:09:10Z",
+        "c20": 10,
+        "c100": 1
+      },
+      {
+        "key": "jean",
+        "name": "Jean",
+        "github": "https://github.com/coollabsio/jean",
+        "stars": 1428,
+        "pushedAt": "2026-11-17T22:02:19Z",
+        "c20": 3,
+        "c100": 1
+      },
+      {
+        "key": "monocode",
+        "name": "MonoCode",
+        "github": "https://github.com/hardbeat920/monocode",
+        "stars": 4090,
+        "pushedAt": "2026-11-12T08:35:54Z",
+        "c20": 5,
+        "c100": 1
+      },
+      {
+        "key": "mux",
+        "name": "Xum (formerly Mux)",
+        "github": "https://github.com/coder/xum",
+        "stars": 2081,
+        "pushedAt": "2026-11-19T12:52:11Z",
+        "c20": 10,
+        "c100": 5
+      },
+      {
+        "key": "openchamber",
+        "name": "OpenChamber",
+        "github": "https://github.com/openchamber/openchamber",
+        "stars": 13053,
+        "pushedAt": "2026-11-19T11:51:37Z",
+        "c20": 23,
+        "c100": 4
+      },
+      {
+        "key": "opencode",
+        "name": "OpenCode",
+        "github": "https://github.com/anomalyco/opencode",
+        "stars": 227952,
+        "pushedAt": "2026-11-19T13:09:27Z",
+        "c20": 39,
+        "c100": 23
+      },
+      {
+        "key": "orca",
+        "name": "Orca",
+        "github": "https://github.com/stablyai/orca",
+        "stars": 129428,
+        "pushedAt": "2026-11-19T13:08:35Z",
+        "c20": 15,
+        "c100": 8
+      },
+      {
+        "key": "ovis",
+        "name": "Ovis",
+        "github": "https://github.com/devswha/ovis",
+        "stars": 2142,
+        "pushedAt": "2026-11-19T13:10:19Z",
+        "c20": 5,
+        "c100": 1
+      },
+      {
+        "key": "paradev",
+        "name": "Paradev (formerly Superset)",
+        "github": "https://github.com/ParadevAI/Paradev",
+        "stars": 16402,
+        "pushedAt": "2026-11-19T09:48:39Z",
+        "c20": 8,
+        "c100": 4
+      },
+      {
+        "key": "paseo",
+        "name": "Paseo",
+        "github": "https://github.com/getpaseo/paseo",
+        "stars": 24446,
+        "pushedAt": "2026-11-19T12:54:23Z",
+        "c20": 5,
+        "c100": 3
+      },
+      {
+        "key": "pi-gui",
+        "name": "pi-gui",
+        "github": "https://github.com/minghinmatthewlam/pi-gui",
+        "stars": 1471,
+        "pushedAt": "2026-11-02T16:26:34Z",
+        "c20": 3,
+        "c100": 1
+      },
+      {
+        "key": "synara",
+        "name": "Synara",
+        "github": "https://github.com/Emanuele-web04/synara",
+        "stars": 2271,
+        "pushedAt": "2026-11-18T23:57:18Z",
+        "c20": 17,
+        "c100": 8
+      },
+      {
+        "key": "t3code",
+        "name": "t3 code",
+        "github": "https://github.com/pingdotgg/t3code",
+        "stars": 65920,
+        "pushedAt": "2026-11-19T13:03:41Z",
+        "c20": 37,
+        "c100": 12
+      },
+      {
+        "key": "warp",
+        "name": "Warp",
+        "github": "https://github.com/warpdotdev/warp",
+        "stars": 66059,
+        "pushedAt": "2026-11-19T06:18:24Z",
+        "c20": 28,
+        "c100": 5
+      }
+    ]
   }
 ]
