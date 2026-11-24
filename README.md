@@ -15,35 +15,35 @@ Great resources:
 The leaderboard is regenerated daily from the GitHub API and keeps historical snapshots in [`stats/stats-history.json`](./stats/stats-history.json). It includes only tools with a public GitHub repository.
 
 <!-- DAILY_TABLE:START -->
-## GitHub activity leaderboard — 2026-11-23
+## GitHub activity leaderboard — 2026-11-24
 
 Ranked by GitHub stars. Activity fields are fetched daily from the GitHub API.
 
 | # | Tool | ★ Stars | Contributors ≥20 | Contributors ≥100 | Last push |
 | ---: | --- | ---: | ---: | ---: | --- |
-| 1 | [OpenCode](https://github.com/anomalyco/opencode) | 228,756 | 39 | 23 | today |
-| 2 | [Orca](https://github.com/stablyai/orca) | 134,037 | 15 | 9 | today |
-| 3 | [t3 code](https://github.com/pingdotgg/t3code) | 73,904 | 39 | 12 | today |
-| 4 | [Warp](https://github.com/warpdotdev/warp) | 66,106 | 29 | 5 | today |
-| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 34,454 | 24 | 10 | 18d ago |
-| 6 | [Happy](https://github.com/slopus/happy) | 24,776 | 7 | 5 | yesterday |
-| 7 | [Paseo](https://github.com/getpaseo/paseo) | 24,765 | 5 | 3 | today |
-| 8 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | 16,510 | 8 | 4 | today |
-| 9 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 15,044 | 35 | 13 | today |
-| 10 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,737 | 2 | 2 | 4d ago |
-| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 13,197 | 24 | 4 | today |
-| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,294 | 17 | 5 | 3d ago |
-| 13 | [bb](https://github.com/get-bb/bb) | 5,915 | 10 | 5 | yesterday |
-| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 4,123 | 5 | 1 | 11d ago |
-| 15 | [Herdr app](https://github.com/herdrdev/herdr-app) | 3,376 | 1 | 1 | today |
-| 16 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,378 | 10 | 1 | today |
-| 17 | [Synara](https://github.com/Emanuele-web04/synara) | 2,300 | 17 | 8 | today |
-| 18 | [Ovis](https://github.com/devswha/ovis) | 2,190 | 5 | 1 | today |
+| 1 | [OpenCode](https://github.com/anomalyco/opencode) | 228,916 | 39 | 23 | today |
+| 2 | [Orca](https://github.com/stablyai/orca) | 135,560 | 16 | 10 | today |
+| 3 | [t3 code](https://github.com/pingdotgg/t3code) | 76,730 | 39 | 12 | today |
+| 4 | [Warp](https://github.com/warpdotdev/warp) | 66,127 | 29 | 5 | today |
+| 5 | [AionUi](https://github.com/iOfficeAI/AionUi) | 34,476 | 24 | 10 | 19d ago |
+| 6 | [Paseo](https://github.com/getpaseo/paseo) | 24,928 | 5 | 3 | today |
+| 7 | [Happy](https://github.com/slopus/happy) | 24,784 | 7 | 5 | today |
+| 8 | [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | 16,541 | 8 | 4 | today |
+| 9 | [Orchestrator.inc (formerly Agent Orchestrator)](https://github.com/OrchestratorInc/agent-orchestrator) | 15,079 | 35 | 13 | today |
+| 10 | [Claude Code UI (CloudCLI)](https://github.com/siteboon/claudecodeui) | 14,745 | 2 | 2 | today |
+| 11 | [OpenChamber](https://github.com/openchamber/openchamber) | 13,225 | 24 | 4 | today |
+| 12 | [Emdash](https://github.com/generalaction/emdash) | 6,299 | 17 | 5 | yesterday |
+| 13 | [bb](https://github.com/get-bb/bb) | 5,962 | 10 | 5 | today |
+| 14 | [MonoCode](https://github.com/hardbeat920/monocode) | 4,138 | 5 | 1 | 12d ago |
+| 15 | [Herdr app](https://github.com/herdrdev/herdr-app) | 3,428 | 1 | 1 | today |
+| 16 | [Herdr UI (herdr-gpui)](https://github.com/penso/herdr-gpui) | 2,381 | 10 | 1 | today |
+| 17 | [Synara](https://github.com/Emanuele-web04/synara) | 2,305 | 17 | 8 | today |
+| 18 | [Ovis](https://github.com/devswha/ovis) | 2,202 | 5 | 1 | today |
 | 19 | [Xum (formerly Mux)](https://github.com/coder/xum) | 2,081 | 10 | 5 | today |
-| 20 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,486 | 3 | 1 | 21d ago |
-| 21 | [Jean](https://github.com/coollabsio/jean) | 1,430 | 3 | 1 | today |
-| 22 | [49Agents](https://github.com/alpbahadur/49Agents) | 589 | 2 | 1 | 2026-10-01 |
-| 23 | [ADE](https://github.com/arul28/ADE) | 146 | 1 | 1 | today |
+| 20 | [pi-gui](https://github.com/minghinmatthewlam/pi-gui) | 1,490 | 3 | 1 | 22d ago |
+| 21 | [Jean](https://github.com/coollabsio/jean) | 1,431 | 3 | 1 | today |
+| 22 | [49Agents](https://github.com/alpbahadur/49Agents) | 587 | 2 | 1 | 2026-10-01 |
+| 23 | [ADE](https://github.com/arul28/ADE) | 147 | 1 | 1 | today |
 
 [Raw daily JSON](./stats/daily.json) · [Full stats history](./stats/stats-history.json)
 <!-- DAILY_TABLE:END -->
